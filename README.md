@@ -28,6 +28,7 @@ The colors are available in the code; different colors can be used.
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/BreezeDark_Colors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/DeepDark_Colors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/Discord_Colors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/FirefoxDark_Colors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/Firefox57_Colors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/Mint-Y-Dark_Colors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/OpenUserCSS-DeepDark/master/Images/VertexDark_Colors.png)
