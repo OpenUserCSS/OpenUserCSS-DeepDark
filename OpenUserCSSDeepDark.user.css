@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/RaitaroH/OpenUserCSS-DeepDark
 @homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
-@version 1.0.0
+@version 1.0.1
 @updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.0*/
+/*1.0.1*/
 
 	/*Main color variables*/
 	:root
@@ -612,6 +612,80 @@
 	.button.is-primary[data-v-d5970584]:hover
 	{
 		opacity: 1 !important;
+	}
+
+
+	/*Upload theme*/
+	.input[data-v-65edc48c], .textarea[data-v-65edc48c], .input[data-v-47e8ab44], .textarea[data-v-47e8ab44]
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.input.is-active[data-v-65edc48c], .input.is-focused[data-v-65edc48c], .input[data-v-65edc48c]:active, .input[data-v-65edc48c]:focus, .textarea.is-active[data-v-65edc48c], .textarea.is-focused[data-v-65edc48c], .textarea[data-v-65edc48c]:active, .textarea[data-v-65edc48c]:focus, .input[data-v-65edc48c]:hover, .textarea[data-v-65edc48c]:hover, .input[data-v-47e8ab44]:hover, .textarea[data-v-47e8ab44]:hover
+	{
+		box-shadow: none !important;
+		border-color: var(--main-color) !important;
+	}
+	/*Code*/
+	#editor .ace_gutter
+	{
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.ace_folding-enabled > .ace_gutter-cell, .ace-tm .ace_marker-layer .ace_active-line
+	{
+		background: var(--hover-background) !important;
+	}
+	#editor
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	#editor .ace_print-margin
+	{
+		background: transparent !important;
+	}
+	/*Buttons*/
+	.button.is-primary.is-hovered[data-v-65edc48c].button.is-primary.is-hovered[data-v-47e8ab44], .button.is-primary[data-v-65edc48c], .button.is-primary[data-v-47e8ab44]
+	{
+		background: var(--main-color) !important;
+		opacity: .9;
+	}
+	.button.is-primary[data-v-47e8ab44]:hover, .button.is-primary[data-v-65edc48c]:hover
+	{
+		background: var(--main-color) !important;
+		opacity: 1 !important;
+	}
+	/*Options*/
+	.box[data-v-65edc48c], .vc-chrome-body, .vc-chrome-fields .vc-input__input
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	hr[data-v-65edc48c]
+	{
+		background: var(--hover-background) !important;
+	}
+	.vc-chrome-fields .vc-input__input
+	{
+		box-shadow: var(--shadow) !important;
+	}
+	.select select[data-v-65edc48c]
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.select[data-v-65edc48c]:not(.is-multiple)::after
+	{
+		border-color: var(--main-text) !important;
+	}
+	.select[data-v-65edc48c]:hover:not(.is-multiple)::after
+	{
+		border-color: var(--main-color) !important;
 	}
 }
 @-moz-document domain("forums.openusercss.org") {
