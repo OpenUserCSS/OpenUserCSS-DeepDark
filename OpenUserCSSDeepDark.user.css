@@ -1,0 +1,756 @@
+/* ==UserStyle==
+@name OpenUserCSS DeepDark
+@namespace github.com/RaitaroH/OpenUserCSS-DeepDark
+@homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
+@version 1.0.0
+@updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
+@description OpenUserCSS dark theme
+@author RaitaroH
+@license GNU-V3.0
+
+@preprocessor uso
+@var select mainColor 'Main color' {
+	"DeepDark": "#00adee",
+	"BreezeDark": "#3DAEE9",
+	"Vertex Dark": "#4080fb",
+	"Arc Dark": "#5294E2",
+	"Firefox Dark": "#5675B9",
+	"Firefox57": "#4080FB",
+	"Discord": "#7289DA",
+	"YouTubeDark": "#E52117",
+	"Mint-Y-Dark": "#9AB87C",
+	"9anime": "#723f8c",
+	"Black&White": "#ffffff",
+	"Yellow_petrocompletions": "#FFC700",
+	"Yellow2": "#FFC700",
+	"Ubuntu_grey": "#EF7847",
+	"Ubuntu_purple": "#EF7847",
+	"Orange": "#ff6905",
+	"Jisho_夜明け":  "#EF7D6C"
+}
+
+@var select mainBackground 'Main background color' {
+	"DeepDark": "#111111",
+	"BreezeDark": "#232629",
+	"Vertex Dark": "#2B2B2C",
+	"Arc Dark": "#343944",
+	"Firefox Dark": "#272B35",
+	"Firefox57": "#0C0C0D",
+	"Discord": "#1E2124",
+	"YouTubeDark": "#111111",
+	"Mint-Y-Dark": "#2F2F2F",
+	"9anime": "#0B0A0D",
+	"Black&White": "#000000",
+	"Yellow_petrocompletions": "#141414",
+	"Yellow2": "#0a0800",
+	"Ubuntu_grey": "#312D2A",
+	"Ubuntu_purple": "#2C071A",
+	"Orange": "#0a0400",
+	"Jisho_夜明け":  "#332222"
+}
+
+@var select secondBackground 'Second background color' {
+	"DeepDark": "#181818",
+	"BreezeDark": "#2a2e32",
+	"Vertex Dark": "#353638",
+	"Arc Dark": "#383C4A",
+	"Firefox Dark": "#181D20",
+	"Firefox57": "#252526",
+	"Discord": "#2F3136",
+	"YouTubeDark": "#232323",
+	"Mint-Y-Dark": "#383838",
+	"9anime": "#17151C",
+	"Black&White": "#0a0a0a",
+	"Yellow_petrocompletions": "#202222",
+	"Yellow2": "#0c0a04",
+	"Ubuntu_grey": "#3D3C38",
+	"Ubuntu_purple": "#430B28",
+	"Orange": "#0e0702",
+	"Jisho_夜明け":  "#2A1B1B"
+}
+
+@var select hoverBackground 'Hover background color' {
+	"DeepDark": "#232323",
+	"BreezeDark": "#31363b",
+	"Vertex Dark": "#515254",
+	"Arc Dark": "#414A59",
+	"Firefox Dark": "#353A44",
+	"Firefox57": "#323234",
+	"Discord": "#484B51",
+	"YouTubeDark": "#343434",
+	"Mint-Y-Dark": "#404040",
+	"9anime": "#1E1C25",
+	"Black&White": "#0f0f0f",
+	"Yellow_petrocompletions": "#353838",
+	"Yellow2": "#0f0d05",
+	"Ubuntu_grey": "#59564D",
+	"Ubuntu_purple": "#520D30",
+	"Orange": "#110903",
+	"Jisho_夜明け":  "#863B2F"
+}
+
+@var select mainText 'Main text color' {
+	"DeepDark": "#eff0f1",
+	"BreezeDark": "#eff0f1",
+	"Vertex Dark": "#F3F3F5",
+	"Arc Dark": "#C1C8D1",
+	"Firefox Dark": "#E3EEF9",
+	"Firefox57": "#F9F9FA",
+	"Discord": "#FFFFFF",
+	"YouTubeDark": "#E1E1E1",
+	"Mint-Y-Dark": "#FFFFFF",
+	"9anime": "#B4B4B4",
+	"Black&White": "#b4b4b4",
+	"Yellow_petrocompletions": "#EFF0F1",
+	"Yellow2": "#fffdf5",
+	"Ubuntu_grey": "#F2F1EF",
+	"Ubuntu_purple": "#F2F1EF",
+	"Orange": "#fff9f5",
+	"Jisho_夜明け":  "#EFB26C"
+}
+
+@var select dimerText 'Secondary text color' {
+	"DeepDark": "#CCCCCC",
+	"BreezeDark": "#bdc3c7",
+	"Vertex Dark": "#AEAFB0",
+	"Arc Dark": "#B3BAC5",
+	"Firefox Dark": "#606376",
+	"Firefox57": "#D0D0D0",
+	"Discord": "#ADA8AA",
+	"YouTubeDark": "#7F7F7F",
+	"Mint-Y-Dark": "#D5DADA",
+	"9anime": "#747474",
+	"Black&White": "#828282",
+	"Yellow_petrocompletions": "#9F9999",
+	"Yellow2": "#fff8e1",
+	"Ubuntu_grey": "#E6E5E3",
+	"Ubuntu_purple": "#E6E5E3",
+	"Orange": "#ffede1",
+	"Jisho_夜明け":  "#986E3F"
+}
+
+==/UserStyle== */
+
+@-moz-document domain("openusercss.org") {
+
+/*Theme made by RaitaroH @https://github.com/RaitaroH/OpenUserCSS-DeepDark*/
+
+/*GNU General Public License v3.0*/
+
+/*1.0.0*/
+
+	/*Main color variables*/
+	:root
+	{
+		/*User colors*/
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimer-text: /*[[dimerText]]*/;
+
+		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+
+		/*DeepDark colors*/
+		/*
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818;
+		--hover-background: #232323;
+		--main-text: #eff0f1;
+		--dimer-text: #CCCCCC;
+		*/
+
+		/*KDE colors*/
+		/*
+		--main-color: #3DAEE9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimer-text: #bdc3c7;
+		*/
+
+		/*Vertex Dark colors*/
+		/*
+		--main-color: #4080fb;
+		--main-background: #2B2B2C;
+		--second-background: #353638;
+		--hover-background: #515254;
+		--main-text: #F3F3F5;
+		--dimer-text: #AEAFB0;
+		*/
+
+		/*Arc Dark colors*/
+		/*
+		--main-color: #5294E2;
+		--main-background: #343944;
+		--second-background: #383C4A;
+		--hover-background: #414A59;
+		--main-text: #C1C8D1;
+		--dimer-text: #B3BAC5;
+		*/
+
+		/*Firefox Dark colors*/
+		/*
+		--main-color: #5675B9;
+		--main-background: #272B35;
+		--second-background: #181D20;
+		--hover-background: #353A44;
+		--main-text: #E3EEF9;
+		--dimer-text: #606376;
+		*/
+
+		/*Firefox57 Dark colors*/
+		/*
+		--main-color: #4080FB;
+		--main-background: #0C0C0D;
+		--second-background: #252526;
+		--hover-background: #323234;
+		--main-text: #F9F9FA;
+		--dimer-text: #D0D0D0;
+		*/
+
+		/*Discord colors*/
+		/*
+		--main-color: #7289DA;
+		--main-background: #1E2124;
+		--second-background: #2F3136;
+		--hover-background: #484B51;
+		--main-text: #FFFFFF;
+		--dimer-text: #ADA8AA;
+		*/
+
+		/*YouTube dark colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimer-text: #7F7F7F;
+		*/
+
+		/*Mint-Y-Dark colors*/
+		/*
+		--main-color: #9AB87C;
+		--main-background: #2F2F2F;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #FFFFFF;
+		--dimer-text: #D5DADA;
+		*/
+
+		/*9anime colors*/
+		/*
+		--main-color: #723f8c;
+		--main-background: #0B0A0D;
+		--second-background: #17151C;
+		--hover-background: #1E1C25;
+		--main-text: #B4B4B4;
+		--dimer-text: #747474;
+		*/
+
+		/*Black and white*/
+		/*
+		--main-color: #ffffff;
+		--main-background: #000000;
+		--second-background: #0a0a0a;
+		--hover-background: #0f0f0f;
+		--main-text: #b4b4b4;
+		--dimer-text: #828282;
+		*/
+
+		/*Yellow (colors from petrocompletions)*/
+		/*
+		--main-color: #FFC700;
+		--main-background: #141414;
+		--second-background: #202222;
+		--hover-background: #353838;
+		--main-text: #EFF0F1;
+		--dimer-text: #9F9999;
+		*/
+
+		/*Yellow 2*/
+		/*
+		--main-color: #ffc700;
+		--main-background: #0a0800;
+		--second-background: #0c0a04;
+		--hover-background: #0f0d05;
+		--main-text: #fffdf5;
+		--dimer-text: #fff8e1;
+		*/
+
+		/*Ubuntu grey colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #312D2A;
+		--second-background: #3D3C38;
+		--hover-background: #59564D;
+		--main-text: #F2F1EF;
+		--dimer-text: #E6E5E3;
+		*/
+
+		/*Ubuntu purple colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #2C071A;
+		--second-background: #430B28;
+		--hover-background: #520D30;
+		--main-text: #F2F1EF;
+		--dimer-text: #E6E5E3;
+		*/
+
+		/*Orange*/
+		/*
+		--main-color: #ff6905;
+		--main-background: #0a0400;
+		--second-background: #0e0702;
+		--hover-background: #110903;
+		--main-text: #fff9f5;
+		--dimer-text: #ffede1;
+		*/
+
+		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
+		/*
+		--main-color: #EF7D6C;
+		--main-background: #332222;
+		--second-background: #2A1B1B;
+		--hover-background: #863B2F;
+		--main-text: #EFB26C;
+		--dimer-text: #986E3F;
+		*/
+	}
+
+	/*Changed text highlight*/
+	::selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	::-moz-selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+
+	a, a:visited, .style-name-link
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	a:hover, .style-name-link:hover
+	{
+		opacity: 1;
+	}
+
+
+	/*Header*/
+	.navbar.is-primary[data-v-69502204], .navbar-menu.is-primary[data-v-69502204]
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*Header items*/
+	.navbar-item[data-v-69502204]:not(.no-active):not(.router-link-exact-active):not(:hover)
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.navbar-item:not(.no-active).router-link-exact-active[data-v-69502204]
+	{
+		background: var(--second-background) !important;
+		color: var(--main-color) !important;
+	}
+	.navbar.is-primary .navbar-end .navbar-link.is-active[data-v-69502204], .navbar.is-primary .navbar-end .navbar-link[data-v-69502204]:hover, .navbar.is-primary .navbar-end > a.navbar-item.is-active[data-v-69502204], .navbar.is-primary .navbar-end > a.navbar-item[data-v-69502204]:hover, .navbar.is-primary .navbar-start .navbar-link.is-active[data-v-69502204], .navbar.is-primary .navbar-start .navbar-link[data-v-69502204]:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active[data-v-69502204], .navbar.is-primary .navbar-start > a.navbar-item[data-v-69502204]:hover, .navbar.is-primary .navbar-brand .navbar-link.is-active[data-v-69502204], .navbar.is-primary .navbar-brand .navbar-link[data-v-69502204]:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active[data-v-69502204], .navbar.is-primary .navbar-brand > a.navbar-item[data-v-69502204]:hover
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	/*Alpha*/
+	.tag:not(body).is-secondary[data-v-69502204]
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+
+
+	/*Body of the page*/
+	.ouc-app-root[data-v-7deac32c]
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*Footer*/
+	.footer[data-v-17293cc4]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+
+
+	/*Popular themes*/
+	.box[data-v-8d77a91c]
+	{
+		background: var(--hover-background) !important;
+		color: var(--dimer-text) !important;
+	}
+
+
+	/*Newst themes*/
+	.is-primary > .box[data-v-67b2c5fe]
+	{
+		background: var(--hover-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	h4[data-v-8d77a91c]
+	{
+		color: var(--main-color) !important;
+	}
+	.box[data-v-67b2c5fe] h6[data-v-8d77a91c]:nth-child(2)
+	{
+		color: var(--main-text) !important;
+	}
+
+
+	/*Themes*/
+	h1[data-v-ca7e2dc0]
+	{
+		color: var(--main-color) !important;
+	}
+	.box[data-v-ca7e2dc0]
+	{
+		background: var(--hover-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	/*About*/
+	h2[data-v-ca7e2dc0]
+	{
+		color: var(--main-text) !important;
+	}
+	/*Buttons*/
+	.button.is-primary[data-v-ca7e2dc0]
+	{
+		background: var(--main-color) !important;
+		opacity: .9;
+	}
+	.button.is-primary[data-v-ca7e2dc0]:hover
+	{
+		opacity: 1 !important;
+	}
+	a[data-v-ca7e2dc0]
+	{
+		color: var(--main-text) !important;
+	}
+	/*Theme options*/
+	li[data-v-ca7e2dc0], p[data-v-ca7e2dc0], ul[data-v-ca7e2dc0]
+	{
+		color: var(--dimer-text) !important;
+	}
+	hr[data-v-ca7e2dc0]
+	{
+		background: var(--hover-background) !important;
+	}
+	
+	/*Code*/
+	code[data-v-ca7e2dc0], .v--modal
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.v--modal
+	{
+		box-shadow: var(--shadow) !important;
+	}
+
+
+	/*Profile*/
+	.box[data-v-08464040]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	hr[data-v-08464040]
+	{
+		background: var(--second-background) !important;
+	}
+	.tile.is-parent[data-v-08464040] h2[data-v-08464040], h4[data-v-08464040]
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	/*Buttons*/
+	.button.is-primary[data-v-08464040]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-primary[data-v-08464040]:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	/*Account details*/
+	.content h1[data-v-a58b4e30], .content h2[data-v-a58b4e30], .content h3[data-v-a58b4e30], .content h4[data-v-a58b4e30], .content h5[data-v-a58b4e30], .content h6[data-v-a58b4e30]
+	{
+		color: var(--main-text) !important;
+	}
+	hr[data-v-a58b4e30]
+	{
+		background: var(--hover-background) !important;
+	}
+	.box[disabled][data-v-a58b4e30], .box[data-v-a58b4e30]
+	{
+		background: var(--hover-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	h5[data-v-a58b4e30]
+	{
+		color: var(--main-text) !important;
+	}
+	/*Lock check*/
+	.switch.checked[data-v-38bcac9e]
+	{
+		background: var(--main-color) !important;
+	}
+	/*Inputs*/
+	.input[data-v-a58b4e30], .textarea[data-v-a58b4e30]
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.input.is-active[data-v-a58b4e30], .input.is-focused[data-v-a58b4e30], .input[data-v-a58b4e30]:active, .input[data-v-a58b4e30]:focus, .textarea.is-active[data-v-a58b4e30], .textarea.is-focused[data-v-a58b4e30], .textarea[data-v-a58b4e30]:active, .textarea[data-v-a58b4e30]:focus, .input[data-v-a58b4e30]:hover, .textarea[data-v-a58b4e30]:hover
+	{
+		box-shadow: none !important;
+		border-color: var(--main-color) !important;
+	}
+	/*Dim text*/
+	.input[data-v-a58b4e30]::-moz-placeholder, .textarea[data-v-a58b4e30]::-moz-placeholder, .input[data-v-49c2bd04]::-moz-placeholder, .textarea[data-v-49c2bd04]::-moz-placeholder
+	{
+		color: var(--dimer-text) !important;
+	}
+	/*Buttons*/
+	.button.is-primary[data-v-a58b4e30]
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.button.is-primary[data-v-a58b4e30]:hover
+	{
+		opacity: 1 !important;
+	}
+
+
+	/*Search*/
+	.input[data-v-d374bd44]::-moz-placeholder, .textarea[data-v-d374bd44]::-moz-placeholder
+	{
+		color: var(--dimer-text) !important;
+	}
+	.input[data-v-d374bd44], .textarea[data-v-d374bd44]
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.input.is-active[data-v-d374bd44], .input.is-focused[data-v-d374bd44], .input[data-v-d374bd44]:active, .input[data-v-d374bd44]:focus, .textarea.is-active[data-v-d374bd44], .textarea.is-focused[data-v-d374bd44], .textarea[data-v-d374bd44]:active, .textarea[data-v-d374bd44]:focus, .input[data-v-d374bd44]:hover, .textarea[data-v-d374bd44]:hover
+	{
+		box-shadow: none !important;
+		border-color: var(--main-color) !important;
+	}
+	/*Button*/
+	.button.is-primary[data-v-5c6ce3cc]
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.button.is-primary[data-v-5c6ce3cc]:hover
+	{
+		opacity: 1 !important;
+	}
+	/*Search results title*/
+	h4[data-v-5c6ce3cc]
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	/*Login*/
+	.box[data-v-e886f740]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	hr[data-v-e886f740]
+	{
+		background: var(--second-background) !important;
+	}
+	/*Input*/
+	.input[data-v-e886f740], .textarea[data-v-e886f740]
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.input.is-active[data-v-e886f740], .input.is-focused[data-v-e886f740], .input[data-v-e886f740]:active, .input[data-v-e886f740]:focus, .textarea.is-active[data-v-e886f740], .textarea.is-focused[data-v-e886f740], .textarea[data-v-e886f740]:active, .textarea[data-v-e886f740]:focus
+	{
+		box-shadow: none !important;
+		border-color: var(--main-color) !important;
+	}
+	
+	.button.is-primary[data-v-d5970584]
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.button.is-primary[data-v-d5970584]:hover
+	{
+		opacity: 1 !important;
+	}
+}
+@-moz-document domain("forums.openusercss.org") {
+/*Forums*/
+
+	/*Navbar*/
+	nav.navbar, .navbar-default
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+		border: none;
+		box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important;
+	}
+	.btn-primary, .dropdown-toggle
+	{
+		background: var(--main-background) !important;
+	}
+	.btn-primary:hover, .dropdown-toggle:hover, .dropdown i:hover, .dropdown .pagination-text:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.navbar-default .pagination-block .progress-container .progress-bar
+	{
+		background: var(--main-color) !important;
+	}
+	.navbar-default .pagination-block .progress-container
+	{
+		background: var(--main-text) !important;
+	}
+	/*Links*/
+	.navbar > .container .navbar-brand:hover, .navbar > .container-fluid .navbar-brand:hover, .navbar-default .search-menu #search-form #search-button:hover i, .navbar-default .navbar-nav > li > a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.navbar-default #main-nav li > a
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.navbar-default #main-nav li > a:hover, .navbar-default #main-nav li > a:hover > *
+	{
+		border-color: var(--main-color) !important;
+		color: var(--main-color) !important;
+	}
+
+
+	body
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.categories .categories-header .header-title
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+
+	/*Posts*/
+	.breadcrumb > .active, .category [component="category/topic"] .title small
+	{
+		color: var(--dimer-text) !important;
+	}
+	hr, .category .topics-header .header-title, .topic [component="post"]
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
+	{
+		border-color: var(--hover-background) !important;
+	}
+	thead
+	{
+		background: var(--main-background) !important;
+	}
+	.table-striped > tbody > tr:nth-of-type(2n+1)
+	{
+		background: var(--hover-background) !important;
+	}
+	.table-striped > tbody > tr:nth-of-type(2n)
+	{
+		background: var(--second-background) !important;
+	}
+	code
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+
+
+	/*Search*/
+	.form-control, .bootstrap-tagsinput
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.form-control:focus, .bootstrap-tagsinput:focus, .form-control:hover, .bootstrap-tagsinput:hover
+	{
+		box-shadow: none !important;
+		border-color: var(--main-color) !important;
+	}
+	
+	.search .panel-default, .search .panel-default .panel-heading
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.panel
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.panel-default > .panel-heading
+	{
+		background: var(--main-background) !important;
+		color: var(--main-color) !important;
+	}
+	/*Buttons*/
+	.btn-default
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.btn-default:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+	.alert-info
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+
+	blockquote
+	{
+		background: var(--second-background) !important;
+		border-color: var(--main-background) !important;
+		color: var(--dimer-text) !important;
+	}
+}
