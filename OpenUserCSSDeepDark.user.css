@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/RaitaroH/OpenUserCSS-DeepDark
 @homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
-@version 1.0.2
+@version 1.0.3
 @updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.2*/
+/*1.0.3*/
 
 	/*Main color variables*/
 	:root
@@ -908,10 +908,18 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	.notifications.dropdown .dropdown-menu .notification-list li.unread
+	.notifications.dropdown .dropdown-menu .notification-list li.unread, .notifications.dropdown .dropdown-menu .notification-list li.unread.notification-msg a
 	{
-		background: var(--main-color) !important;
+		background: var(--second-background) !important;
+		color: var(--main-color) !important;
+	}
+	.notifications.dropdown .dropdown-menu .notification-list li .notification-msg a
+	{
 		color: var(--main-text) !important;
+	}
+	.notifications.dropdown .dropdown-menu .notification-list li .notification-msg a:hover
+	{
+		color: var(--main-color) !important;
 	}
 	.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover
 	{
