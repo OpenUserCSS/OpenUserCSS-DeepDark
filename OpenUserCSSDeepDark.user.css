@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/RaitaroH/OpenUserCSS-DeepDark
 @homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
-@version 1.0.3
+@version 1.0.4
 @updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.3*/
+/*1.0.4*/
 
 	/*Main color variables*/
 	:root
@@ -337,6 +337,7 @@
 
 	a, a:visited, .style-name-link
 	{
+		background: transparent !important;
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
