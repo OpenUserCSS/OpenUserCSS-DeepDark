@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/RaitaroH/OpenUserCSS-DeepDark
 @homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
-@version 1.0.4
+@version 1.0.5
 @updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.4*/
+/*1.0.5*/
 
 	/*Main color variables*/
 	:root
@@ -440,7 +440,7 @@
 	{
 		opacity: 1 !important;
 	}
-	a[data-v-ca7e2dc0]
+	a[data-v-ca7e2dc0], .button.is-primary[data-v-ca7e2dc0] p[data-v-ca7e2dc0]
 	{
 		color: var(--main-text) !important;
 	}
@@ -472,7 +472,7 @@
 		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	hr[data-v-08464040]
+	hr
 	{
 		background: var(--second-background) !important;
 	}
