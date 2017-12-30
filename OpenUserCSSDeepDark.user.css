@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/RaitaroH/OpenUserCSS-DeepDark
 @homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
-@version 1.0.1
+@version 1.0.2
 @updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.1*/
+/*1.0.2*/
 
 	/*Main color variables*/
 	:root
@@ -452,7 +452,7 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	
+
 	/*Code*/
 	code[data-v-ca7e2dc0], .v--modal
 	{
@@ -602,7 +602,7 @@
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
 	}
-	
+
 	.button.is-primary[data-v-d5970584]
 	{
 		background: var(--main-color) !important;
@@ -690,6 +690,22 @@
 }
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
+
+	.bar:nth-child(1)
+	{
+		background: var(--main-color) !important;
+		filter: brightness(70%);
+	}
+	.bar:nth-child(2)
+	{
+		background: var(--hover-background) !important;
+	}
+	.bar:nth-child(3)
+	{
+		background: var(--main-color) !important;
+		filter: brightness(100%);
+	}
+
 
 	/*Navbar*/
 	nav.navbar, .navbar-default
@@ -787,7 +803,7 @@
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
 	}
-	
+
 	.search .panel-default, .search .panel-default .panel-heading
 	{
 		border-color: var(--hover-background) !important;
@@ -823,8 +839,194 @@
 
 	blockquote
 	{
-		background: var(--second-background) !important;
+		background: var(--hover-background) !important;
 		border-color: var(--main-background) !important;
 		color: var(--dimer-text) !important;
+	}
+
+
+	/*Login*/
+	.help-block
+	{
+		color: var(--dimer-text) !important;
+	}
+	.alert-window .alert.alert-warning, .alert-window .alert.alert-success
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--main-color) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	.alert-window .alert.alert-danger
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--main-color) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	.alert-dismissable .close, .alert-dismissible .close
+	{
+		text-shadow: none !important;
+		color: var(--main-text) !important;
+		opacity: 1 !important;
+	}
+	.alert-dismissable .close:hover, .alert-dismissible .close:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*Email confirm*/
+	.alert-success, .alert-warning
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+
+
+	/*Notifications and other dropdown menus*/
+	.unread-count::after
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	nav.navbar .open, nav.navbar .open > a, nav.navbar .open > a > i
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.dropdown-menu
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.notifications.dropdown .dropdown-menu .mark-all-read, .chats.dropdown .dropdown-menu .mark-all-read
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.notifications.dropdown .dropdown-menu .notification-list li, .chats.dropdown .dropdown-menu .chat-list a
+	{
+		background: var(--hover-background) !important;
+	}
+	.notifications.dropdown .dropdown-menu .notification-list li.unread
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.notifications.dropdown .dropdown-menu .notification-list li.unread .notification-msg a, .dropdown-menu > li > a
+	{
+		color: var(--main-text) !important;
+	}
+	.dropdown-menu .divider
+	{
+		background: var(--hover-background) !important;
+	}
+
+
+	/*Settings*/
+	.list-group-item
+	{
+		background: var(--main-background) !important;
+		border-color: transparent !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	.list-group-item:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.btn-danger
+	{
+		color: var(--main-text) !important;
+	}
+	/*Change picture*/
+	.modal-content
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.modal-header, .modal-footer
+	{
+		border-color: var(--main-background) !important;
+	}
+	.nav-pills > li > a
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	.nav > li > a:focus, .nav > li > a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.account .user-setting
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+
+	/*Account page*/
+	.account .account-stats .stat .stat-label, .text-muted, .account .posts-list .posts-list-item .post-body .timeago, .account .posts-list .posts-list-item .post-body .topic-category > a
+	{
+		color: var(--dimer-text) !important;
+	}
+	.btn-success, .btn-warning
+	{
+		color: var(--main-text) !important;
+	}
+	.account .posts-list .posts-list-item
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.account .posts-list .posts-list-item .post-body .topic-category > a:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	/*Login sessions*/
+	.panel-default > .panel-heading, .panel
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+
+	/*Chat*/
+	.chat-modal .modal-header .chat-room-name
+	{
+		color: var(--main-color) !important;
+	}
+	.modal-header button, .chat-modal .chat-content .chat-message .controls button, .chats-list [component="chat/recent/room"] .chat-body .chat-secondary .leave, .close, .expanded-chat .chat-content .chat-message .controls button
+	{
+		text-shadow: none !important;
+		color: var(--dimer-text) !important;
+		opacity: 1 !important;
+	}
+	.modal-header button:hover, .chat-modal .chat-content .chat-message .controls button:hover, .chats-list [component="chat/recent/room"] .chat-body .chat-secondary .leave:hover, .close:hover, .expanded-chat .chat-content .chat-message .controls button:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.chat-modal .chat-content .chat-message .message-header .chat-timestamp
+	{
+		color: var(--dimer-text) !important;
+	}
+	/*Chat room*/
+	.chats-list [component="chat/recent/room"] .chat-body .chat-main .chat-room-name
+	{
+		color: var(--main-color) !important;
+	}
+	.bg-primary
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.chats-list, .chats-list [component="chat/recent/room"]
+	{
+		border-color: var(--hover-background) !important;
 	}
 }
