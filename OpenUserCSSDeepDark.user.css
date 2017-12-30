@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/RaitaroH/OpenUserCSS-DeepDark
 @homepageURL https://github.com/RaitaroH/OpenUserCSS-DeepDark
-@version 1.0.5
+@version 1.0.6
 @updateURL https://rawgit.com/RaitaroH/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.5*/
+/*1.0.6*/
 
 	/*Main color variables*/
 	:root
@@ -578,6 +578,11 @@
 	h4[data-v-5c6ce3cc]
 	{
 		color: var(--main-color) !important;
+	}
+	.box[data-v-5c6ce3cc]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 
 
