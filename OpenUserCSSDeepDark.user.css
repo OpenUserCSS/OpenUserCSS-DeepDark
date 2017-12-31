@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.0.8
+@version 1.0.9
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.8*/
+/*1.0.9*/
 
 	/*Main color variables*/
 	:root
@@ -692,6 +692,13 @@
 	.select[data-v-65edc48c]:hover:not(.is-multiple)::after
 	{
 		border-color: var(--main-color) !important;
+	}
+
+
+	/*Donations*/
+	.is-primary-bg[data-v-17293cc4]
+	{
+		background: var(--main-background) !important;
 	}
 }
 @-moz-document domain("forums.openusercss.org") {
