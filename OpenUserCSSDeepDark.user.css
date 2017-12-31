@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.0.6
+@version 1.0.7
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.6*/
+/*1.0.7*/
 
 	/*Main color variables*/
 	:root
@@ -1025,7 +1025,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.chat-modal .chat-content .chat-message .message-header .chat-timestamp
+	.chat-modal .chat-content .chat-message .message-header .chat-timestamp, .github-embed .meta, .github-embed h3 span.number, .expanded-chat .chat-content .chat-message .message-header .chat-timestamp, pre
 	{
 		color: var(--dimer-text) !important;
 	}
@@ -1042,5 +1042,70 @@
 	.chats-list, .chats-list [component="chat/recent/room"]
 	{
 		border-color: var(--hover-background) !important;
+	}
+
+
+	/*New topic*/
+	.composer
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.composer .preview, .composer .write
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.composer .preview:hover, .composer .write:hover, .composer .preview:focus, .composer .write:focus
+	{
+		border-color: var(--main-color) !important;
+	}
+	.composer .preview-container .help-text, .composer .write-container .help-text
+	{
+		color: var(--dimer-text) !important;
+	}
+	.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*Icons*/
+	.composer .resizer .trigger
+	{
+		background: var(--main-background) !important;
+		border-color: transparent !important;
+		color: var(--main-text) !important;
+	}
+	.composer .resizer .trigger:hover i
+	{
+		color: var(--main-color) !important;
+	}
+	.composer .formatting-bar .formatting-group li
+	{
+		color: var(--main-text) !important;
+	}
+	.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus i, .composer .formatting-bar .formatting-group li:hover i
+	{
+		background: transparent !important;
+		color: var(--main-color) !important;
+	}
+	/*Emoticons*/
+	.nav-tabs
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .emoji-link:hover
+	{
+		border-color: transparent !important;
+		color: var(--main-color) !important;
+	}
+	.nav-tabs > li > a, .emoji-link
+	{
+		color: var(--main-text) !important;
+	}
+	.nav-tabs > li > a:hover
+	{
+		border-color: transparent !important;
 	}
 }
