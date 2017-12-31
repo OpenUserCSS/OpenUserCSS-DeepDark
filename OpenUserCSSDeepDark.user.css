@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.0.7
+@version 1.0.8
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.7*/
+/*1.0.8*/
 
 	/*Main color variables*/
 	:root
@@ -1107,5 +1107,16 @@
 	.nav-tabs > li > a:hover
 	{
 		border-color: transparent !important;
+	}
+
+
+	/*RSS feed issue*/
+	.not-responsive.emoji.emoji-parsed
+	{
+		height: 20px;
+	}
+	#feedSubtitleText
+	{
+		display: none;
 	}
 }
