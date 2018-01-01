@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.0.9
+@version 1.1.0
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.0.9*/
+/*1.1.0*/
 
 	/*Main color variables*/
 	:root
@@ -463,6 +463,21 @@
 	.v--modal
 	{
 		box-shadow: var(--shadow) !important;
+	}
+
+
+	/*Ratings}*/
+	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
+	{
+		stop-color: var(--main-color) !important;
+	}
+	.vue-rate-it-pointer stop[stop-color="#d8d8d8"], .vue-rate-it-rating stop[stop-color="#d8d8d8"]
+	{
+		stop-color: var(--main-background) !important;
+	}
+	.vue-rate-it-pointer polygon[stroke="#999"], .vue-rate-it-rating polygon[stroke="#999"]
+	{
+		stroke: var(--hover-background) !important;
 	}
 
 
