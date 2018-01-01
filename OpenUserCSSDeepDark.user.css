@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.1.0
+@version 1.1.2
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.0*/
+/*1.1.2*/
 
 	/*Main color variables*/
 	:root
@@ -409,7 +409,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	h6[data-v-8d77a91c]
+	h6
 	{
 		color: var(--main-text) !important;
 	}
@@ -660,7 +660,27 @@
 }
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
+	
+	/*Inputs*/
+	.input, .textarea
+	{
+		background: var(--main-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover
+	{
+		box-shadow: none !important;
+		border-color: var(--main-color) !important;
+	}
+	/*Dim text*/
+	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
+	{
+		color: var(--dimer-text) !important;
+	}
 
+
+	/*Loading bar*/
 	.bar:nth-child(1)
 	{
 		background: var(--main-color) !important;
