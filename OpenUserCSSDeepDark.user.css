@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.1.6
+@version 1.1.7
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.6*/
+/*1.1.7*/
 
 	/*Main color variables*/
 	:root
@@ -791,7 +791,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.pull-right .upvoted .fa, .pull-right .downvoted .fa
+	.pull-right .upvoted .fa, .pull-right .downvoted .fa, .pull-right a:hover .fa
 	{
 		color: var(--main-color) !important;
 	}
