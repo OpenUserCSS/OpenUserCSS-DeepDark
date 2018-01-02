@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.1.4
+@version 1.1.5
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.4*/
+/*1.1.5*/
 
 	/*Main color variables*/
 	:root
@@ -339,11 +339,11 @@
 	{
 		background: transparent !important;
 		color: var(--main-color) !important;
-		opacity: .9;
+		opacity: 1;
 	}
 	a:hover, .style-name-link:hover
 	{
-		opacity: 1;
+		filter: brightness(110%) !important;
 	}
 
 
@@ -719,7 +719,7 @@
 	}
 	.navbar-default .pagination-block .progress-container
 	{
-		background: var(--main-text) !important;
+		background: var(--dimer-text) !important;
 	}
 	/*Links*/
 	.navbar > .container .navbar-brand:hover, .navbar > .container-fluid .navbar-brand:hover, .navbar-default .search-menu #search-form #search-button:hover i, .navbar-default .navbar-nav > li > a:hover
@@ -783,6 +783,38 @@
 	.topic .post .post-author .user-avatar, .topic .quick-reply .reply-user a .user-avatar
 	{
 		border-radius: 5% !important;
+	}
+
+	/*Votes*/
+	.pull-right .fa
+	{
+		color: var(--main-text) !important;
+	}
+	.pull-right .upvoted .fa, .pull-right .downvoted .fa
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Options*/
+	.topic .post-footer .moderator-tools .fa
+	{
+		color: var(--main-color) !important;
+	}
+	.topic .post-footer .moderator-tools:hover .fa
+	{
+		filter: brightness(110%) !important;
+	}
+
+	/*Edited*/
+	.fa.fa-pencil-square.pointer.edit-icon
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Signature*/
+	.topic .post .post-signature
+	{
+		color: var(--dimer-text) !important;
 	}
 
 
