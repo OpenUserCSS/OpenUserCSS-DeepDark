@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.1.7
+@version 1.1.8
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.7*/
+/*1.1.8*/
 
 	/*Main color variables*/
 	:root
@@ -783,7 +783,6 @@
 	.user-avatar
 	{
 		border-radius: 15% !important;
-		box-shadow: var(--shadow) !important;
 	}
 
 	/*Votes*/
@@ -961,6 +960,10 @@
 	.dropdown-menu .divider
 	{
 		background: var(--hover-background) !important;
+	}
+	.notifications.dropdown .dropdown-menu .notification-list li:hover a, .notifications.dropdown .dropdown-menu .notification-list li:hover strong
+	{
+		color: var(--main-color) !important;
 	}
 
 
@@ -1165,6 +1168,5 @@
 	.profile-card-avatar, .avatar.avatar-rounded
 	{
 		border-radius: 15% !important;
-		box-shadow: var(--shadow) !important;
 	}
 }
