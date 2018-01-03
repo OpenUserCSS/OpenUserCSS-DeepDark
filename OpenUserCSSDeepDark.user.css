@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.1.8
+@version 1.1.9
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.8*/
+/*1.1.9*/
 
 	/*Main color variables*/
 	:root
@@ -1017,6 +1017,11 @@
 	.btn-success, .btn-warning
 	{
 		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
+	}
+	.btn-success:hover, .btn-warning:hover
+	{
+		color: var(--main-color) !important;
 	}
 	.account .posts-list .posts-list-item
 	{
@@ -1153,17 +1158,39 @@
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 	}
-	.popover.left>.arrow:after
+	.popover.left>.arrow, .popover.left>.arrow:after
 	{
 		border-left-color: var(--hover-background) !important;
 	}
+	.popover.top>.arrow, .popover.top>.arrow:after
+	{
+		border-top-color: var(--hover-background) !important;
+	}
+	.popover.right>.arrow, .popover.right>.arrow:after
+	{
+		border-right-color: var(--hover-background) !important;
+	}
+	.popover.bottom>.arrow, .popover.bottom>.arrow:after
+	{
+		border-bottom-color: var(--hover-background) !important;
+	}
+
 	.profile-card-avatar
 	{
-		border-color: var(--hover-background) !important;
+		border-color: var(--second-background) !important;
+	}
+	.profile-card-info .aboutme>p::after
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 	.profile-card-info .account-stats .stat-label
 	{
 		color: var(--main-text) !important;
+	}
+	.profile-card-info .profile-meta strong, .profile-card-info .profile-meta
+	{
+		color: var(--dimer-text) !important;
 	}
 	.profile-card-avatar, .avatar.avatar-rounded
 	{
