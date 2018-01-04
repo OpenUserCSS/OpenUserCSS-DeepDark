@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.1.9
+@version 1.2.0
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.9*/
+/*1.2.0*/
 
 	/*Main color variables*/
 	:root
@@ -884,12 +884,6 @@
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
-	.alert-window .alert.alert-danger
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--main-color) !important;
-		box-shadow: var(--shadow) !important;
-	}
 	.alert-dismissable .close, .alert-dismissible .close
 	{
 		text-shadow: none !important;
@@ -899,6 +893,12 @@
 	.alert-dismissable .close:hover, .alert-dismissible .close:hover
 	{
 		color: var(--main-color) !important;
+	}
+	.alert-window .alert.alert-danger, .alert-danger 
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--main-color) !important;
+		box-shadow: var(--shadow) !important;
 	}
 	/*Email confirm*/
 	.alert-success, .alert-warning
