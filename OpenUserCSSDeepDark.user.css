@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.0
+@version 1.2.1
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.0*/
+/*1.2.1*/
 
 	/*Main color variables*/
 	:root
@@ -459,6 +459,10 @@
 	.v--modal
 	{
 		box-shadow: var(--shadow) !important;
+	}
+	div.tile.is-parent.is-paddingless div.tile.is-child code
+	{
+		color: var(--dimer-text) !important;
 	}
 
 
