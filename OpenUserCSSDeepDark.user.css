@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.1
+@version 1.2.2
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.1*/
+/*1.2.2*/
 
 	/*Main color variables*/
 	:root
@@ -660,6 +660,10 @@
 	.is-primary-bg
 	{
 		background: var(--main-background) !important;
+	}
+	a.button.is-patreon.is-pulled-right.is-fullheight div.ouc-flush-img-root
+	{
+		filter: brightness(2000%) grayscale(100%) !important;
 	}
 }
 @-moz-document domain("forums.openusercss.org") {
