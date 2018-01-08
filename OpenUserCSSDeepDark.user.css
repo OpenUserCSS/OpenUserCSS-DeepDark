@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.3
+@version 1.2.4
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.3*/
+/*1.2.4*/
 
 	/*Main color variables*/
 	:root
@@ -354,7 +354,7 @@
 		color: var(--main-text) !important;
 	}
 	/*Header items*/
-	.navbar-item[data-v-69502204]:not(.no-active):not(.router-link-exact-active):not(:hover)
+	.navbar-item:not(.no-active):not(.router-link-exact-active):not(:hover)
 	{
 		background: transparent !important;
 		color: var(--main-text) !important;
@@ -466,7 +466,7 @@
 	}
 
 
-	/*Ratings}*/
+	/*Ratings*/
 	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
 	{
 		stop-color: var(--main-color) !important;
@@ -613,14 +613,14 @@
 		border-color: var(--main-color) !important;
 	}
 	/*Buttons*/
-	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary
+	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary, .is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary
 	{
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 		box-shadow: var(--shadow) !important;
 		opacity: 1 !important;
 	}
-	.has-bottom-margin .button.is-primary:hover, .tile.is-6 .button.is-primary:hover
+	.has-bottom-margin .button.is-primary:hover, .tile.is-6 .button.is-primary:hover, .is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary:hover
 	{
 		filter: brightness(110%);
 	}
