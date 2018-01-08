@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.2
+@version 1.2.3
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.2*/
+/*1.2.3*/
 
 	/*Main color variables*/
 	:root
@@ -665,6 +665,39 @@
 	{
 		filter: brightness(2000%) grayscale(100%) !important;
 	}
+
+
+	/*Sned issues*/
+	.sentry-error-embed
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.sentry-error-embed header
+	{
+		border-color: var(--main-background) !important;
+	}
+	.sentry-error-embed .form-field input, .sentry-error-embed .form-field textarea
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.sentry-error-embed .form-field input:active, .sentry-error-embed .form-field textarea:active, .sentry-error-embed .form-field input:focus, .sentry-error-embed .form-field textarea:focus, .sentry-error-embed .form-field input:hover, .sentry-error-embed .form-field textarea:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	.sentry-error-embed .form-submit .btn
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	.sentry-error-embed .form-submit .btn:hover
+	{
+		filter: brightness(110%);
+	}
+	
 }
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
