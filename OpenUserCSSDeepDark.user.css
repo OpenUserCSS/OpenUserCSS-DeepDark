@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.4
+@version 1.2.5
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.4*/
+/*1.2.5*/
 
 	/*Main color variables*/
 	:root
@@ -343,7 +343,12 @@
 	}
 	a:hover, .style-name-link:hover
 	{
-		filter: brightness(110%) !important;
+		filter: brightness(110%);
+	}
+	/*Fix for visit profile button*/
+	a[href*="profile"]
+	{
+		filter: brightness(100%) !important;
 	}
 
 
@@ -466,6 +471,35 @@
 	}
 
 
+	/*Delete themes*/
+	.card
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.card-footer-item, .card-footer
+	{
+		border-color: transparent !important;
+	}
+	/*Buttons*/
+	.button[disabled], .card-footer-item.is-paddingless .button
+	{
+		background: #d80b00 !important;
+		border-color: transparent !important;
+		color: var(--main-text) !important;
+		margin-bottom: 30px !important;
+	}
+	.card-footer-item.is-paddingless .button[type="reset"]
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	.card-footer-item.is-paddingless .button:hover
+	{
+		filter: brightness(110%);
+	}
+	
+
 	/*Ratings*/
 	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
 	{
@@ -489,13 +523,13 @@
 
 
 	/*Buttons*/
-	.button.is-primary[data-v-08464040]
+	.button.is-primary.ouc-new-theme-button, .button.is-primary.ouc-account-button
 	{
 		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	.button.is-primary[data-v-08464040]:hover
+	.button.is-primary.ouc-new-theme-button:hover, .button.is-primary.ouc-account-button:hover
 	{
 		color: var(--main-color) !important;
 		filter: brightness(110%);
@@ -540,14 +574,14 @@
 		color: var(--dimer-text) !important;
 	}
 	/*Buttons*/
-	.button.is-primary[data-v-a58b4e30]
+	.button.is-primary.is-pulled-right
 	{
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 		box-shadow: var(--shadow) !important;
 		opacity: 1 !important;
 	}
-	.button.is-primary[data-v-a58b4e30]:hover
+	.button.is-primary.is-pulled-right:hover
 	{
 		filter: brightness(110%);
 	}
@@ -578,7 +612,7 @@
 	}
 	.tile.is-vertical .button.is-primary:hover
 	{
-		filter: brightness(110%);
+		filter: brightness(110%) !important;
 	}
 	.tile.is-vertical .button.is-primary p
 	{
@@ -1092,7 +1126,7 @@
 		color: var(--dimer-text) !important;
 		opacity: 1 !important;
 	}
-	.modal-header button:hover, .chat-modal .chat-content .chat-message .controls button:hover, .chats-list [component="chat/recent/room"] .chat-body .chat-secondary .leave:hover, .close:hover, .expanded-chat .chat-content .chat-message .controls button:hover
+	.modal-header button:hover, .chat-modal .chat-content .chat-message .controls button:hover, .chats-list [component="chat/recent/room"] .chat-body .chat-secondary .leave:hover, .close:hover, .expanded-chat .chat-content .chat-message .controls button:hover, .btn.btn-xs.btn-link:hover i
 	{
 		color: var(--main-color) !important;
 	}
