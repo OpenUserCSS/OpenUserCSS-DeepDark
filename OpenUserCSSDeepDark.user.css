@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.6
+@version 1.2.7
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -26,7 +26,7 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"Jisho_夜明け":  "#EF7D6C"
+	"Jisho_夜明け": "#EF7D6C"
 }
 
 @var select mainBackground 'Main background color' {
@@ -46,7 +46,7 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"Jisho_夜明け":  "#332222"
+	"Jisho_夜明け": "#332222"
 }
 
 @var select secondBackground 'Second background color' {
@@ -66,7 +66,7 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け":  "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B"
 }
 
 @var select hoverBackground 'Hover background color' {
@@ -86,7 +86,7 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"Jisho_夜明け":  "#863B2F"
+	"Jisho_夜明け": "#863B2F"
 }
 
 @var select mainText 'Main text color' {
@@ -106,7 +106,7 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"Jisho_夜明け":  "#EFB26C"
+	"Jisho_夜明け": "#EFB26C"
 }
 
 @var select dimerText 'Secondary text color' {
@@ -126,7 +126,7 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"Jisho_夜明け":  "#986E3F"
+	"Jisho_夜明け": "#986E3F"
 }
 
 ==/UserStyle== */
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.6*/
+/*1.2.7*/
 
 	/*Main color variables*/
 	:root
@@ -498,7 +498,7 @@
 	{
 		filter: brightness(110%);
 	}
-	
+
 
 	/*Ratings*/
 	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
@@ -731,19 +731,24 @@
 	{
 		filter: brightness(110%);
 	}
-	
+
 }
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
-	
+	*
+	{
+		transition: none !important;
+	}
+
+
 	/*Inputs*/
-	.input, .textarea
+	.input, .textarea, .bootstrap-tagsinput
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover
+	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover, .bootstrap-tagsinput:hover, .bootstrap-tagsinput:focus, .bootstrap-tagsinput:active
 	{
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
@@ -756,519 +761,342 @@
 
 
 	/*Loading bar*/
-	.bar:nth-child(1)
+	.material-load-bar, .material-bar:nth-child(1)
 	{
 		background: var(--main-color) !important;
 		filter: brightness(70%);
 	}
-	.bar:nth-child(2)
-	{
-		background: var(--hover-background) !important;
-	}
-	.bar:nth-child(3)
-	{
-		background: var(--main-color) !important;
-		filter: brightness(100%);
-	}
-
-
-	/*Navbar*/
-	nav.navbar, .navbar-default
-	{
-		background: var(--main-background) !important;
-		color: var(--main-text) !important;
-		border: none;
-		box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important;
-	}
-	.btn-primary, .dropdown-toggle
-	{
-		background: var(--main-background) !important;
-	}
-	.btn-primary:hover, .dropdown-toggle:hover, .dropdown i:hover, .dropdown .pagination-text:hover
-	{
-		color: var(--main-color) !important;
-	}
-	.navbar-default .pagination-block .progress-container .progress-bar
-	{
-		background: var(--main-color) !important;
-	}
-	.navbar-default .pagination-block .progress-container
-	{
-		background: var(--dimer-text) !important;
-	}
-	/*Links*/
-	.navbar > .container .navbar-brand:hover, .navbar > .container-fluid .navbar-brand:hover, .navbar-default .search-menu #search-form #search-button:hover i, .navbar-default .navbar-nav > li > a:hover
-	{
-		color: var(--main-color) !important;
-	}
-	.navbar-default #main-nav li > a
-	{
-		border-color: var(--hover-background) !important;
-	}
-	.navbar-default #main-nav li > a:hover, .navbar-default #main-nav li > a:hover > *
-	{
-		border-color: var(--main-color) !important;
-		color: var(--main-color) !important;
-	}
-
+		.material-bar:nth-child(2)
+		{
+			background: var(--hover-background) !important;
+		}
+		.material-bar:nth-child(3)
+		{
+			background: var(--main-color) !important;
+			filter: brightness(100%);
+		}
 
 	body
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.categories .categories-header .header-title
-	{
-		border-color: var(--hover-background) !important;
-	}
 
 
-	/*Posts*/
-	.breadcrumb > .active, .category [component="category/topic"] .title small
-	{
-		color: var(--dimer-text) !important;
-	}
-	hr, .category .topics-header .header-title, .topic [component="post"]
-	{
-		border-color: var(--hover-background) !important;
-	}
-
-	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
-	{
-		border-color: var(--hover-background) !important;
-	}
-	thead
+	/*Navbar*/
+	#header
 	{
 		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+		border: none;
+		box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important;
 	}
-	.table-striped > tbody > tr:nth-of-type(2n+1)
-	{
-		background: var(--hover-background) !important;
-	}
-	.table-striped > tbody > tr:nth-of-type(2n)
-	{
-		background: var(--second-background) !important;
-	}
-	code
-	{
-		background: var(--hover-background) !important;
-		color: var(--main-color) !important;
-	}
-	/*Avatar*/
-	.user-avatar
-	{
-		border-radius: 15% !important;
-	}
+		.header-menu > li > a, #search-form i, .top-menu > li > a
+		{
+			color: var(--main-text) !important;
+		}
+		.header-menu > li > a:hover .fa, .fa:hover, #search-form:hover i, .top-menu > li > a:hover
+		{
+			color: var(--main-color) !important;
+		}
 
-	/*Votes*/
-	.pull-right .fa
+
+	/*Notifications*/
+	.unread-count::after
+	{
+		background: var(--main-color) !important;
+	}
+	.listview .lv-header, .listview .lv-footer
 	{
 		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
 	}
-	.pull-right .upvoted .fa, .pull-right .downvoted .fa, .pull-right a:hover .fa
+		.listview .lv-footer a
+		{
+			color: var(--main-text) !important;
+		}
+		.listview .lv-footer a:hover
+		{
+			color: var(--main-color) !important;
+		}
+
+			.notifications .relTime, #header #notif-list a .mark-read
+			{
+				color: var(--dimer-text) !important;
+			}
+			#header #notif-list a .mark-read:hover
+			{
+				color: var(--main-color) !important;
+			}
+
+
+	/*Chat*/
+	#messages-main .ms-menu, #messages-main .ms-body, .modal-content, .modal-header
 	{
-		color: var(--main-color) !important;
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+		.label-info
+		{
+			background: var(--main-color) !important;
+		}
+		#messages-main .ms-menu .lv-item.bg-primary, #messages-main .ms-menu .lv-item:not(:last-child)
+		{
+			background: var(--second-background) !important;
+			border-color: var(--hover-background) !important;
+		}
+		#messages-main .ms-menu .lv-item:not(.bg-primary):hover
+		{
+			background: var(--hover-background) !important;
+			border-color: var(--hover-background) !important;
+		}
+
+		/*Messages*/
+		#messages-main .lv-message .lv-item:not(.right) .ms-item, .chat-modal .lv-message .lv-item:not(.right) .ms-item
+		{
+			background: var(--second-background) !important;
+			color: var(--dimer-text) !important;
+		}
+		#messages-main .lv-message .lv-item.right .ms-item, #messages-main .lv-message .lv-item.right .ms-item p, .chat-modal .lv-message .lv-item.right .ms-item, .chat-modal .lv-message .lv-item.right .ms-item p
+		{
+			background: var(--hover-background) !important;
+			color: var(--main-text) !important;
+		}
+			/*Edit svgs*/
+			.waves-effect
+			{
+				color: var(--dimer-text) !important;
+			}
+			.waves-effect:hover
+			{
+				color: var(--main-color) !important;
+			}
+
+		/*Test area*/
+		#messages-main .listview .lv-footer
+		{
+			background: var(--hover-background) !important;
+		}
+			#messages-main .ms-reply textarea, .chat-modal .modal-dialog .modal-content .modal-body .chat-footer
+			{
+				background: var(--second-background) !important;
+				color: var(--main-text) !important;
+			}
+			#messages-main .ms-reply button
+			{
+				color: var(--main-text) !important;
+			}
+			#messages-main .ms-reply button:hover
+			{
+				color: var(--main-color) !important;
+			}
+			#chat-message-send-btn:hover
+			{
+				color: var(--main-text) !important;
+				filter: brightness(110%);
+			}
+
+	/*Categories*/
+	.listview.lv-bordered .lv-item
+	{
+		border-color: var(--main-background) !important;
 	}
 
-	/*Options*/
-	.topic .post-footer .moderator-tools .fa
+
+	/*Panels*/
+	.panel-default
 	{
-		color: var(--main-color) !important;
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
-	.topic .post-footer .moderator-tools:hover .fa
+		.panel-default > .panel-heading
+		{
+			background: var(--main-background) !important;
+			border-color: var(--hover-background) !important;
+		}
+		.panel-title
+		{
+			color: var(--main-color) !important;
+		}
+
+	.github-embed.panel.panel-default
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+		.meta, .github-embed h3 span.number
+		{
+			color: var(--dimer-text) !important;
+		}
+
+
+	/*Unread*/
+	.breadcrumb, .alert-warning, .alert-info
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+		.alert-warning, .alert-info
+		{
+			color: var(--main-color) !important;
+		}
+
+
+	/*Recent*/
+	.listview .lv-header-alt
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.btn-primary
+	{
+		background: var(--main-color) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	.btn-primary:hover
 	{
 		filter: brightness(110%) !important;
 	}
-
-	/*Edited*/
-	.fa.fa-pencil-square.pointer.edit-icon
+		.btn-primary .fa
+		{
+			color: var(--main-text) !important;
+		}
+	.btn-default
+	{
+		background: var(--main-background) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+		.dropdown-menu
+		{
+			background: var(--main-background) !important;
+		}
+			.dropdown-menu > li > a
+			{
+				color: var(--main-text) !important;
+			}
+			.dropdown-menu > li > a:hover
+			{
+				color: var(--main-color) !important;
+			}
+			.dropdown-menu .divider
+			{
+				background: var(--hover-background) !important;
+			}
+	[component="category/topic"] .topic-title
 	{
 		color: var(--main-color) !important;
-	}
-
-	/*Signature*/
-	.topic .post .post-signature
-	{
-		color: var(--dimer-text) !important;
 	}
 
 
 	/*Search*/
-	.form-control, .bootstrap-tagsinput
-	{
-		background: var(--main-background) !important;
-		border-color: var(--second-background) !important;
-		color: var(--main-text) !important;
-	}
-	.form-control:focus, .bootstrap-tagsinput:focus, .form-control:hover, .bootstrap-tagsinput:hover
-	{
-		box-shadow: none !important;
-		border-color: var(--main-color) !important;
-	}
-
-	.search .panel-default, .search .panel-default .panel-heading
-	{
-		border-color: var(--hover-background) !important;
-	}
-	.panel
-	{
-		background: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.panel-default > .panel-heading
-	{
-		background: var(--main-background) !important;
-		color: var(--main-color) !important;
-	}
-	/*Buttons*/
-	.btn-default
-	{
-		background: var(--second-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.btn-default:hover
-	{
-		color: var(--main-color) !important;
-	}
-
-	.alert-info
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-color) !important;
-	}
-
-	blockquote
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--main-background) !important;
-		color: var(--dimer-text) !important;
-	}
-
-
-	/*Login*/
-	.help-block
+	.form-control::-moz-placeholder, .fg-line .form-control:not(:disabled)
 	{
 		color: var(--dimer-text) !important;
 	}
-	.alert-window .alert.alert-warning, .alert-window .alert.alert-success
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--main-color) !important;
-		box-shadow: var(--shadow) !important;
-		color: var(--main-text) !important;
-	}
-	.alert-dismissable .close, .alert-dismissible .close
-	{
-		text-shadow: none !important;
-		color: var(--main-text) !important;
-		opacity: 1 !important;
-	}
-	.alert-dismissable .close:hover, .alert-dismissible .close:hover
-	{
-		color: var(--main-color) !important;
-	}
-	.alert-window .alert.alert-danger, .alert-danger 
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--main-color) !important;
-		box-shadow: var(--shadow) !important;
-	}
-	/*Email confirm*/
-	.alert-success, .alert-warning
-	{
-		background: var(--main-background) !important;
-		border-color: var(--hover-background) !important;
-		box-shadow: var(--shadow) !important;
-		color: var(--main-text) !important;
-	}
-
-
-	/*Notifications and other dropdown menus*/
-	.unread-count::after
+	.fg-line:not([class*="has-"])::after
 	{
 		background: var(--main-color) !important;
-		border-color: var(--main-color) !important;
-		box-shadow: var(--shadow) !important;
 	}
-	nav.navbar .open, nav.navbar .open > a, nav.navbar .open > a > i
-	{
-		background: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.dropdown-menu
+	select.form-control option
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.notifications.dropdown .dropdown-menu .mark-all-read, .chats.dropdown .dropdown-menu .mark-all-read
-	{
-		border-color: var(--hover-background) !important;
-	}
-	.notifications.dropdown .dropdown-menu .notification-list li, .chats.dropdown .dropdown-menu .chat-list a
-	{
-		background: var(--hover-background) !important;
-	}
-	.notifications.dropdown .dropdown-menu .notification-list li.unread, .notifications.dropdown .dropdown-menu .notification-list li.unread.notification-msg a
-	{
-		background: var(--second-background) !important;
-		color: var(--main-color) !important;
-	}
-	.notifications.dropdown .dropdown-menu .notification-list li .notification-msg a
-	{
-		color: var(--main-text) !important;
-	}
-	.notifications.dropdown .dropdown-menu .notification-list li .notification-msg a:hover
-	{
-		color: var(--main-color) !important;
-	}
-	.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover
-	{
-		background: var(--hover-background) !important;
-		color: var(--main-color) !important;
-	}
-	.notifications.dropdown .dropdown-menu .notification-list li.unread .notification-msg a, .dropdown-menu > li > a
-	{
-		color: var(--main-text) !important;
-	}
-	.dropdown-menu .divider
-	{
-		background: var(--hover-background) !important;
-	}
-	.notifications.dropdown .dropdown-menu .notification-list li:hover a, .notifications.dropdown .dropdown-menu .notification-list li:hover strong, .notifications.dropdown .dropdown-menu .notification-list .unread:hover .notification-msg a
-	{
-		color: var(--main-color) !important;
-	}
 
+	/*Checkboxes*/
+	.checkbox .input-helper::before, .radio .input-helper::before
+	{
+		border-color: var(--dimer-text) !important;
+		border-radius: 0% !important;
+	}
+		.radio .input-helper::after
+		{
+			background: var(--main-color) !important;
+			border-radius: 0% !important;
+		}
 
-	/*Settings*/
-	.list-group-item
-	{
-		background: var(--main-background) !important;
-		border-color: transparent !important;
-		box-shadow: var(--shadow) !important;
-		color: var(--main-text) !important;
-	}
-	.list-group-item:hover
-	{
-		color: var(--main-color) !important;
-	}
-	.btn-danger
-	{
-		color: var(--main-text) !important;
-	}
-	/*Change picture*/
-	.modal-content
-	{
-		background: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.modal-header, .modal-footer
+	/*Tables*/
+	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
 	{
 		border-color: var(--main-background) !important;
 	}
-	.nav-pills > li > a
-	{
-		background: var(--main-background) !important;
-		color: var(--main-text) !important;
-		box-shadow: var(--shadow) !important;
-	}
-	.nav > li > a:focus, .nav > li > a:hover
-	{
-		color: var(--main-color) !important;
-	}
-	.account .user-setting
-	{
-		border-color: var(--hover-background) !important;
-	}
+		.table-striped > tbody > tr:nth-of-type(2n+1)
+		{
+			background: var(--second-background) !important;
+		}
 
 
-	/*Account page*/
-	.account .account-stats .stat .stat-label, .text-muted, .account .posts-list .posts-list-item .post-body .timeago, .account .posts-list .posts-list-item .post-body .topic-category > a
+	/*Next buttons*/
+	.pagination > li.active a, .pagination > li.active a:hover, .pagination > li > a, .pagination > li > span
 	{
-		color: var(--dimer-text) !important;
+		border-color: var(--main-background) !important;
 	}
-	.btn-success, .btn-warning
+	.pagination > li > a, .pagination > li > span
 	{
 		color: var(--main-text) !important;
-		border-color: var(--main-color) !important;
 	}
-	.btn-success:hover, .btn-warning:hover
+	.pagination > li.active a, .pagination > li.active a:hover, .pagination > li > a:hover, .pagination > li:hover > span
 	{
 		color: var(--main-color) !important;
 	}
-	.account .posts-list .posts-list-item
+
+	/*Posts*/
+	.topic .card .lv-body .post-content
 	{
+		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.account .posts-list .posts-list-item .post-body .topic-category > a:hover
-	{
-		color: var(--main-color) !important;
-	}
+			.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
+			{
+				border-right-color: var(--second-background) !important;
+			}
+		blockquote, hr
+		{
+			border-color: var(--hover-background) !important;
+		}
 
+		/*Reply, quote, like etc*/
+		.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
+		{
+			color: var(--main-text) !important;
+		}
+		.topic .post-tools a:hover, .topic .card .lv-body .post-actions > li > a:hover > i
+		{
+			color: var(--main-color) !important;
+		}
 
-	/*Login sessions*/
-	.panel-default > .panel-heading, .panel
+	/*Wathing svg hover*/
+	.actions > li > span > i
 	{
-		border-color: var(--hover-background) !important;
-	}
-
-
-	/*Chat*/
-	.chat-modal .modal-header .chat-room-name
-	{
-		color: var(--main-color) !important;
-	}
-	.modal-header button, .chat-modal .chat-content .chat-message .controls button, .chats-list [component="chat/recent/room"] .chat-body .chat-secondary .leave, .close, .expanded-chat .chat-content .chat-message .controls button
-	{
-		text-shadow: none !important;
-		color: var(--dimer-text) !important;
-		opacity: 1 !important;
-	}
-	.modal-header button:hover, .chat-modal .chat-content .chat-message .controls button:hover, .chats-list [component="chat/recent/room"] .chat-body .chat-secondary .leave:hover, .close:hover, .expanded-chat .chat-content .chat-message .controls button:hover, .btn.btn-xs.btn-link:hover i
-	{
-		color: var(--main-color) !important;
-	}
-	.chat-modal .chat-content .chat-message .message-header .chat-timestamp, .github-embed .meta, .github-embed h3 span.number, .expanded-chat .chat-content .chat-message .message-header .chat-timestamp, pre
-	{
-		color: var(--dimer-text) !important;
-	}
-	/*Chat room*/
-	.chats-list [component="chat/recent/room"] .chat-body .chat-main .chat-room-name
-	{
-		color: var(--main-color) !important;
-	}
-	.bg-primary
-	{
-		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.chats-list, .chats-list [component="chat/recent/room"]
+	.actions > li > span > i:hover
 	{
-		border-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		transition: none !important;
 	}
+		.visible-sm-inline.visible-md-inline.visible-lg-inline:hover, .caret:hover
+		{
+			color: var(--main-color) !important;
+		}
 
 
-	/*New topic*/
-	.composer
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.composer .preview, .composer .write
+	/*User page*/
+	.card .card-header.ch-alt:not([class*="bgm-"])
 	{
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
 	}
-	.composer .preview:hover, .composer .write:hover, .composer .preview:focus, .composer .write:focus
-	{
-		border-color: var(--main-color) !important;
-	}
-	.composer .preview-container .help-text, .composer .write-container .help-text
-	{
-		color: var(--dimer-text) !important;
-	}
-	.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
-	{
-		color: var(--main-color) !important;
-	}
-	/*Icons*/
-	.composer .resizer .trigger
-	{
-		background: var(--main-background) !important;
-		border-color: transparent !important;
-		color: var(--main-text) !important;
-	}
-	.composer .resizer .trigger:hover i
-	{
-		color: var(--main-color) !important;
-	}
-	.composer .formatting-bar .formatting-group li
-	{
-		color: var(--main-text) !important;
-	}
-	.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus i, .composer .formatting-bar .formatting-group li:hover i
-	{
-		background: transparent !important;
-		color: var(--main-color) !important;
-	}
-	/*Emoticons*/
-	.nav-tabs
-	{
-		border-color: var(--hover-background) !important;
-	}
-	.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .emoji-link:hover
-	{
-		border-color: transparent !important;
-		color: var(--main-color) !important;
-	}
-	.nav-tabs > li > a, .emoji-link
-	{
-		color: var(--main-text) !important;
-	}
-	.nav-tabs > li > a:hover
-	{
-		border-color: transparent !important;
-	}
-
-
-	/*RSS feed issue*/
-	.not-responsive.emoji.emoji-parsed
-	{
-		height: 20px;
-	}
-	#feedSubtitleText
-	{
-		display: none;
-	}
-
-
-	/*Avatar hover menu*/
-	.popover
-	{
-		background: var(--hover-background) !important;
-		border-color: transparent !important;
-		color: var(--main-text) !important;
-	}
-	.popover.left>.arrow, .popover.left>.arrow:after
-	{
-		border-left-color: var(--hover-background) !important;
-	}
-	.popover.top>.arrow, .popover.top>.arrow:after
-	{
-		border-top-color: var(--hover-background) !important;
-	}
-	.popover.right>.arrow, .popover.right>.arrow:after
-	{
-		border-right-color: var(--hover-background) !important;
-	}
-	.popover.bottom>.arrow, .popover.bottom>.arrow:after
-	{
-		border-bottom-color: var(--hover-background) !important;
-	}
-
-	.profile-card-avatar
-	{
-		border-color: var(--second-background) !important;
-	}
-	.profile-card-info .aboutme>p::after
-	{
-		background: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.profile-card-info .account-stats .stat-label
-	{
-		color: var(--main-text) !important;
-	}
-	.profile-card-info .profile-meta strong, .profile-card-info .profile-meta
-	{
-		color: var(--dimer-text) !important;
-	}
-	.profile-card-avatar, .avatar.avatar-rounded
-	{
-		border-radius: 15% !important;
-	}
+		#unfollow-btn
+		{
+			background: var(--main-background) !important;
+			box-shadow: var(--shadow) !important;
+			color: var(--main-text) !important;
+		}
+		#unfollow-btn:hover
+		{
+			color: var(--main-color) !important;
+		}
 }
