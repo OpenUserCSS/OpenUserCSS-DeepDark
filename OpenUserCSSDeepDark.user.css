@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.7
+@version 1.2.8
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.7*/
+/*1.2.8*/
 
 	/*Main color variables*/
 	:root
@@ -904,7 +904,7 @@
 
 
 	/*Panels*/
-	.panel-default
+	.panel-default, .well
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -957,6 +957,7 @@
 	.btn-primary:hover
 	{
 		filter: brightness(110%) !important;
+		color: var(--main-text) !important;
 	}
 		.btn-primary .fa
 		{
@@ -1099,4 +1100,36 @@
 		{
 			color: var(--main-color) !important;
 		}
+
+
+	/*Reply, post messages*/
+	body.page-compose.skin-default #content, body.page-compose.skin-noskin #content, .composer-container, .composer .tags-container .bootstrap-tagsinput, .composer .title-container .title
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+		.composer .formatting-bar .formatting-group .fa
+		{
+			color: var(--main-text) !important;
+		}
+		.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus .fa, .composer .formatting-bar .formatting-group li:hover .fa
+		{
+			background: var(--hover-background) !important;
+			color: var(--main-color) !important;
+		}
+		.composer .write-preview-container .write, .composer .preview.well
+		{
+			background: var(--second-background) !important;
+			border-color: var(--hover-background) !important;
+		}
+			.composer .preview-container .help-text, .composer .write-container .help-text
+			{
+				color: var(--dimer-text) !important;
+				opacity: .7;
+			}
+			.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
+			{
+				color: var(--main-color) !important;
+				opacity: 1;
+			}
 }
