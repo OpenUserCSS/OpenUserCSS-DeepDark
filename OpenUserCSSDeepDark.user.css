@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.0
+@version 1.2.9
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description OpenUserCSS dark theme
 @author RaitaroH
@@ -948,6 +948,15 @@
 	{
 		color: var(--main-color) !important;
 	}
+		.chat-list li.unread {
+    		background-color: var(--second-background) !important; /* notifications */
+	}
+	.chat-list li.unread:hover {
+    		background-color: var(--hover-background) !important; /* notifications */
+	}
+	.groups.list .list-cover {
+    		background-image: url(/assets/images/cover-default.png) !important; /* groups */
+	}
 	.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover
 	{
 		background: var(--hover-background) !important;
@@ -1073,6 +1082,25 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
+    	{ 
+        	color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
+    	}
+    	.chat-modal .modal-header .close 
+    	{
+        	color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
+        	opacity: 1;
+    	}
+	.chat-modal .modal-header .close:hover
+    	{
+        	color: var(--main-color) !important; /* svgs hover */
+        	opacity: 1;
+    	}
+    	#messages-main .chat-search-menu 
+    	{
+    		background-color: var(--main-background) !important; /*  ++ search in maximized */
+        	border: 1px solid var(--second-background) !important;
+    	}
 
 
 	/*New topic*/
@@ -1154,7 +1182,7 @@
 	/*Avatar hover menu*/
 	.popover
 	{
-		background: var(--hover-background) !important;
+		background-color: var(--main-background) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 	}
@@ -1197,39 +1225,7 @@
 		border-radius: 15% !important;
 	}
 	
-	/* Issue #12 */
-	.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
-    	{ 
-        	color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
-    	}
-    	.chat-modal .modal-header .close 
-    	{
-        	color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
-        	opacity: 1;
-    	}
-	.chat-modal .modal-header .close:hover
-    	{
-        	color: var(--main-color) !important; /* svgs hover */
-        	opacity: 1;
-    	}
-    	#messages-main .chat-search-menu 
-    	{
-    		background-color: var(--main-background) !important; /*  ++ search in maximized */
-        	border: 1px solid var(--second-background) !important;
-    	}
-    	.popover 
-    	{ 
-        	background-color: var(--main-background); /* edit profile social links */
-    	}
-	.chat-list li.unread {
-    		background-color: var(--second-background) !important; /* notifications */
-	}
-	.chat-list li.unread:hover {
-    		background-color: var(--hover-background) !important; /* notifications */
-	}
-	.groups.list .list-cover {
-    		background-image: url(/assets/images/cover-default.png) !important; /* groups */
-	}
+	/*Tags*/
 	.tag-container, .tag-container .tag-topic-count 
     	{
         	border-color: var(--main-background) !important;
