@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.8
+@version 1.2.9
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.8*/
+/*1.2.9*/
 
 	/*Main color variables*/
 	:root
@@ -828,7 +828,15 @@
 			{
 				color: var(--main-color) !important;
 			}
-
+		.chat-list li.unread
+		{
+			background-color: var(--second-background) !important; /* notifications */
+		}
+		.chat-list li.unread:hover
+		{
+			background-color: var(--hover-background) !important; /* notifications */
+		}
+	
 
 	/*Chat*/
 	#messages-main .ms-menu, #messages-main .ms-body, .modal-content, .modal-header
@@ -849,6 +857,25 @@
 		{
 			background: var(--hover-background) !important;
 			border-color: var(--hover-background) !important;
+		}
+		.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
+		{ 
+			color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
+		}
+		.chat-modal .modal-header .close 
+		{
+			color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
+			opacity: 1;
+		}
+		.chat-modal .modal-header .close:hover
+		{
+			color: var(--main-color) !important; /* svgs hover */
+			opacity: 1;
+		}
+		#messages-main .chat-search-menu 
+		{
+			background-color: var(--main-background) !important; /*  ++ search in maximized */
+			border: 1px solid var(--second-background) !important;
 		}
 
 		/*Messages*/
@@ -1049,6 +1076,10 @@
 		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
+	.groups.list .list-cover
+	{
+    		background-image: url(/assets/images/cover-default.png) !important; /* groups */
+	}
 			.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
 			{
 				border-right-color: var(--second-background) !important;
@@ -1067,6 +1098,12 @@
 		{
 			color: var(--main-color) !important;
 		}
+	/*Tags*/
+ 	.tag-container, .tag-container .tag-topic-count 
+	{
+         	border-color: var(--main-background) !important;
+	}
+
 
 	/*Wathing svg hover*/
 	.actions > li > span > i
@@ -1132,4 +1169,11 @@
 				color: var(--main-color) !important;
 				opacity: 1;
 			}
+	/*Avatar hover menu*/
+	.popover
+ 	{
+		background-color: var(--main-background) !important;
+ 		border-color: transparent !important;
+ 		color: var(--main-text) !important;
+ 	}
 }
