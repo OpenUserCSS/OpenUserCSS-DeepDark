@@ -1200,7 +1200,7 @@
 	/* Issue #12 */
 	.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
     	{ 
-        	color: var(--dimer-text) !important; /* "enter user here" in chat window */
+        	color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
     	}
     	.chat-modal .modal-header .close 
     	{
