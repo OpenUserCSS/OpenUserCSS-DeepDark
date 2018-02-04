@@ -880,17 +880,13 @@
 			color: var(--dimer-text) !important;
 		}
 			/*Edit svgs*/
-			.waves-effect
+			.waves-effect, .modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input, .btn-group-xs > .btn, .btn-xs
 			{
 				color: var(--dimer-text) !important;
 			}
-			.waves-effect:hover
+			.waves-effect:hover, .btn-group-xs > .btn, .btn-xs:hover
 			{
 				color: var(--main-color) !important;
-			}
-			.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
-			{ 
-				color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
 			}
 			.chat-modal .modal-header .close 
 			{
