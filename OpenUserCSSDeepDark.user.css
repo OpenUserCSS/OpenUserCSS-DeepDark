@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.2.9
+@version 1.3.0
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.9*/
+/*1.3.0*/
 
 	/*Main color variables*/
 	:root
@@ -858,20 +858,6 @@
 			background: var(--hover-background) !important;
 			border-color: var(--hover-background) !important;
 		}
-		.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
-		{ 
-			color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
-		}
-		.chat-modal .modal-header .close 
-		{
-			color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
-			opacity: 1;
-		}
-		.chat-modal .modal-header .close:hover
-		{
-			color: var(--main-color) !important; /* svgs hover */
-			opacity: 1;
-		}
 		#messages-main .chat-search-menu 
 		{
 			background-color: var(--main-background) !important; /*  ++ search in maximized */
@@ -889,6 +875,10 @@
 			background: var(--hover-background) !important;
 			color: var(--main-text) !important;
 		}
+		pre
+		{
+			color: var(--dimer-text) !important;
+		}
 			/*Edit svgs*/
 			.waves-effect
 			{
@@ -897,6 +887,20 @@
 			.waves-effect:hover
 			{
 				color: var(--main-color) !important;
+			}
+			.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
+			{ 
+				color: var(--dimer-text) !important; /* "enter user here" in chat window or add new corespondents. I think it's the same thing*/
+			}
+			.chat-modal .modal-header .close 
+			{
+				color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
+				opacity: 1;
+			}
+			.chat-modal .modal-header .close:hover
+			{
+				color: var(--main-color) !important; /* svgs hover */
+				opacity: 1;
 			}
 
 		/*Test area*/
