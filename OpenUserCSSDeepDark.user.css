@@ -1196,4 +1196,25 @@
 	{
 		border-radius: 15% !important;
 	}
+	
+	/* Issue #12 */
+	.modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input
+    	{ 
+        	color: var(--dimer-text) !important; /* "enter user here" in chat window */
+    	}
+    	.chat-modal .modal-header .close 
+    	{
+        	color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
+        	opacity: 1;
+    	}
+    	#messages-main .chat-search-menu 
+    	{
+    		background-color: var(--main-background) !important; /*  ++ search in maximized */
+        	border: 1px solid var(--second-background) !important;
+    	}
+    	.popover 
+    	{ 
+        	background-color: var(--main-background); /* edit profile social links */
+    	}
+    
 }
