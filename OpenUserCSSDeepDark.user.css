@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.3.3
+@version 1.3.4
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.3*/
+/*1.3.4*/
 
 	/*Main color variables*/
 	:root
@@ -460,6 +460,7 @@
 	code, .v--modal
 	{
 		background: var(--hover-background) !important;
+		color: var(--main-color);
 	}
 	.v--modal
 	{
@@ -988,6 +989,10 @@
 		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
+	.post-body .github-embed.panel.panel-default, .post-body  blockquote
+	{
+		background: var(--hover-background) !important;
+	}
 		.meta, .github-embed h3 span.number
 		{
 			color: var(--dimer-text) !important;
@@ -1182,6 +1187,10 @@
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
+	[component="post"].highlight .post-body
+	{
+		border-color: var(--hover-background) !important;
+	}
 		.composer .formatting-bar .formatting-group .fa
 		{
 			color: var(--main-text) !important;
@@ -1206,6 +1215,14 @@
 				color: var(--main-color) !important;
 				opacity: 1;
 			}
+	.lv-body
+	{
+		padding-right: 20px !important;
+	}
+	.pull-right.post-edit
+	{
+		margin-top: -10px;
+	}
 	/*Avatar hover menu*/
 	.popover
  	{
