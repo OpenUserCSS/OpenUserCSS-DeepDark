@@ -769,7 +769,8 @@
 	}
 }
 @-moz-document domain("forums.openusercss.org") {
-/*Forums*/
+	/*Forums*/
+
 	body
 	{
 		background: var(--second-background) !important;
@@ -1029,15 +1030,15 @@
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		.panel-default > .panel-heading
-		{
-			background: var(--main-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-		.panel-title
-		{
-			color: var(--main-color) !important;
-		}
+	.panel-default > .panel-heading
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.panel-title
+	{
+		color: var(--main-color) !important;
+	}
 
 	.github-embed.panel.panel-default
 	{
@@ -1048,11 +1049,10 @@
 	{
 		background: var(--hover-background) !important;
 	}
-		.meta, .github-embed h3 span.number
-		{
-			color: var(--dimer-text) !important;
-		}
-
+	.meta, .github-embed h3 span.number
+	{
+		color: var(--dimmer-text) !important;
+	}
 
 	/*Unread*/
 	.header .notification-list li.unread, .slideout-menu .notification-list li.unread
@@ -1060,12 +1060,12 @@
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		.alert-warning, .alert-info
-		{
-			color: var(--main-color) !important;
-		}
+	.alert-warning, .alert-info
+	{
+		color: var(--main-color) !important;
+	}
 	.unread-count::after
-		{
+	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
@@ -1092,32 +1092,32 @@
 		filter: brightness(110%) !important;
 		color: var(--main-text) !important;
 	}
-		.btn-primary .fa
-		{
-			color: var(--main-text) !important;
-		}
+	.btn-primary .fa
+	{
+		color: var(--main-text) !important;
+	}
 	.btn-default
 	{
 		background: var(--main-background) !important;
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
-		.dropdown-menu
-		{
-			background: var(--main-background) !important;
-		}
-			.dropdown-menu > li > a
-			{
-				color: var(--main-text) !important;
-			}
-			.dropdown-menu > li > a:hover
-			{
-				color: var(--main-color) !important;
-			}
-			.dropdown-menu .divider
-			{
-				background: var(--hover-background) !important;
-			}
+	.dropdown-menu
+	{
+		background: var(--main-background) !important;
+	}
+	.dropdown-menu > li > a
+	{
+		color: var(--main-text) !important;
+	}
+	.dropdown-menu > li > a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.dropdown-menu .divider
+	{
+		background: var(--hover-background) !important;
+	}
 	[component="category/topic"] .topic-title
 	{
 		color: var(--main-color) !important;
@@ -1144,22 +1144,21 @@
 		border-color: var(--dimmer-text) !important;
 		border-radius: 0% !important;
 	}
-		.radio .input-helper::after
-		{
-			background: var(--main-color) !important;
-			border-radius: 0% !important;
-		}
+	.radio .input-helper::after
+	{
+		background: var(--main-color) !important;
+		border-radius: 0% !important;
+	}
 
 	/*Tables*/
 	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
 	{
 		border-color: var(--main-background) !important;
 	}
-		.table-striped > tbody > tr:nth-of-type(2n+1)
-		{
-			background: var(--second-background) !important;
-		}
-
+	.table-striped > tbody > tr:nth-of-type(2n+1)
+	{
+		background: var(--second-background) !important;
+	}
 
 	/*Next buttons*/
 	.pagination > li.active a, .pagination > li.active a:hover, .pagination > li > a, .pagination > li > span
@@ -1183,26 +1182,26 @@
 	}
 	.groups.list .list-cover
 	{
-    		background-image: url(/assets/images/cover-default.png) !important; /* groups */
+    	background-image: url(/assets/images/cover-default.png) !important; /* groups */
 	}
-			.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
-			{
-				border-right-color: var(--second-background) !important;
-			}
-		blockquote, hr
-		{
-			border-color: var(--hover-background) !important;
-		}
+	.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
+	{
+		border-right-color: var(--second-background) !important;
+	}
+	blockquote, hr
+	{
+		border-color: var(--hover-background) !important;
+	}
 
-		/*Reply, quote, like etc*/
-		.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
-		{
-			color: var(--main-text) !important;
-		}
-		.topic .post-tools a:hover, .topic .card .lv-body .post-actions > li > a:hover > i
-		{
-			color: var(--main-color) !important;
-		}
+	/*Reply, quote, like etc*/
+	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
+	{
+		color: var(--main-text) !important;
+	}
+	.topic .post-tools a:hover, .topic .card .lv-body .post-actions > li > a:hover > i
+	{
+		color: var(--main-color) !important;
+	}
 	.btn.btn-info.dropdown-toggle
 	{
 		background: var(--main-background) !important;
@@ -1253,11 +1252,10 @@
 		color: var(--main-color) !important;
 		transition: none !important;
 	}
-		.visible-sm-inline.visible-md-inline.visible-lg-inline:hover, .caret:hover
-		{
-			color: var(--main-color) !important;
-		}
-
+	.visible-sm-inline.visible-md-inline.visible-lg-inline:hover, .caret:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*User page*/
 	.card .card-header.ch-alt:not([class*="bgm-"])
@@ -1265,17 +1263,16 @@
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		#unfollow-btn
-		{
-			background: var(--main-background) !important;
-			box-shadow: var(--shadow) !important;
-			color: var(--main-text) !important;
-		}
-		#unfollow-btn:hover
-		{
-			color: var(--main-color) !important;
-		}
-
+	#unfollow-btn
+	{
+		background: var(--main-background) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	#unfollow-btn:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*Reply, post messages*/
 	body.page-compose.skin-default #content, body.page-compose.skin-noskin #content, .composer-container, .composer .tags-container .bootstrap-tagsinput, .composer .title-container .title
@@ -1287,30 +1284,30 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-		.composer .formatting-bar .formatting-group .fa
-		{
-			color: var(--main-text) !important;
-		}
-		.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus .fa, .composer .formatting-bar .formatting-group li:hover .fa
-		{
-			background: var(--hover-background) !important;
-			color: var(--main-color) !important;
-		}
-		.composer .write-preview-container .write, .composer .preview.well
-		{
-			background: var(--second-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-			.composer .preview-container .help-text, .composer .write-container .help-text
-			{
-				color: var(--dimer-text) !important;
-				opacity: .7;
-			}
-			.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
-			{
-				color: var(--main-color) !important;
-				opacity: 1;
-			}
+	.composer .formatting-bar .formatting-group .fa
+	{
+		color: var(--main-text) !important;
+	}
+	.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus .fa, .composer .formatting-bar .formatting-group li:hover .fa
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.composer .write-preview-container .write, .composer .preview.well
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.composer .preview-container .help-text, .composer .write-container .help-text
+	{
+		color: var(--dimmer-text) !important;
+		opacity: .7;
+	}
+	.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1;
+	}
 	.lv-body
 	{
 		padding-right: 20px !important;
@@ -1331,5 +1328,5 @@
  	{
 		background-color: var(--hover-background) !important;
  		border-color: var(--hover-background) !important;
- 	}	
+ 	}
 }
