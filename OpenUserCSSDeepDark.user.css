@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.3.8
+@version 1.3.9
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.8*/
+/*1.3.9*/
 
 	/*Main color variables*/
 	:root
@@ -767,21 +767,16 @@
 
 
 	/*Loading bar*/
-	.material-load-bar, .material-bar:nth-child(1)
+	#nprogress .bar
 	{
 		background: var(--main-color) !important;
-		filter: brightness(70%);
 	}
-		.material-bar:nth-child(2)
-		{
-			background: var(--hover-background) !important;
-		}
-		.material-bar:nth-child(3)
-		{
-			background: var(--main-color) !important;
-			filter: brightness(100%);
-		}
+	#nprogress .spinner-icon {
+		border-top-color: var(--main-color) !important;
+		border-left-color: var(--main-color) !important;
+	}
 
+	
 	body
 	{
 		background: var(--second-background) !important;
@@ -938,7 +933,7 @@
 	}
 
 	/*Panels*/
-	.panel-default, .well
+	.panel-default, .well, .breadcrumb
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -969,7 +964,7 @@
 
 
 	/*Unread*/
-	.breadcrumb, .alert-warning, .alert-info
+	.header .notification-list li.unread, .slideout-menu .notification-list li.unread
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -978,6 +973,11 @@
 		{
 			color: var(--main-color) !important;
 		}
+	.unread-count::after
+		{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
 
 
 	/*Recent*/
