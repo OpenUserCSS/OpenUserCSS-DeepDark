@@ -351,6 +351,11 @@
 		filter: brightness(100%) !important;
 	}
 
+	/*help warning banner */
+	.mdi-alert:before {
+		color: var(--main-text) !important;
+		pointer-events: none !important;
+	}
 
 	/*Header*/
 	.navbar.is-primary, .navbar-menu.is-primary, .navbar.is-primary .navbar-brand > .navbar-item
