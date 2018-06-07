@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.3.6
+@version 1.3.7
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.6*/
+/*1.3.7*/
 
 	/*Main color variables*/
 	:root
@@ -1120,14 +1120,34 @@
 		border-color: var(--hover-background) !important;
 	}
 	/*Tags*/
- 	.tag-container, .tag-container .tag-topic-count 
+ 	.tag-container, .tag-container .tag-topic-count, .category > ul > li .tag-list .tag
 	{
-         	border-color: var(--main-background) !important;
+        border-color: var(--main-background) !important;
+		background: var(--main-background) !important;
 	}
 	.timeago, .stats small
 	{
 		color: var(--dimer-text) !important;
 		text-decoration: none !important;
+	}
+	/*Left bar*/
+	.category > ul > li:not(.unread) .card
+	{
+		border-color: var(--dimer-text) !important;
+	}
+	/*Buttons*/
+	.btn-group > .btn:hover, div.post-bar .btn:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*Svgs next to the post*/
+	.fa.fa-chevron-up, .fa.fa-chevron-down, .fa.fa-fw.fa-ellipsis-v
+	{
+		color: var(--dimer-text) !important;
+	}
+	.fa.fa-chevron-up:hover, .fa.fa-chevron-down:hover, .fa.fa-fw.fa-ellipsis-v:hover
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Wathing svg hover*/
