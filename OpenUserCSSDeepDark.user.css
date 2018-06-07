@@ -886,7 +886,13 @@
 	{
 		color: var(--main-color) !important;
 	}
-	/*Avatar*/
+
+	/*Avatar
+	style avatar color*/
+	.avatar
+	{
+		color: var(--main-text) !important;
+ 	}
 	.navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:focus, .navbar-default .navbar-nav > .open > label:hover
 	{
 		background: var(--second-background) !important;
