@@ -858,9 +858,17 @@
 		border-left-color: var(--main-color) !important;
 	}
 
+	.material-bar:nth-child(3)
 	{
+		background: var(--main-color) !important;
+		filter: brightness(100%);
 	}
 
+	/* fix tags */
+	.category > ul > li .tag-list .tag
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/*Navbar*/
 	#header-menu
