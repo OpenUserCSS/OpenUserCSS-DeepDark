@@ -772,6 +772,53 @@
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
 
+	/* fix forum join welcome banner wow this default theme burns*/
+	.alert-success
+	{
+		filter: contrast(65%) !important;
+	}
+	.alert-success a
+	{
+		filter: brightness(50%) contrast(150%) !important;
+	}
+	.alert-success strong, .alert-success p
+	{
+	color: #fff !important;
+	}
+
+	/* fixes to user profile items
+	Stat labels + dimmer text below*/
+	.account .profile .account-stats .stat-label, .text-center span
+	{
+		color: var(--dimmer-text) !important;
+	}
+
+	/* profile control button */
+	.btn-group.account-fab .fab
+	{
+		background: var(--main-color) !important;
+		font-size: 20px;
+	}
+
+	/* profile upload modal */
+	.modal-footer
+	{
+		border-top: 1px solid #555 !important;
+	}
+
+	.alert-success
+	{
+		background-color: var(--main-background) !important;
+	}
+
+	/* notification close button */
+	.close[data-dismiss="alert"]:hover
+	{
+		background: transparent !important;
+		color: var(--main-color) !important;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23) !important;
+	}
+
 	.fa
 	{
 		text-shadow: none !important;
