@@ -109,7 +109,7 @@
 	"Jisho_夜明け": "#EFB26C"
 }
 
-@var select dimerText 'Secondary text color' {
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -148,7 +148,7 @@
 		--second-background: /*[[secondBackground]]*/;
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
 
 		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
 
@@ -159,7 +159,7 @@
 		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--dimmer-text: #CCCCCC;
 		*/
 
 		/*KDE colors*/
@@ -169,7 +169,7 @@
 		--second-background: #2a2e32;
 		--hover-background: #31363b;
 		--main-text: #eff0f1;
-		--dimer-text: #bdc3c7;
+		--dimmer-text: #bdc3c7;
 		*/
 
 		/*Vertex Dark colors*/
@@ -179,7 +179,7 @@
 		--second-background: #353638;
 		--hover-background: #515254;
 		--main-text: #F3F3F5;
-		--dimer-text: #AEAFB0;
+		--dimmer-text: #AEAFB0;
 		*/
 
 		/*Arc Dark colors*/
@@ -189,7 +189,7 @@
 		--second-background: #383C4A;
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
-		--dimer-text: #B3BAC5;
+		--dimmer-text: #B3BAC5;
 		*/
 
 		/*Firefox Dark colors*/
@@ -199,7 +199,7 @@
 		--second-background: #181D20;
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
-		--dimer-text: #606376;
+		--dimmer-text: #606376;
 		*/
 
 		/*Firefox57 Dark colors*/
@@ -209,7 +209,7 @@
 		--second-background: #252526;
 		--hover-background: #323234;
 		--main-text: #F9F9FA;
-		--dimer-text: #D0D0D0;
+		--dimmer-text: #D0D0D0;
 		*/
 
 		/*Discord colors*/
@@ -219,7 +219,7 @@
 		--second-background: #2F3136;
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
-		--dimer-text: #ADA8AA;
+		--dimmer-text: #ADA8AA;
 		*/
 
 		/*YouTube dark colors*/
@@ -229,7 +229,7 @@
 		--second-background: #232323;
 		--hover-background: #343434;
 		--main-text: #E1E1E1;
-		--dimer-text: #7F7F7F;
+		--dimmer-text: #7F7F7F;
 		*/
 
 		/*Mint-Y-Dark colors*/
@@ -239,7 +239,7 @@
 		--second-background: #383838;
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
-		--dimer-text: #D5DADA;
+		--dimmer-text: #D5DADA;
 		*/
 
 		/*9anime colors*/
@@ -249,7 +249,7 @@
 		--second-background: #17151C;
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
-		--dimer-text: #747474;
+		--dimmer-text: #747474;
 		*/
 
 		/*Black and white*/
@@ -259,7 +259,7 @@
 		--second-background: #0a0a0a;
 		--hover-background: #0f0f0f;
 		--main-text: #b4b4b4;
-		--dimer-text: #828282;
+		--dimmer-text: #828282;
 		*/
 
 		/*Yellow (colors from petrocompletions)*/
@@ -269,7 +269,7 @@
 		--second-background: #202222;
 		--hover-background: #353838;
 		--main-text: #EFF0F1;
-		--dimer-text: #9F9999;
+		--dimmer-text: #9F999;
 		*/
 
 		/*Yellow 2*/
@@ -279,7 +279,7 @@
 		--second-background: #0c0a04;
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
-		--dimer-text: #fff8e1;
+		--dimmer-text: #fff8e1;
 		*/
 
 		/*Ubuntu grey colors*/
@@ -289,7 +289,7 @@
 		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Ubuntu purple colors*/
@@ -299,7 +299,7 @@
 		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Orange*/
@@ -309,7 +309,7 @@
 		--second-background: #0e0702;
 		--hover-background: #110903;
 		--main-text: #fff9f5;
-		--dimer-text: #ffede1;
+		--dimmer-text: #ffede1;
 		*/
 
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
@@ -319,7 +319,7 @@
 		--second-background: #2A1B1B;
 		--hover-background: #863B2F;
 		--main-text: #EFB26C;
-		--dimer-text: #986E3F;
+		--dimmer-text: #986E3F;
 		*/
 	}
 
@@ -400,7 +400,7 @@
 	.box
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
@@ -408,7 +408,7 @@
 	.is-primary > .box
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	h4
 	{
@@ -449,7 +449,7 @@
 	/*Theme options*/
 	li, p, ul
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	hr
 	{
@@ -468,14 +468,14 @@
 	}
 	div.tile.is-parent.is-paddingless div.tile.is-child code
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
 	/*Delete themes*/
 	.card
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
 	.card-footer-item, .card-footer
@@ -545,7 +545,7 @@
 	.box[disabled], .box
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	h5
 	{
@@ -572,7 +572,7 @@
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
 	.button.is-primary.is-pulled-right
@@ -762,9 +762,8 @@
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
-
 
 	/*Loading bar*/
 	#nprogress .bar
@@ -873,7 +872,7 @@
 	/*Time*/
 	.chat-modal .chat-content li.chat-message .chat-timestamp, .expanded-chat .chat-content li.chat-message .chat-timestamp
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Edit and delete messages*/
 	.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn.btn-xs.btn-link
@@ -1036,7 +1035,7 @@
 	/*Search*/
 	.form-control::-moz-placeholder, .fg-line .form-control:not(:disabled)
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.fg-line:not([class*="has-"])::after
 	{
@@ -1051,7 +1050,7 @@
 	/*Checkboxes*/
 	.checkbox .input-helper::before, .radio .input-helper::before
 	{
-		border-color: var(--dimer-text) !important;
+		border-color: var(--dimmer-text) !important;
 		border-radius: 0% !important;
 	}
 		.radio .input-helper::after
@@ -1126,7 +1125,7 @@
 	}
 	.timeago, .stats small, a.permalink
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		text-decoration: none !important;
 	}
 	.timeago:hover
@@ -1136,7 +1135,7 @@
 	/*Left bar*/
 	.category > ul > li:not(.unread) .card
 	{
-		border-color: var(--dimer-text) !important;
+		border-color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
 	.btn-group > .btn:hover, div.post-bar .btn:hover
@@ -1146,7 +1145,7 @@
 	/*Svgs next to the post*/
 	.fa.fa-chevron-up, .fa.fa-chevron-down, .fa.fa-fw.fa-ellipsis-v
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.fa.fa-chevron-up:hover, .fa.fa-chevron-down:hover, .fa.fa-fw.fa-ellipsis-v:hover
 	{
