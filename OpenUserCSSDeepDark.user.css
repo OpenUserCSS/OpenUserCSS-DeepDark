@@ -767,7 +767,6 @@
 	{
 		filter: brightness(110%);
 	}
-
 }
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
@@ -897,6 +896,7 @@
 	{
 		background: var(--second-background) !important;
 	}
+
 	/*Avatar logout*/
 	.dropdown-menu > li > form > .btn-link, .dropdown-menu > li > form > button
 	{
@@ -908,7 +908,6 @@
 		background: var(--main-background) !important;
 		color: var(--main-color) !important;
 	}
-
 
 	/*Notifications*/
 	.chats-list > li, .chats-list
@@ -961,7 +960,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*Time*/
 	.chat-modal .chat-content li.chat-message .chat-timestamp, .expanded-chat .chat-content li.chat-message .chat-timestamp
 	{
@@ -1123,7 +1122,6 @@
 	{
 		color: var(--main-color) !important;
 	}
-
 
 	/*Search*/
 	.form-control::-moz-placeholder, .fg-line .form-control:not(:disabled)
@@ -1328,7 +1326,6 @@
  		border-color: transparent !important;
  		color: var(--main-text) !important;
  	}
-
 
 	pre
  	{
