@@ -771,6 +771,11 @@
 }
 @-moz-document domain("forums.openusercss.org") {
 /*Forums*/
+	body
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
 
 	/* fix forum join welcome banner wow this default theme burns*/
 	.alert-success
@@ -853,11 +858,7 @@
 		border-left-color: var(--main-color) !important;
 	}
 
-	
-	body
 	{
-		background: var(--second-background) !important;
-		color: var(--main-text) !important;
 	}
 
 
