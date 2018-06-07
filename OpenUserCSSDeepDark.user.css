@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.3.5
+@version 1.3.6
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.5*/
+/*1.3.6*/
 
 	/*Main color variables*/
 	:root
@@ -748,13 +748,13 @@
 	}
 
 	/*Inputs*/
-	.input, .textarea, .bootstrap-tagsinput
+	.input, .textarea, .bootstrap-tagsinput, .form-control
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover, .bootstrap-tagsinput:hover, .bootstrap-tagsinput:focus, .bootstrap-tagsinput:active
+	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover, .bootstrap-tagsinput:hover, .bootstrap-tagsinput:focus, .bootstrap-tagsinput:active, .form-control:active, .form-control:hover, .form-control:focus
 	{
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
@@ -790,180 +790,146 @@
 
 
 	/*Navbar*/
-	#header
+	#header-menu
 	{
 		background: var(--main-background) !important;
 		color: var(--main-text) !important;
 		border: none;
 		box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important;
 	}
-		.header-menu > li > a, #search-form i, .top-menu > li > a
-		{
-			color: var(--main-text) !important;
-		}
-		.header-menu > li > a:hover .fa, .fa:hover, #search-form:hover i, .top-menu > li > a:hover
-		{
-			color: var(--main-color) !important;
-		}
+	.navbar-nav > li > a
+	{
+		color: var(--main-text) !important;
+	}
+	.navbar-nav > li > a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*Avatar*/
+	.navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:focus, .navbar-default .navbar-nav > .open > label:hover
+	{
+		background: var(--second-background) !important;
+	}
+	/*Avatar logout*/
+	.dropdown-menu > li > form > .btn-link, .dropdown-menu > li > form > button
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.dropdown-menu > li > form > .btn-link:hover, .dropdown-menu > li > form > button:hover
+	{
+		background: var(--main-background) !important;
+		color: var(--main-color) !important;
+	}
 
 
 	/*Notifications*/
-	.unread-count::after
-	{
-		background: var(--main-color) !important;
-	}
-	.listview .lv-header, .listview .lv-footer, .listview .lv-item .lv-small
-	{
-		color: var(--main-text) !important;
-		border-color: var(--hover-background) !important;
-	}
-		.listview .lv-footer a, .chat-list li a
-		{
-			color: var(--main-text) !important;
-		}
-		.listview .lv-footer a:hover, .listview .lv-item .lv-small strong, .chat-list li:hover a
-		{
-			color: var(--main-color) !important;
-		}
-
-			.notifications .relTime, #header #notif-list a .mark-read
-			{
-				color: var(--dimer-text) !important;
-			}
-			#header #notif-list a .mark-read:hover
-			{
-				color: var(--main-color) !important;
-			}
-		.chat-list li.unread
-		{
-			background-color: var(--second-background) !important; /* notifications */
-		}
-		.chat-list li.unread:hover, #notif-list .lv-item:hover, .chat-list li:hover
-		{
-			background-color: var(--hover-background) !important; /* notifications */
-		}
-		.pull-right.mark-read::before
-		{
-			background: var(--second-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-	
-
-	/*Chat*/
-	#messages-main .ms-menu, #messages-main .ms-body, .modal-content, .modal-header
+	.chats-list > li, .chats-list
 	{
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		/*Adding user to chat*/
-		.label-info
-		{
-			background: var(--main-color) !important;
-		}
-		.form-control
-		{
-			color: var(--dimer-text) !important;
-			border-color: var(--dimer-text)  !important;
-		}
-			.form-control:active, .form-control:focus, .form-control:hover
-			{
-				border-color: var(--main-color)  !important;
-			}
-		.ui-widget-content
-		{
-			background: var(--hover-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-		.ui-menu .ui-menu-item:hover *, .ui-button,.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,html .ui-button.ui-state-disabled:active,html .ui-button.ui-state-disabled:hover
-		{
-			color: var(--main-color) !important;
-			background: var(--hover-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-		#messages-main .ms-menu .lv-item.bg-primary
-		{
-			background: var(--second-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-			#messages-main .ms-menu .lv-item:not(:last-child)
-			{
-				border-color: var(--hover-background) !important;
-			}
-		#messages-main .ms-menu .lv-item:not(.bg-primary):hover
-		{
-			background: var(--hover-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-		#messages-main .chat-search-menu 
-		{
-			background-color: var(--main-background) !important; /*  ++ search in maximized */
-			border: 1px solid var(--second-background) !important;
-		}
+	.chats-list > li:hover
+	{
+		background: var(--hover-background) !important;
+	}
 
-		/*Messages*/
-		#messages-main .lv-message .lv-item:not(.right) .ms-item, .chat-modal .lv-message .lv-item:not(.right) .ms-item
-		{
-			background: var(--second-background) !important;
-			color: var(--dimer-text) !important;
-		}
-		#messages-main .lv-message .lv-item.right .ms-item, #messages-main .lv-message .lv-item.right .ms-item p, .chat-modal .lv-message .lv-item.right .ms-item, .chat-modal .lv-message .lv-item.right .ms-item p
-		{
-			background: var(--hover-background) !important;
-			color: var(--main-text) !important;
-		}
-		pre
-		{
-			color: var(--dimer-text) !important;
-		}
-			/*Svgs*/
-			.waves-effect, .modal-header .bootstrap-tagsinput .ui-autocomplete-input, #messages-main .bootstrap-tagsinput .ui-autocomplete-input, .btn-group-xs > .btn, .btn-xs
-			{
-				color: var(--dimer-text) !important;
-			}
-			.waves-effect:hover, .btn-group-xs > .btn, .btn-xs:hover
-			{
-				color: var(--main-color) !important;
-			}
-			.chat-modal .modal-header .close 
-			{
-				color: var(--dimer-text) !important; /* ++ fix the svgs: edit, close, maximize (modal aka minimized version) */
-				opacity: 1;
-			}
-			.chat-modal .modal-header .close:hover, #messages-main .lv-actions:hover .fa
-			{
-				color: var(--main-color) !important; /* svgs hover */
-				opacity: 1;
-			}
-		/*Delete message*/
-		.modal-body
-		{
-			color: var(--main-color) !important;
-		}
+	/*Chat*/
+	.chat-content, .modal-content
+	{
+		background: var(--second-background) !important;
+	}
+	.chat-modal .chat-content li.chat-message[data-break="true"], .expanded-chat .chat-content li.chat-message[data-break="true"],
+	.modal-content, .modal-header
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*Who you are chatting with*/
+	.chat-modal [component="chat/header"], .chats-full [component="chat/header"]
+	{
+		background: var(--hover-background) !important;
+	}
+	/*Enter a username to search*/
+	.chat-modal [component="chat/nav-wrapper"] .chat-search input, .chats-full [component="chat/nav-wrapper"] .chat-search input
+	{
+		background: var(--hover-background) !important;
+	}
+	.chat-modal [component="chat/nav-wrapper"] .chat-search input:active, .chats-full [component="chat/nav-wrapper"] .chat-search input:active,
+	.chat-modal [component="chat/nav-wrapper"] .chat-search input:hover, .chats-full [component="chat/nav-wrapper"] .chat-search input:hover,
+	.chat-modal [component="chat/nav-wrapper"] .chat-search input:focus, .chats-full [component="chat/nav-wrapper"] .chat-search input:focus
+	{
+		border-color: var(--main-color) !important;
+		box-shadow: none !important;
+	}
+	/*The results*/
+	.chat-modal [component="chat/nav-wrapper"] [component="chat/search/list"] li, .chats-full [component="chat/nav-wrapper"] [component="chat/search/list"] li,
+	.chat-modal [component="chat/nav-wrapper"] [component="chat/search/list"], .chats-full [component="chat/nav-wrapper"] [component="chat/search/list"]
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*Hover for the names*/
+	.chat-modal [component="chat/nav-wrapper"] [component="chat/search/list"] li:hover, .chats-full [component="chat/nav-wrapper"] [component="chat/search/list"] li:hover
+	{
+		color: var(--main-color) !important;
+	}
+	
+	/*Time*/
+	.chat-modal .chat-content li.chat-message .chat-timestamp, .expanded-chat .chat-content li.chat-message .chat-timestamp
+	{
+		color: var(--dimer-text) !important;
+	}
+	/*Edit and delete messages*/
+	.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle)
+	{
+		background: var(--main-background) !important;
+	}
+	.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle):hover .fa, .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle):hover .fa
+	{
+		color: var(--main-color) !important;
+	}
+	/*The text area for messages*/
+	.form-control::-moz-placeholder, .chat-modal [component="chat/composer"] [component="chat/input"], .chats-full [component="chat/composer"] [component="chat/input"]
+	{
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	chat-modal [component="chat/composer"] [component="chat/input"]:active, .chats-full [component="chat/composer"] [component="chat/input"]:active,
+	.chat-modal [component="chat/composer"] [component="chat/input"]:focus, .chats-full [component="chat/composer"] [component="chat/input"]:focus,
+	.chat-modal [component="chat/composer"] [component="chat/input"]:hover, .chats-full [component="chat/composer"] [component="chat/input"]:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	/*The send button*/
+	.chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] .btn.btn-primary,
+	.chat-modal [component="chat/composer"] [data-action="send"] .btn.btn-primary, .chats-full [component="chat/composer"] [data-action="send"] .btn.btn-primary,
+	.chat-modal [component="chat/composer"] [data-action="send"], .chats-full [component="chat/composer"] [data-action="send"]
+	{
+		background: transparent !important;
+	}
+	.chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] .btn.btn-primary:hover .fa,
+	.chat-modal [component="chat/composer"] [data-action="send"].btn.btn-primary:hover .fa, .chats-full [component="chat/composer"] [data-action="send"] .btn.btn-primary:hover .fa
+	{
+		color: var(--main-color) !important;
+	}
+	/*The settings buttons*/
+	.chat-modal [component="chat/header"] .close, .chats-full [component="chat/header"] .close, .modal-header button
+	{
+		background: transparent !important;
+		color: var(--main-text) !important;
+		opacity: 1 !important;
+	}
+	.chat-modal [component="chat/header"] .close:hover .fa, .chats-full [component="chat/header"] .close:hover .fa, .modal-header button:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*Exception for h1*/
+	.message-body h1
+	{
+		color: var(--main-text) !important;
+	}
 
-		/*Test area*/
-		#messages-main .listview .lv-footer
-		{
-			background: var(--hover-background) !important;
-		}
-			#messages-main .ms-reply textarea, .chat-modal .modal-dialog .modal-content .modal-body .chat-footer
-			{
-				background: var(--second-background) !important;
-				color: var(--main-text) !important;
-			}
-		/*Svgs*/
-		#messages-main .ms-reply button, .close
-		{
-			color: var(--main-text) !important;
-		}
-		#messages-main .ms-reply button:hover, .close:hover
-		{
-			color: var(--main-color) !important;
-		}
-		#chat-message-send-btn:hover
-		{
-			color: var(--main-text) !important;
-			filter: brightness(110%);
-		}
 
 	/*Categories*/
 	.listview.lv-bordered .lv-item
@@ -1025,6 +991,10 @@
 	{
 		background: var(--main-color) !important;
 		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	#content [role="button"], button, .btn
+	{
 		color: var(--main-text) !important;
 	}
 	.btn-primary:hover
@@ -1144,12 +1114,21 @@
 		{
 			color: var(--main-color) !important;
 		}
+	.btn.btn-info.dropdown-toggle
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
 	/*Tags*/
  	.tag-container, .tag-container .tag-topic-count 
 	{
          	border-color: var(--main-background) !important;
 	}
-
+	.timeago, .stats small
+	{
+		color: var(--dimer-text) !important;
+		text-decoration: none !important;
+	}
 
 	/*Wathing svg hover*/
 	.actions > li > span > i
