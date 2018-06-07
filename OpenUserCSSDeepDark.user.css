@@ -611,6 +611,32 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	/* fix header */
+	.header .notification-list li.unread,.slideout-menu .notification-list li.unread
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	a.header .notification-list li.unread:hover,a.slideout-menu .notification-list li.unread:hover
+	{
+		background: var(--hover-background) !important;
+	}
+	/*fix notification headers + unread */
+	.header .notification-list li .mark-read, .slideout-menu .notification-list li .mark-read,
+	.header .notification-list li .mark-read:hover,.slideout-menu .notification-list li .mark-read:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.notification-list
+	{
+		background: var(--main-background) !important;
+	}
+	/* hack background here for now :(*/
+	.btn-toolbar
+	{
+		background: var(--second-background) !important;
+	}
+
 
 	/*Login*/
 	.tile.is-vertical .button.is-primary
