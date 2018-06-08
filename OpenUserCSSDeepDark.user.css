@@ -882,7 +882,8 @@
 	{
 		background: var(--main-color) !important;
 	}
-	#nprogress .spinner-icon {
+	#nprogress .spinner-icon
+	{
 		border-top-color: var(--main-color) !important;
 		border-left-color: var(--main-color) !important;
 	}
