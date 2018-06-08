@@ -621,7 +621,7 @@
 	{
 		filter: brightness(110%);
 	}
-	/*Notification*/
+	/*Notification List */
 	.notification.is-primary
 	{
 		background: var(--hover-background) !important;
@@ -632,7 +632,7 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	a.header .notification-list li.unread:hover,a.slideout-menu .notification-list li.unread:hover
+	a.header .notification-list li.unread:hover, a.slideout-menu .notification-list li.unread:hover
 	{
 		background: var(--hover-background) !important;
 	}
@@ -642,16 +642,17 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.notification-list
+	.notification-list .text strong
 	{
-		background: var(--main-background) !important;
+		color: var(--main-color) !important;
 	}
-	/* hack background here for now :(*/
-	.btn-toolbar
+	/* notification close button */
+	.close[data-dismiss="alert"]:hover
 	{
-		background: var(--second-background) !important;
+		background: transparent !important;
+		color: var(--main-color) !important;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23) !important;
 	}
-
 
 	/*Login*/
 	.tile.is-vertical .button.is-primary
@@ -830,14 +831,6 @@
 	.alert-success
 	{
 		background-color: var(--main-background) !important;
-	}
-
-	/* notification close button */
-	.close[data-dismiss="alert"]:hover
-	{
-		background: transparent !important;
-		color: var(--main-color) !important;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23) !important;
 	}
 
 	.fa
