@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.3.9
+@version 1.4.0
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -109,7 +109,7 @@
 	"Jisho_夜明け": "#EFB26C"
 }
 
-@var select dimerText 'Secondary text color' {
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.9*/
+/*1.4.0*/
 
 	/*Main color variables*/
 	:root
@@ -148,7 +148,7 @@
 		--second-background: /*[[secondBackground]]*/;
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
 
 		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
 
@@ -159,7 +159,7 @@
 		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--dimmer-text: #CCCCCC;
 		*/
 
 		/*KDE colors*/
@@ -169,7 +169,7 @@
 		--second-background: #2a2e32;
 		--hover-background: #31363b;
 		--main-text: #eff0f1;
-		--dimer-text: #bdc3c7;
+		--dimmer-text: #bdc3c7;
 		*/
 
 		/*Vertex Dark colors*/
@@ -179,7 +179,7 @@
 		--second-background: #353638;
 		--hover-background: #515254;
 		--main-text: #F3F3F5;
-		--dimer-text: #AEAFB0;
+		--dimmer-text: #AEAFB0;
 		*/
 
 		/*Arc Dark colors*/
@@ -189,7 +189,7 @@
 		--second-background: #383C4A;
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
-		--dimer-text: #B3BAC5;
+		--dimmer-text: #B3BAC5;
 		*/
 
 		/*Firefox Dark colors*/
@@ -199,7 +199,7 @@
 		--second-background: #181D20;
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
-		--dimer-text: #606376;
+		--dimmer-text: #606376;
 		*/
 
 		/*Firefox57 Dark colors*/
@@ -209,7 +209,7 @@
 		--second-background: #252526;
 		--hover-background: #323234;
 		--main-text: #F9F9FA;
-		--dimer-text: #D0D0D0;
+		--dimmer-text: #D0D0D0;
 		*/
 
 		/*Discord colors*/
@@ -219,7 +219,7 @@
 		--second-background: #2F3136;
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
-		--dimer-text: #ADA8AA;
+		--dimmer-text: #ADA8AA;
 		*/
 
 		/*YouTube dark colors*/
@@ -229,7 +229,7 @@
 		--second-background: #232323;
 		--hover-background: #343434;
 		--main-text: #E1E1E1;
-		--dimer-text: #7F7F7F;
+		--dimmer-text: #7F7F7F;
 		*/
 
 		/*Mint-Y-Dark colors*/
@@ -239,7 +239,7 @@
 		--second-background: #383838;
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
-		--dimer-text: #D5DADA;
+		--dimmer-text: #D5DADA;
 		*/
 
 		/*9anime colors*/
@@ -249,7 +249,7 @@
 		--second-background: #17151C;
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
-		--dimer-text: #747474;
+		--dimmer-text: #747474;
 		*/
 
 		/*Black and white*/
@@ -259,7 +259,7 @@
 		--second-background: #0a0a0a;
 		--hover-background: #0f0f0f;
 		--main-text: #b4b4b4;
-		--dimer-text: #828282;
+		--dimmer-text: #828282;
 		*/
 
 		/*Yellow (colors from petrocompletions)*/
@@ -269,7 +269,7 @@
 		--second-background: #202222;
 		--hover-background: #353838;
 		--main-text: #EFF0F1;
-		--dimer-text: #9F9999;
+		--dimmer-text: #9F999;
 		*/
 
 		/*Yellow 2*/
@@ -279,7 +279,7 @@
 		--second-background: #0c0a04;
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
-		--dimer-text: #fff8e1;
+		--dimmer-text: #fff8e1;
 		*/
 
 		/*Ubuntu grey colors*/
@@ -289,7 +289,7 @@
 		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Ubuntu purple colors*/
@@ -299,7 +299,7 @@
 		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Orange*/
@@ -309,7 +309,7 @@
 		--second-background: #0e0702;
 		--hover-background: #110903;
 		--main-text: #fff9f5;
-		--dimer-text: #ffede1;
+		--dimmer-text: #ffede1;
 		*/
 
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
@@ -319,7 +319,7 @@
 		--second-background: #2A1B1B;
 		--hover-background: #863B2F;
 		--main-text: #EFB26C;
-		--dimer-text: #986E3F;
+		--dimmer-text: #986E3F;
 		*/
 	}
 
@@ -351,6 +351,11 @@
 		filter: brightness(100%) !important;
 	}
 
+	/*help warning banner */
+	.mdi-alert:before {
+		color: var(--main-text) !important;
+		pointer-events: none !important;
+	}
 
 	/*Header*/
 	.navbar.is-primary, .navbar-menu.is-primary, .navbar.is-primary .navbar-brand > .navbar-item
@@ -400,7 +405,7 @@
 	.box
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
@@ -408,7 +413,7 @@
 	.is-primary > .box
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	h4
 	{
@@ -449,7 +454,7 @@
 	/*Theme options*/
 	li, p, ul
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	hr
 	{
@@ -468,14 +473,14 @@
 	}
 	div.tile.is-parent.is-paddingless div.tile.is-child code
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
 	/*Delete themes*/
 	.card
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
 	.card-footer-item, .card-footer
@@ -545,7 +550,7 @@
 	.box[disabled], .box
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	h5
 	{
@@ -572,7 +577,7 @@
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
 	.button.is-primary.is-pulled-right
@@ -606,6 +611,32 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	/* fix header */
+	.header .notification-list li.unread,.slideout-menu .notification-list li.unread
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	a.header .notification-list li.unread:hover,a.slideout-menu .notification-list li.unread:hover
+	{
+		background: var(--hover-background) !important;
+	}
+	/*fix notification headers + unread */
+	.header .notification-list li .mark-read, .slideout-menu .notification-list li .mark-read,
+	.header .notification-list li .mark-read:hover,.slideout-menu .notification-list li .mark-read:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.notification-list
+	{
+		background: var(--main-background) !important;
+	}
+	/* hack background here for now :(*/
+	.btn-toolbar
+	{
+		background: var(--second-background) !important;
+	}
+
 
 	/*Login*/
 	.tile.is-vertical .button.is-primary
@@ -702,7 +733,7 @@
 	}
 	a.button.is-patreon.is-pulled-right.is-fullheight div.ouc-flush-img-root
 	{
-		filter: brightness(2000%) grayscale(100%) !important;
+		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
 	}
 
 
@@ -736,10 +767,62 @@
 	{
 		filter: brightness(110%);
 	}
-
 }
 @-moz-document domain("forums.openusercss.org") {
-/*Forums*/
+	/*Forums*/
+
+	body
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+
+	/* fix forum join welcome banner wow this default theme burns*/
+	.alert-success
+	{
+		filter: contrast(65%) !important;
+	}
+	.alert-success a
+	{
+		filter: brightness(50%) contrast(150%) !important;
+	}
+	.alert-success strong, .alert-success p
+	{
+	color: #fff !important;
+	}
+
+	/* fixes to user profile items
+	Stat labels + dimmer text below*/
+	.account .profile .account-stats .stat-label, .text-center span
+	{
+		color: var(--dimmer-text) !important;
+	}
+
+	/* profile control button */
+	.btn-group.account-fab .fab
+	{
+		background: var(--main-color) !important;
+		font-size: 20px;
+	}
+
+	/* profile upload modal */
+	.modal-footer
+	{
+		border-top: 1px solid #555 !important;
+	}
+
+	.alert-success
+	{
+		background-color: var(--main-background) !important;
+	}
+
+	/* notification close button */
+	.close[data-dismiss="alert"]:hover
+	{
+		background: transparent !important;
+		color: var(--main-color) !important;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23) !important;
+	}
 
 	.fa
 	{
@@ -762,9 +845,8 @@
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
-
 
 	/*Loading bar*/
 	#nprogress .bar
@@ -776,13 +858,17 @@
 		border-left-color: var(--main-color) !important;
 	}
 
-	
-	body
+	.material-bar:nth-child(3)
 	{
-		background: var(--second-background) !important;
-		color: var(--main-text) !important;
+		background: var(--main-color) !important;
+		filter: brightness(100%);
 	}
 
+	/* fix tags */
+	.category > ul > li .tag-list .tag
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/*Navbar*/
 	#header-menu
@@ -800,11 +886,18 @@
 	{
 		color: var(--main-color) !important;
 	}
-	/*Avatar*/
+
+	/*Avatar
+	style avatar color*/
+	.avatar
+	{
+		color: var(--main-text) !important;
+ 	}
 	.navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:focus, .navbar-default .navbar-nav > .open > label:hover
 	{
 		background: var(--second-background) !important;
 	}
+
 	/*Avatar logout*/
 	.dropdown-menu > li > form > .btn-link, .dropdown-menu > li > form > button
 	{
@@ -816,7 +909,6 @@
 		background: var(--main-background) !important;
 		color: var(--main-color) !important;
 	}
-
 
 	/*Notifications*/
 	.chats-list > li, .chats-list
@@ -869,11 +961,11 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*Time*/
 	.chat-modal .chat-content li.chat-message .chat-timestamp, .expanded-chat .chat-content li.chat-message .chat-timestamp
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Edit and delete messages*/
 	.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn.btn-xs.btn-link
@@ -938,15 +1030,15 @@
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		.panel-default > .panel-heading
-		{
-			background: var(--main-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-		.panel-title
-		{
-			color: var(--main-color) !important;
-		}
+	.panel-default > .panel-heading
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.panel-title
+	{
+		color: var(--main-color) !important;
+	}
 
 	.github-embed.panel.panel-default
 	{
@@ -957,11 +1049,10 @@
 	{
 		background: var(--hover-background) !important;
 	}
-		.meta, .github-embed h3 span.number
-		{
-			color: var(--dimer-text) !important;
-		}
-
+	.meta, .github-embed h3 span.number
+	{
+		color: var(--dimmer-text) !important;
+	}
 
 	/*Unread*/
 	.header .notification-list li.unread, .slideout-menu .notification-list li.unread
@@ -969,12 +1060,12 @@
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		.alert-warning, .alert-info
-		{
-			color: var(--main-color) !important;
-		}
+	.alert-warning, .alert-info
+	{
+		color: var(--main-color) !important;
+	}
 	.unread-count::after
-		{
+	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
@@ -1001,42 +1092,41 @@
 		filter: brightness(110%) !important;
 		color: var(--main-text) !important;
 	}
-		.btn-primary .fa
-		{
-			color: var(--main-text) !important;
-		}
+	.btn-primary .fa
+	{
+		color: var(--main-text) !important;
+	}
 	.btn-default
 	{
 		background: var(--main-background) !important;
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
-		.dropdown-menu
-		{
-			background: var(--main-background) !important;
-		}
-			.dropdown-menu > li > a
-			{
-				color: var(--main-text) !important;
-			}
-			.dropdown-menu > li > a:hover
-			{
-				color: var(--main-color) !important;
-			}
-			.dropdown-menu .divider
-			{
-				background: var(--hover-background) !important;
-			}
+	.dropdown-menu
+	{
+		background: var(--main-background) !important;
+	}
+	.dropdown-menu > li > a
+	{
+		color: var(--main-text) !important;
+	}
+	.dropdown-menu > li > a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.dropdown-menu .divider
+	{
+		background: var(--hover-background) !important;
+	}
 	[component="category/topic"] .topic-title
 	{
 		color: var(--main-color) !important;
 	}
 
-
 	/*Search*/
 	.form-control::-moz-placeholder, .fg-line .form-control:not(:disabled)
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.fg-line:not([class*="has-"])::after
 	{
@@ -1051,25 +1141,24 @@
 	/*Checkboxes*/
 	.checkbox .input-helper::before, .radio .input-helper::before
 	{
-		border-color: var(--dimer-text) !important;
+		border-color: var(--dimmer-text) !important;
 		border-radius: 0% !important;
 	}
-		.radio .input-helper::after
-		{
-			background: var(--main-color) !important;
-			border-radius: 0% !important;
-		}
+	.radio .input-helper::after
+	{
+		background: var(--main-color) !important;
+		border-radius: 0% !important;
+	}
 
 	/*Tables*/
 	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
 	{
 		border-color: var(--main-background) !important;
 	}
-		.table-striped > tbody > tr:nth-of-type(2n+1)
-		{
-			background: var(--second-background) !important;
-		}
-
+	.table-striped > tbody > tr:nth-of-type(2n+1)
+	{
+		background: var(--second-background) !important;
+	}
 
 	/*Next buttons*/
 	.pagination > li.active a, .pagination > li.active a:hover, .pagination > li > a, .pagination > li > span
@@ -1093,26 +1182,26 @@
 	}
 	.groups.list .list-cover
 	{
-    		background-image: url(/assets/images/cover-default.png) !important; /* groups */
+    	background-image: url(/assets/images/cover-default.png) !important; /* groups */
 	}
-			.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
-			{
-				border-right-color: var(--second-background) !important;
-			}
-		blockquote, hr
-		{
-			border-color: var(--hover-background) !important;
-		}
+	.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
+	{
+		border-right-color: var(--second-background) !important;
+	}
+	blockquote, hr
+	{
+		border-color: var(--hover-background) !important;
+	}
 
-		/*Reply, quote, like etc*/
-		.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
-		{
-			color: var(--main-text) !important;
-		}
-		.topic .post-tools a:hover, .topic .card .lv-body .post-actions > li > a:hover > i
-		{
-			color: var(--main-color) !important;
-		}
+	/*Reply, quote, like etc*/
+	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
+	{
+		color: var(--main-text) !important;
+	}
+	.topic .post-tools a:hover, .topic .card .lv-body .post-actions > li > a:hover > i
+	{
+		color: var(--main-color) !important;
+	}
 	.btn.btn-info.dropdown-toggle
 	{
 		background: var(--main-background) !important;
@@ -1126,7 +1215,7 @@
 	}
 	.timeago, .stats small, a.permalink
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		text-decoration: none !important;
 	}
 	.timeago:hover
@@ -1136,7 +1225,7 @@
 	/*Left bar*/
 	.category > ul > li:not(.unread) .card
 	{
-		border-color: var(--dimer-text) !important;
+		border-color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
 	.btn-group > .btn:hover, div.post-bar .btn:hover
@@ -1146,7 +1235,7 @@
 	/*Svgs next to the post*/
 	.fa.fa-chevron-up, .fa.fa-chevron-down, .fa.fa-fw.fa-ellipsis-v
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.fa.fa-chevron-up:hover, .fa.fa-chevron-down:hover, .fa.fa-fw.fa-ellipsis-v:hover
 	{
@@ -1163,11 +1252,10 @@
 		color: var(--main-color) !important;
 		transition: none !important;
 	}
-		.visible-sm-inline.visible-md-inline.visible-lg-inline:hover, .caret:hover
-		{
-			color: var(--main-color) !important;
-		}
-
+	.visible-sm-inline.visible-md-inline.visible-lg-inline:hover, .caret:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*User page*/
 	.card .card-header.ch-alt:not([class*="bgm-"])
@@ -1175,17 +1263,16 @@
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-		#unfollow-btn
-		{
-			background: var(--main-background) !important;
-			box-shadow: var(--shadow) !important;
-			color: var(--main-text) !important;
-		}
-		#unfollow-btn:hover
-		{
-			color: var(--main-color) !important;
-		}
-
+	#unfollow-btn
+	{
+		background: var(--main-background) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	#unfollow-btn:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*Reply, post messages*/
 	body.page-compose.skin-default #content, body.page-compose.skin-noskin #content, .composer-container, .composer .tags-container .bootstrap-tagsinput, .composer .title-container .title
@@ -1197,30 +1284,30 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-		.composer .formatting-bar .formatting-group .fa
-		{
-			color: var(--main-text) !important;
-		}
-		.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus .fa, .composer .formatting-bar .formatting-group li:hover .fa
-		{
-			background: var(--hover-background) !important;
-			color: var(--main-color) !important;
-		}
-		.composer .write-preview-container .write, .composer .preview.well
-		{
-			background: var(--second-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-			.composer .preview-container .help-text, .composer .write-container .help-text
-			{
-				color: var(--dimer-text) !important;
-				opacity: .7;
-			}
-			.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
-			{
-				color: var(--main-color) !important;
-				opacity: 1;
-			}
+	.composer .formatting-bar .formatting-group .fa
+	{
+		color: var(--main-text) !important;
+	}
+	.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover, .composer .formatting-bar .formatting-group li:focus .fa, .composer .formatting-bar .formatting-group li:hover .fa
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.composer .write-preview-container .write, .composer .preview.well
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.composer .preview-container .help-text, .composer .write-container .help-text
+	{
+		color: var(--dimmer-text) !important;
+		opacity: .7;
+	}
+	.composer .preview-container .help-text:hover, .composer .write-container .help-text:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1;
+	}
 	.lv-body
 	{
 		padding-right: 20px !important;
@@ -1237,10 +1324,9 @@
  		color: var(--main-text) !important;
  	}
 
-
 	pre
  	{
 		background-color: var(--hover-background) !important;
  		border-color: var(--hover-background) !important;
- 	}	
+ 	}
 }
