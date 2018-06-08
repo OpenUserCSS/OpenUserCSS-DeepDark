@@ -351,8 +351,8 @@
 		filter: brightness(100%) !important;
 	}
 
-	/*help warning banner */
-	.mdi-alert:before {
+	/*help warning info banner */
+	.mdi-alert:before, .mdi-information:before {
 		color: var(--main-text) !important;
 		pointer-events: none !important;
 	}
