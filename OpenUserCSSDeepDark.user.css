@@ -1224,6 +1224,11 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/* hack to prevent mouse hover to flicker */
+	.persona-usercard .usercard-picture
+	{
+		pointer-events: none !important;
+	}
 
 	/*Reply, quote, like etc*/
 	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
