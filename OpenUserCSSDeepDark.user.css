@@ -386,7 +386,6 @@
 		color: var(--main-text) !important;
 	}
 
-
 	/*Body of the page*/
 	.ouc-app-root
 	{
@@ -400,14 +399,12 @@
 		color: var(--main-text) !important;
 	}
 
-
 	/*Popular themes*/
 	.box
 	{
 		background: var(--hover-background) !important;
 		color: var(--dimmer-text) !important;
 	}
-
 
 	/*Newst themes*/
 	.is-primary > .box
@@ -423,7 +420,6 @@
 	{
 		color: var(--main-text) !important;
 	}
-
 
 	/*Themes*/
 	h1
@@ -520,7 +516,6 @@
 		filter: brightness(110%);
 	}
 
-
 	/*Ratings*/
 	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
 	{
@@ -535,13 +530,11 @@
 		stroke: var(--hover-background) !important;
 	}
 
-
 	/*Profile*/
 	.tile.is-parent h2, h4
 	{
 		color: var(--main-color) !important;
 	}
-
 
 	/*Buttons*/
 	.button.is-primary.ouc-new-theme-button, .button.is-primary.ouc-account-button
@@ -555,7 +548,6 @@
 		color: var(--main-color) !important;
 		filter: brightness(110%);
 	}
-
 
 	/*Account details*/
 	.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
@@ -606,7 +598,6 @@
 	{
 		filter: brightness(110%);
 	}
-
 
 	/*Search*/
 	/*Button*/
@@ -670,7 +661,6 @@
 	{
 		color: var(--main-text) !important;
 	}
-
 
 	/*Upload theme*/
 	/*Code*/
@@ -743,7 +733,6 @@
 		border-color: var(--main-color) !important;
 	}
 
-
 	/*Donations*/
 	.is-primary-bg
 	{
@@ -753,7 +742,6 @@
 	{
 		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
 	}
-
 
 	/*Sned issues*/
 	.sentry-error-embed
@@ -1107,7 +1095,6 @@
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
-
 
 	/*Recent*/
 	.listview .lv-header-alt
