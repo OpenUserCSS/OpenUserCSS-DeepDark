@@ -1298,10 +1298,16 @@
 	}
 
 	/*Reply, post messages*/
-	body.page-compose.skin-default #content, body.page-compose.skin-noskin #content, .composer-container, .composer .tags-container .bootstrap-tagsinput, .composer .title-container .title
+	body.page-compose.skin-default #content, body.page-compose.skin-noskin #content,
+	.composer-container, .composer .tags-container .bootstrap-tagsinput
 	{
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	/* .title-container, .composer .title-container .title background is clearer this way and looks neat/clean layout*/
+	.title-container, .composer .title-container .title
+	{
+		background: var(--second-background) !important;
 	}
 	[component="post"].highlight .post-body
 	{
