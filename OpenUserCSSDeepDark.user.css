@@ -1274,6 +1274,11 @@
 	{
 		color: var(--main-color) !important;
 	}
+	.btn-danger
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
 	/*Svgs next to the post*/
 	.fa.fa-chevron-up, .fa.fa-chevron-down, .fa.fa-fw.fa-ellipsis-v
 	{
