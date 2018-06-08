@@ -1229,6 +1229,11 @@
 	{
 		pointer-events: none !important;
 	}
+	.persona-usercard .usercard-body
+	{
+		background: var(--main-background) !important;
+	}
+
 
 	/*Reply, quote, like etc*/
 	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
