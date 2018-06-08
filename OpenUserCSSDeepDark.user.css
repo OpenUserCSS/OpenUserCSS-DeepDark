@@ -486,7 +486,11 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-
+	 .box.is-fullheight
+	{
+		background: var(---background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
 
 	/*Delete themes*/
 	.card
