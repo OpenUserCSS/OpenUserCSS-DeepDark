@@ -1005,7 +1005,7 @@
 		color: var(--main-text) !important;
 		border-color: var(--hover-background) !important;
 	}
-	chat-modal [component="chat/composer"] [component="chat/input"]:active, .chats-full [component="chat/composer"] [component="chat/input"]:active,
+	.chat-modal [component="chat/composer"] [component="chat/input"]:active, .chats-full [component="chat/composer"] [component="chat/input"]:active,
 	.chat-modal [component="chat/composer"] [component="chat/input"]:focus, .chats-full [component="chat/composer"] [component="chat/input"]:focus,
 	.chat-modal [component="chat/composer"] [component="chat/input"]:hover, .chats-full [component="chat/composer"] [component="chat/input"]:hover
 	{
