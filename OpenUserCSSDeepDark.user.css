@@ -810,16 +810,29 @@
 
 	/* fixes to user profile items
 	Stat labels + dimmer text below*/
-	.account .profile .account-stats .stat-label, .text-center span
+	.account .profile .account-stats .stat-label
 	{
 		color: var(--dimmer-text) !important;
 	}
+	/* fix profile edit */
+	.list-group, .list-group-item
+	{
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.list-group-item:hover
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/* profile control button */
-	.btn-group.account-fab .fab
+	.btn-group.account-fab .fab, .fab.btn-morph.plus
 	{
 		background: var(--main-color) !important;
-		font-size: 20px;
+	}
+	.btn-morph:hover, button:hover
+	{
+		filter: brightness(120%) !important;
 	}
 
 	/* profile upload modal */
