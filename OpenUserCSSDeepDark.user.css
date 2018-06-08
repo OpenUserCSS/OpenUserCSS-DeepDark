@@ -801,9 +801,8 @@
 	}
 	.alert-success strong, .alert-success p
 	{
-	color: var(--main-text) !important;
+		color: var(--main-text) !important;
 	}
-
 
 	/* fixes to user profile items
 	Stat labels + dimmer text below*/
