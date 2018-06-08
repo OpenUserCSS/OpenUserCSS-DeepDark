@@ -467,6 +467,17 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color);
 	}
+	pre
+ 	{
+		background-color: var(--main-background) !important;
+ 		border: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
+ 	}
+	code
+	{
+		background-color: var(--main-background) !important;
+ 		border: none !important;
+ 	}
 	.v--modal
 	{
 		box-shadow: var(--shadow) !important;
