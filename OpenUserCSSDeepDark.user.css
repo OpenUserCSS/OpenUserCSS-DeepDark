@@ -618,6 +618,11 @@
 		background: var(--hover-background) !important;
 	}
 	/* fix header */
+	/* fixes flicker and hover issues with time on notification list */
+	.header .notification-list li a .text, .slideout-menu .notification-list li a .text
+	{
+		margin-right: 30px !important;
+	}
 	.header .notification-list li.unread,.slideout-menu .notification-list li.unread
 	{
 		background: var(--hover-background) !important;
