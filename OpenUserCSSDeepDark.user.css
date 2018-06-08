@@ -699,14 +699,16 @@
 		border-color: var(--main-color) !important;
 	}
 	/*Buttons*/
-	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary, .is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary
+	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
+	.is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary
 	{
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 		box-shadow: var(--shadow) !important;
 		opacity: 1 !important;
 	}
-	.has-bottom-margin .button.is-primary:hover, .tile.is-6 .button.is-primary:hover, .is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary:hover
+	.has-bottom-margin .button.is-primary:hover, .tile.is-6 .button.is-primary:hover,
+	.is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary:hover
 	{
 		filter: brightness(110%);
 	}
@@ -770,7 +772,9 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.sentry-error-embed .form-field input:active, .sentry-error-embed .form-field textarea:active, .sentry-error-embed .form-field input:focus, .sentry-error-embed .form-field textarea:focus, .sentry-error-embed .form-field input:hover, .sentry-error-embed .form-field textarea:hover
+	.sentry-error-embed .form-field input:active, .sentry-error-embed .form-field textarea:active,
+	.sentry-error-embed .form-field input:focus, .sentry-error-embed .form-field textarea:focus,
+	.sentry-error-embed .form-field input:hover, .sentry-error-embed .form-field textarea:hover
 	{
 		border-color: var(--main-color) !important;
 	}
@@ -859,11 +863,14 @@
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover, .bootstrap-tagsinput:hover, .bootstrap-tagsinput:focus, .bootstrap-tagsinput:active, .form-control:active, .form-control:hover, .form-control:focus
+	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active,
+	.textarea:focus, .input:hover, .textarea:hover, .bootstrap-tagsinput:hover, .bootstrap-tagsinput:focus,
+	.bootstrap-tagsinput:active, .form-control:active, .form-control:hover, .form-control:focus
 	{
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
 	}
+
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
 	{
@@ -915,7 +922,8 @@
 	{
 		color: var(--main-text) !important;
  	}
-	.navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:focus, .navbar-default .navbar-nav > .open > label:hover
+	.navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:focus,
+	.navbar-default .navbar-nav > .open > label:hover
 	{
 		background: var(--second-background) !important;
 	}
@@ -948,7 +956,8 @@
 	{
 		background: var(--second-background) !important;
 	}
-	.chat-modal .chat-content li.chat-message[data-break="true"], .expanded-chat .chat-content li.chat-message[data-break="true"],
+	.chat-modal .chat-content li.chat-message[data-break="true"],
+	.expanded-chat .chat-content li.chat-message[data-break="true"],
 	.modal-content, .modal-header, .modal-footer
 	{
 		border-color: var(--hover-background) !important;
@@ -1000,7 +1009,8 @@
 		color: var(--main-color) !important;
 	}
 	/*The text area for messages*/
-	.form-control::-moz-placeholder, .chat-modal [component="chat/composer"] [component="chat/input"], .chats-full [component="chat/composer"] [component="chat/input"]
+	.form-control::-moz-placeholder, .chat-modal [component="chat/composer"] [component="chat/input"],
+	.chats-full [component="chat/composer"] [component="chat/input"]
 	{
 		color: var(--main-text) !important;
 		border-color: var(--hover-background) !important;
@@ -1013,24 +1023,28 @@
 	}
 	/*The send button*/
 	.chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] .btn.btn-primary,
-	.chat-modal [component="chat/composer"] [data-action="send"] .btn.btn-primary, .chats-full [component="chat/composer"] [data-action="send"] .btn.btn-primary,
+	.chat-modal [component="chat/composer"] [data-action="send"] .btn.btn-primary,
+	.chats-full [component="chat/composer"] [data-action="send"] .btn.btn-primary,
 	.chat-modal [component="chat/composer"] [data-action="send"], .chats-full [component="chat/composer"] [data-action="send"]
 	{
 		background: transparent !important;
 	}
 	.chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] .btn.btn-primary:hover .fa,
-	.chat-modal [component="chat/composer"] [data-action="send"].btn.btn-primary:hover .fa, .chats-full [component="chat/composer"] [data-action="send"] .btn.btn-primary:hover .fa
+	.chat-modal [component="chat/composer"] [data-action="send"].btn.btn-primary:hover .fa,
+	.chats-full [component="chat/composer"] [data-action="send"] .btn.btn-primary:hover .fa
 	{
 		color: var(--main-color) !important;
 	}
 	/*The settings buttons, expand and close*/
-	.chat-modal [component="chat/header"] .close, .chats-full [component="chat/header"] .close, .modal-header button, .bootbox-close-button.close
+	.chat-modal [component="chat/header"] .close, .chats-full [component="chat/header"] .close,
+	.modal-header button, .bootbox-close-button.close
 	{
 		background: transparent !important;
 		color: var(--main-text) !important;
 		opacity: 1 !important;
 	}
-	.chat-modal [component="chat/header"] .close:hover .fa, .chats-full [component="chat/header"] .close:hover .fa, .modal-header button:hover, .bootbox-close-button.close:hover
+	.chat-modal [component="chat/header"] .close:hover .fa, .chats-full [component="chat/header"] .close:hover .fa,
+	.modal-header button:hover,.bootbox-close-button.close:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -1174,7 +1188,9 @@
 	}
 
 	/*Tables*/
-	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
+	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th,
+	.table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th,
+	.table-bordered > thead > tr > td, .table-bordered > thead > tr > th
 	{
 		border-color: var(--main-background) !important;
 	}
