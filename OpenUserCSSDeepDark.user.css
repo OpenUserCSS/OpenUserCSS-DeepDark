@@ -1316,10 +1316,21 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	.composer .write-preview-container .write, .composer .preview.well
+	.composer .write-preview-container .write
 	{
 		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	/* preview well has subtle differences, lets keep them stylistic choices because they make sense. */
+	.composer .preview.well
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+		opacity: .75
+	}
+	.composer .preview.well p
+	{
+		color: var(--dimmer-text) !important;
 	}
 	.composer .preview-container .help-text, .composer .write-container .help-text
 	{
