@@ -580,7 +580,8 @@
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover
+	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused,
+	.textarea:active, .textarea:focus, .input:hover, .textarea:hover
 	{
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
