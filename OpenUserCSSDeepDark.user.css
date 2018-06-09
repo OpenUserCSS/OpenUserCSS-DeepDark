@@ -1065,7 +1065,13 @@
 	}
 
 	/*Panels*/
-	.panel-default, .well, .breadcrumb
+	/* if you must add a bg to breadcrumb, at least add padding a bg that starts with text looks crap */
+	.breadcrumb
+	{
+		background: var(--hover-background) !important;
+		padding-left: 10px !important;
+	}
+	.panel-default, .well
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
