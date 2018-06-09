@@ -617,16 +617,22 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	/*main forum notification list read background */
+	.notifications-list li
+	{
+		background: var(--main-background) !important;
+		border-color: var(--main-background) !important;
+	}
 	/* fix header */
 	/* fixes flicker and hover issues with time on notification list */
 	.header .notification-list li a .text, .slideout-menu .notification-list li a .text
 	{
 		margin-right: 30px !important;
 	}
-	.header .notification-list li.unread,.slideout-menu .notification-list li.unread
+	.header .notification-list li.unread, .slideout-menu .notification-list li.unread, .notifications-list li.unread
 	{
 		background: var(--hover-background) !important;
-		color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
 	}
 	a.header .notification-list li.unread:hover, a.slideout-menu .notification-list li.unread:hover
 	{
@@ -638,7 +644,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.notification-list .text strong
+	.notification-list .text strong, a strong
 	{
 		color: var(--main-color) !important;
 	}
