@@ -152,6 +152,10 @@
 
 		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
 
+		/* These are must have static colors */
+		/*Disable all color/warning Breeze Dark*/
+		--warning-disable-all: #DA4453;
+
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
@@ -580,6 +584,11 @@
 	{
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
+	}
+	/* this needs to be efing red */
+	.input.is-danger, .textarea.is-danger
+	{
+		border-color: var(--warning-disable-all) !important;
 	}
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
