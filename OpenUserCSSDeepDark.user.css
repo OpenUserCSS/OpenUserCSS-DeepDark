@@ -1084,11 +1084,6 @@
 	}
 
 	/*Unread*/
-	.header .notification-list li.unread, .slideout-menu .notification-list li.unread
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}
 	.alert-warning, .alert-info
 	{
 		color: var(--main-color) !important;
