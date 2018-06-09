@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.4.2
+@version 1.4.3
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.2*/
+/*1.4.3*/
 
 	/*Main color variables*/
 	:root
@@ -618,6 +618,11 @@
 		background: var(--hover-background) !important;
 	}
 	/* fix header */
+	/* fixes flicker and hover issues with time on notification list */
+	.header .notification-list li a .text, .slideout-menu .notification-list li a .text
+	{
+		margin-right: 30px !important;
+	}
 	.header .notification-list li.unread,.slideout-menu .notification-list li.unread
 	{
 		background: var(--hover-background) !important;
@@ -796,9 +801,8 @@
 	}
 	.alert-success strong, .alert-success p
 	{
-	color: var(--main-text) !important;
+		color: var(--main-text) !important;
 	}
-
 
 	/* fixes to user profile items
 	Stat labels + dimmer text below*/
@@ -1219,6 +1223,16 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/* hack to prevent mouse hover to flicker */
+	.persona-usercard .usercard-picture
+	{
+		pointer-events: none !important;
+	}
+	.persona-usercard .usercard-body
+	{
+		background: var(--main-background) !important;
+	}
+
 
 	/*Reply, quote, like etc*/
 	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
@@ -1258,6 +1272,11 @@
 	.btn-group > .btn:hover, div.post-bar .btn:hover
 	{
 		color: var(--main-color) !important;
+	}
+	.btn-danger
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 	/*Svgs next to the post*/
 	.fa.fa-chevron-up, .fa.fa-chevron-down, .fa.fa-fw.fa-ellipsis-v
