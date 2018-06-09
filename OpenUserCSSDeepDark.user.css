@@ -753,6 +753,10 @@
 	{
 		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
 	}
+	.button.is-paypal:hover, .button.is-patreon:hover
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/*Sned issues*/
 	.sentry-error-embed
