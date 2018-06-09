@@ -1143,6 +1143,10 @@
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
+	.btn-default:hover
+	{
+		color: var(--main-color) !important;
+	}
 	.dropdown-menu
 	{
 		background: var(--main-background) !important;
@@ -1281,7 +1285,7 @@
 		border-color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
-	.btn-group > .btn:hover, div.post-bar .btn:hover
+	.btn-group > .btn:hover, div.post-bar .btn:hover, #content [role="button"]:hover
 	{
 		color: var(--main-color) !important;
 	}
