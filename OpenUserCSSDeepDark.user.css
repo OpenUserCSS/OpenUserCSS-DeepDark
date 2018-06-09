@@ -940,14 +940,19 @@
 	}
 
 	/*Notifications*/
-	.chats-list > li, .chats-list
+	.chats-list > li
 	{
-		background: var(--main-background) !important;
-		border-color: var(--hover-background) !important;
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
 	}
 	.chats-list > li:hover
 	{
 		background: var(--hover-background) !important;
+	}
+	 .chats-list
+	{
+		background: var(--main-background) !important;
+		border-right: 1px solid var(--hover-background) !important;
 	}
 
 	/*Chat*/
