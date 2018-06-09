@@ -1305,7 +1305,7 @@
 	}
 	.btn-danger
 	{
-		background-color: var(--main-color) !important;
+		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
 	/*Svgs next to the post*/
