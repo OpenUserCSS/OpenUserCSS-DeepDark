@@ -520,6 +520,11 @@
 	}
 	hr
 	{
+		background: var(--hover-background) !important;
+	}
+	/* card content hr*/
+	.is-8 hr
+	{
 		background: var(--main-text) !important;
 	}
 
