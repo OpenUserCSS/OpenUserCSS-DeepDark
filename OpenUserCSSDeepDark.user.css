@@ -814,13 +814,17 @@
 	}
 
 	/*Donations*/
-	.is-primary-bg
+	.ouc-im-broke-wrapper
 	{
 		background: var(--main-background) !important;
 	}
-	a.button.is-patreon.is-pulled-right.is-fullheight div.ouc-flush-img-root
+	 .button.is-patreon .ouc-responsive-image-wrapper
 	{
 		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
+	}
+	.button.is-paypal .ouc-responsive-image-wrapper
+	{
+		filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
 	}
 	.button.is-paypal:hover, .button.is-patreon:hover
 	{
