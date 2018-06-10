@@ -493,7 +493,7 @@
 		color: var(--main-color) !important;
 	}
 	/*About*/
-	h2
+	h2, .label, .card-header-title label
 	{
 		color: var(--main-text) !important;
 	}
