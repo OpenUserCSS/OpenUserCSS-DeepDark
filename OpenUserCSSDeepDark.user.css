@@ -515,7 +515,7 @@
 	}
 	hr
 	{
-		background: var(--hover-background) !important;
+		background: var(--main-text) !important;
 	}
 
 	/*Code*/
