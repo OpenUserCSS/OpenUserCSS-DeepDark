@@ -703,6 +703,24 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.table tr:nth-child(odd)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table tr:nth-child(even)
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table tr:nth-child(odd):hover, .table tr:nth-child(even):hover
+	{
+		background: var(--hover-background) !important;
+	}
+	.table td, .table th
+	{
+		border: 1px solid var(--hover-background) !important;
+	}
 	/*Lock check*/
 	.switch.checked
 	{
