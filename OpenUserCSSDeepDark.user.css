@@ -541,6 +541,29 @@
 		color: var(--main-text) !important;
 		margin-bottom: 30px !important;
 	}
+	.button.is-grey-light
+	{
+		background-color: var(--main-background) !important;
+		border-color: transparent !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-grey-light.is-hovered, .button.is-grey-light:hover
+	{
+		filter: brightness(120%) !important;
+	}
+	.has-text-primary
+	{
+		color: var(--main-color) !important;
+	}
+	a.has-text-primary:focus, a.has-text-primary:hover
+	{
+		color: var(--main-color) !important;
+		filter: brightness(110%) !important;
+	}
+	.has-text-secondary
+	{
+		color: var(--notice) !important;
+	}
 	a.has-text-secondary:focus, a.has-text-secondary:hover
 	{
 		color: var(--notice) !important;
