@@ -631,7 +631,7 @@
 	a.has-text-primary:focus, a.has-text-primary:hover
 	{
 		color: var(--main-color) !important;
-		filter: brightness(110%) !important;
+		filter: brightness(120%) !important;
 	}
 	a.has-text-secondary
 	{
