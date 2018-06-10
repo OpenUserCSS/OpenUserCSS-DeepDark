@@ -153,8 +153,10 @@
 		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
 
 		/* These are must have static colors */
-		/*Disable all color/warning Breeze Dark*/
+		/*Warning/error Breeze Dark*/
 		--warning-disable-all: #DA4453;
+		/*Notice from Breeze Dark*/
+		--notice: #FDBC4B;
 
 		/*DeepDark colors*/
 		/*
@@ -360,6 +362,11 @@
 		color: var(--main-text) !important;
 		pointer-events: none !important;
 	}
+	.notification.is-warning, .notification.is-warning p, .notification.is-danger, .is-ancestor li
+	{
+		background-color: var(--notice) !important;
+		color: var(--main-background) !important;
+	}
 
 	/*Header*/
 	.navbar.is-primary, .navbar-menu.is-primary, .navbar.is-primary .navbar-brand > .navbar-item
@@ -509,6 +516,11 @@
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 		margin-bottom: 30px !important;
+	}
+	a.has-text-secondary:focus, a.has-text-secondary:hover
+	{
+		color: var(--notice) !important;
+		filter: brightness(110%) !important;
 	}
 	.card-footer-item.is-paddingless .button[type="reset"]
 	{
