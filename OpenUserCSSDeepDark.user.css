@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.4.3
+@version 1.4.4
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.3*/
+/*1.4.4*/
 
 	/*Main color variables*/
 	:root
@@ -151,6 +151,10 @@
 		--dimmer-text: /*[[dimmerText]]*/;
 
 		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+
+		/* These are must have static colors */
+		/*Disable all color/warning Breeze Dark*/
+		--warning-disable-all: #DA4453;
 
 		/*DeepDark colors*/
 		/*
@@ -576,10 +580,16 @@
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .input:hover, .textarea:hover
+	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused,
+	.textarea:active, .textarea:focus, .input:hover, .textarea:hover
 	{
 		box-shadow: none !important;
 		border-color: var(--main-color) !important;
+	}
+	/* this needs to be efing red */
+	.input.is-danger, .textarea.is-danger
+	{
+		border-color: var(--warning-disable-all) !important;
 	}
 	/*Dim text*/
 	.input::-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder, .textarea::-moz-placeholder
@@ -617,16 +627,22 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	/*main forum notification list read background */
+	.notifications-list li
+	{
+		background: var(--main-background) !important;
+		border-color: var(--main-background) !important;
+	}
 	/* fix header */
 	/* fixes flicker and hover issues with time on notification list */
 	.header .notification-list li a .text, .slideout-menu .notification-list li a .text
 	{
 		margin-right: 30px !important;
 	}
-	.header .notification-list li.unread,.slideout-menu .notification-list li.unread
+	.header .notification-list li.unread, .slideout-menu .notification-list li.unread, .notifications-list li.unread
 	{
 		background: var(--hover-background) !important;
-		color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
 	}
 	a.header .notification-list li.unread:hover, a.slideout-menu .notification-list li.unread:hover
 	{
@@ -638,7 +654,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.notification-list .text strong
+	.notification-list .text strong, a strong
 	{
 		color: var(--main-color) !important;
 	}
@@ -746,6 +762,10 @@
 	a.button.is-patreon.is-pulled-right.is-fullheight div.ouc-flush-img-root
 	{
 		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
+	}
+	.button.is-paypal:hover, .button.is-patreon:hover
+	{
+		background: var(--hover-background) !important;
 	}
 
 	/*Sned issues*/
@@ -934,14 +954,20 @@
 	}
 
 	/*Notifications*/
-	.chats-list > li, .chats-list
+	.chats-list > li
 	{
-		background: var(--main-background) !important;
-		border-color: var(--hover-background) !important;
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
 	}
 	.chats-list > li:hover
 	{
 		background: var(--hover-background) !important;
+	}
+	 .chats-list
+	{
+		background: var(--main-background) !important;
+		border-right: 1px solid var(--hover-background) !important;
+		border-top: 0 !important;
 	}
 
 	/*Chat*/
@@ -1054,7 +1080,13 @@
 	}
 
 	/*Panels*/
-	.panel-default, .well, .breadcrumb
+	/* if you must add a bg to breadcrumb, at least add padding a bg that starts with text looks crap */
+	.breadcrumb
+	{
+		background: var(--hover-background) !important;
+		padding-left: 10px !important;
+	}
+	.panel-default, .well
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -1084,15 +1116,16 @@
 	}
 
 	/*Unread*/
-	.header .notification-list li.unread, .slideout-menu .notification-list li.unread
-	{
-		background: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}
-	.alert-warning, .alert-info
+	.alert-info
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;
+	}
+	.alert-warning
+	{
+		color: var(--main-color) !important;
+		background: var(--hover-background) !important;
+		border-color: var(--main-background) !important;
 	}
 	.unread-count::after
 	{
@@ -1131,6 +1164,10 @@
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
+	.btn-default:hover
+	{
+		color: var(--main-color) !important;
+	}
 	.dropdown-menu
 	{
 		background: var(--main-background) !important;
@@ -1142,6 +1179,7 @@
 	.dropdown-menu > li > a:hover
 	{
 		color: var(--main-color) !important;
+		background: var(--hover-background) !important;
 	}
 	.dropdown-menu .divider
 	{
@@ -1233,7 +1271,6 @@
 		background: var(--main-background) !important;
 	}
 
-
 	/*Reply, quote, like etc*/
 	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
 	{
@@ -1247,6 +1284,20 @@
 	{
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	/* fix emoji dropdown active item selection */
+	.dropdown-menu .textcomplete-item.active
+	{
+		background: var(--hover-background) !important;
+		cursor: default !important;
+	}
+	.dropdown-menu-right
+	{
+		background: var(--main-background) !important;
+	}
+	.dropdown-menu-right li:hover:not(.dropdown-header)
+	{
+		background: var(--hover-background) !important;
 	}
 	/*Tags*/
  	.tag-container, .tag-container .tag-topic-count, .category > ul > li .tag-list .tag
@@ -1269,13 +1320,13 @@
 		border-color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
-	.btn-group > .btn:hover, div.post-bar .btn:hover
+	.btn-group > .btn:hover, div.post-bar .btn:hover, #content [role="button"]:hover
 	{
 		color: var(--main-color) !important;
 	}
 	.btn-danger
 	{
-		background-color: var(--main-color) !important;
+		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
 	/*Svgs next to the post*/
