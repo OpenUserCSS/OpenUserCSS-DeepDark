@@ -1116,10 +1116,16 @@
 	}
 
 	/*Unread*/
-	.alert-warning, .alert-info
+	.alert-info
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;
+	}
+	.alert-warning
+	{
+		color: var(--main-color) !important;
+		background: var(--hover-background) !important;
+		border-color: var(--main-background) !important;
 	}
 	.unread-count::after
 	{
