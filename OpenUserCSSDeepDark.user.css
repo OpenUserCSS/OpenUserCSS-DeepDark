@@ -379,6 +379,25 @@
 		color: var(--main-background) !important;
 	}
 
+	/* help page */
+	.box.is-warning
+	{
+		background-color: var(--notice) !important;
+		color: var(--main-background) !important;
+	}
+	.is-inline a
+	{
+		color: var(--main-background) !important;
+	}
+	.is-inline a:hover
+	{
+		filter: contrast(70%) !important;
+	}
+	svg.is-inline
+	{
+		color: var(--second-background) !important;
+	}
+
 	/*Header*/
 	.navbar.is-primary, .navbar-menu.is-primary, .navbar.is-primary .navbar-brand > .navbar-item
 	{
