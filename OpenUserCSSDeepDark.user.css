@@ -385,6 +385,11 @@
 		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
+	/* target section hr directly */
+	.section hr
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/* loading */
 	.ouc-loading-cover[data-v-05fea271]
