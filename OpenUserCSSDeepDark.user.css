@@ -521,6 +521,19 @@
 		border-color: transparent !important;
 	}
 	/*Buttons*/
+	.is-brand-primary
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.is-brand-primary:hover
+	{
+		filter: brightness(110%) !important;
+	}
+	.is-brand-primary p
+	{
+		color: var(--main-text) !important;
+	}
 	.button[disabled], .card-footer-item.is-paddingless .button
 	{
 		background: #d80b00 !important;
