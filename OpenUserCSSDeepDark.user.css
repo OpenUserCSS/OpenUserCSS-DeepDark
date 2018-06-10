@@ -609,7 +609,7 @@
 	}
 	.button[disabled], .card-footer-item.is-paddingless .button
 	{
-		background: var(--warning-disable-all) !important;
+		background: var(--main-color) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 		margin-bottom: 30px !important;
