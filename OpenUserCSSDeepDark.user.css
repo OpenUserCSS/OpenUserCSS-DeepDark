@@ -1412,9 +1412,23 @@
 		border-color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
-	.btn-group > .btn:hover, div.post-bar .btn:hover, #content [role="button"]:hover
+	.btn-group > .btn:hover
+	{
+		color: var(--main-text) !important;
+	}
+	div.post-bar .btn:hover, #content [role="button"]:hover
 	{
 		color: var(--main-color) !important;
+	}
+	 .btn.btn-default.composer-discard
+	{
+		color: var(--main-color) !important;
+	}
+	.btn.btn-default.composer-discard:hover
+	{
+		background: transparent !important;
+		background-image: transparent !important;
+		filter: brightness(110%) !important;
 	}
 	.btn-danger
 	{
