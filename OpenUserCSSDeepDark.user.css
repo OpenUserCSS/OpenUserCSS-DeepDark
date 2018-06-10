@@ -1172,6 +1172,7 @@
 	.dropdown-menu > li > a:hover
 	{
 		color: var(--main-color) !important;
+		background: var(--hover-background) !important;
 	}
 	.dropdown-menu .divider
 	{
@@ -1263,7 +1264,6 @@
 		background: var(--main-background) !important;
 	}
 
-
 	/*Reply, quote, like etc*/
 	.topic .post-tools a, .topic .card .lv-body .post-actions > li > a > i
 	{
@@ -1283,6 +1283,14 @@
 	{
 		background: var(--hover-background) !important;
 		cursor: default !important;
+	}
+	.dropdown-menu-right
+	{
+		background: var(--main-background) !important;
+	}
+	.dropdown-menu-right li:hover:not(.dropdown-header)
+	{
+		background: var(--hover-background) !important;
 	}
 	/*Tags*/
  	.tag-container, .tag-container .tag-topic-count, .category > ul > li .tag-list .tag
