@@ -656,18 +656,18 @@
 		color: var(--main-text) !important;
 	}
 
-	/*Ratings*/
-	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
+	/* Ratings  fixed 1.0.0 */
+	.vue-star-rating-star stop[stop-color="#ffd055"], .vue-star-rating-star stop[stop-color="#ffd055"]
 	{
 		stop-color: var(--main-color) !important;
 	}
-	.vue-rate-it-pointer stop[stop-color="#d8d8d8"], .vue-rate-it-rating stop[stop-color="#d8d8d8"]
+	.vue-star-rating-star stop[stop-color="#d8d8d8"], .vue-star-rating-star stop[stop-color="#d8d8d8"]
 	{
 		stop-color: var(--main-background) !important;
 	}
-	.vue-rate-it-pointer polygon[stroke="#999"], .vue-rate-it-rating polygon[stroke="#999"]
+	.vue-star-rating-star polygon[stroke="#999"], .vue-star-rating-star polygon[stroke="#999"]
 	{
-		stroke: var(--hover-background) !important;
+		stroke: var(--main-background) !important;
 	}
 
 	/*Profile*/
