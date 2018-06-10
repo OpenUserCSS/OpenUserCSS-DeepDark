@@ -583,7 +583,20 @@
 	{
 		filter: brightness(110%) !important;
 	}
-
+	.button.is-danger
+	{
+		background: var(--warning-disable-all) !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-primary
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-primary:hover
+	{
+		filter: brightness(110%) !important;
+	}
 	.button[disabled], .card-footer-item.is-paddingless .button
 	{
 		background: var(--warning-disable-all) !important;
