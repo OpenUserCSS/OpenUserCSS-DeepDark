@@ -373,10 +373,17 @@
 		color: var(--main-text) !important;
 		pointer-events: none !important;
 	}
-	.notification.is-warning, .notification.is-warning p, .notification.is-danger, .is-ancestor li
+	/* warning is orange */
+	.notification.is-warning, .notification.is-warning p
 	{
 		background-color: var(--notice) !important;
 		color: var(--main-background) !important;
+	}
+	/* danger is red */
+	.notification.is-danger, .is-ancestor li
+	{
+		background-color: var(--warning-disable-all) !important;
+		color: var(--main-text) !important;
 	}
 
 	/* help page */
