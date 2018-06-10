@@ -967,6 +967,7 @@
 	{
 		background: var(--main-background) !important;
 		border-right: 1px solid var(--hover-background) !important;
+		border-top: 0 !important;
 	}
 
 	/*Chat*/
