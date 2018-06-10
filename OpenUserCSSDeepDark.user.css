@@ -445,7 +445,7 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	/*Alpha*/
+	/*Beta*/
 	.tag:not(body).is-secondary
 	{
 		background: var(--main-color) !important;
@@ -472,7 +472,7 @@
 		color: var(--dimmer-text) !important;
 	}
 
-	/*Newst themes*/
+	/*Newest themes*/
 	.is-primary > .box
 	{
 		background: var(--hover-background) !important;
