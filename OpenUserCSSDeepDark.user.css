@@ -651,6 +651,10 @@
 	{
 		filter: brightness(110%);
 	}
+	.tile .has-text-white
+	{
+		color: var(--main-text) !important;
+	}
 
 	/*Ratings*/
 	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
