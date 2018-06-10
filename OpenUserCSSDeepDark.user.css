@@ -1278,6 +1278,12 @@
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
+	/* fix emoji dropdown active item selection */
+	.dropdown-menu .textcomplete-item.active
+	{
+		background: var(--hover-background) !important;
+		cursor: default !important;
+	}
 	/*Tags*/
  	.tag-container, .tag-container .tag-topic-count, .category > ul > li .tag-list .tag
 	{
