@@ -553,6 +553,17 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.is-brand-secondary
+	{
+		background: var(--notice) !important;
+		color: var(--main-background) !important;
+	}
+	.is-brand-secondary:active:not([disabled]), .is-brand-secondary:focus:not([disabled]),
+	.is-brand-secondary:hover:not([disabled])
+	{
+		filter: brightness(110%) !important;
+	}
+
 	.button[disabled], .card-footer-item.is-paddingless .button
 	{
 		background: var(--warning-disable-all) !important;
