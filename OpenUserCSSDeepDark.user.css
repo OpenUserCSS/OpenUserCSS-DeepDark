@@ -633,11 +633,11 @@
 		color: var(--main-color) !important;
 		filter: brightness(120%) !important;
 	}
-	a.has-text-secondary
+	a.has-text-secondary, a.has-text-warning
 	{
 		color: var(--notice) !important;
 	}
-	a.has-text-secondary:focus, a.has-text-secondary:hover
+	a.has-text-secondary:focus, a.has-text-secondary:hover, a.has-text-warning:focus, a.has-text-warning:hover
 	{
 		color: var(--notice) !important;
 		filter: brightness(110%) !important;
