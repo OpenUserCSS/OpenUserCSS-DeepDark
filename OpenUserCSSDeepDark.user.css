@@ -728,11 +728,24 @@
 		border-color: var(--main-color) !important;
 	}
 	/*Inputs*/
-	.input, .textarea
+	.input, .textarea, .vue-treeselect__control, .vue-treeselect__menu
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
+	}
+	.vue-treeselect--disabled .vue-treeselect__control, .vue-treeselect__multi-value-item
+	{
+		background-color: var(--second-background) !important;
+	}
+	.vue-treeselect__single-value
+	{
+		color: var(--main-text) !important;
+	}
+	.vue-treeselect__label-wrapper:hover
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--dimmer-text) !important;
 	}
 	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused,
 	.textarea:active, .textarea:focus, .input:hover, .textarea:hover
