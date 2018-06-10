@@ -852,9 +852,9 @@
 
 	/*Upload theme*/
 	/*Code*/
-	#editor .ace_gutter
+	.ouc-editor .ace_gutter
 	{
-		background: var(--second-background) !important;
+		background: var(--hover-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
@@ -862,19 +862,20 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	#editor
+	.ouc-editor
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	#editor .ace_print-margin
+	.ouc-editor .ace_print-margin
 	{
 		background: transparent !important;
 	}
-	#editor .ace_cursor
+	.ouc-editor .ace_cursor
 	{
 		border-color: var(--main-color) !important;
+		border-left-width: 3px !important;
 	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
