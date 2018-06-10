@@ -623,7 +623,7 @@
 		color: var(--main-color) !important;
 		filter: brightness(110%) !important;
 	}
-	.has-text-secondary
+	a.has-text-secondary
 	{
 		color: var(--notice) !important;
 	}
