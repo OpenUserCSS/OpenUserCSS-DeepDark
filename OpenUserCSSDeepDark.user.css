@@ -1431,13 +1431,21 @@
 	}
 
 	/*Tables*/
-	.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th,
-	.table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th,
 	.table-bordered > thead > tr > td, .table-bordered > thead > tr > th
+	{
+		background: var(--second-background) !important;
+		border-color: var(--main-background) !important;
+	}
+	.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th,
+	.table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th
 	{
 		border-color: var(--main-background) !important;
 	}
-	.table-striped > tbody > tr:nth-of-type(2n+1)
+	.table-striped > tbody > tr:nth-of-type(odd)
+	{
+		background: var(--main-background) !important;
+	}
+	.table-striped > tbody > tr:nth-of-type(even)
 	{
 		background: var(--second-background) !important;
 	}
