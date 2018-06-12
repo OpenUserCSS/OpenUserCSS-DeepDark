@@ -1472,7 +1472,7 @@
 	}
 	.groups.list .list-cover
 	{
-    	background-image: url(/assets/images/cover-default.png) !important; /* groups */
+		background-image: url("https://forums.openusercss.org/assets/images/cover-default.png") !important; /* groups */
 	}
 	.topic .card .lv-body .post-content::before, .topic .card .lv-body .post-content::after
 	{
