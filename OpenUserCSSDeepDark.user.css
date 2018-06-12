@@ -368,7 +368,7 @@
 		 color: var(--dimmer-text) !important;
 	}
 	/*help warning info banner */
-	.mdi-alert:before, .mdi-information:before, .is-1
+	.mdi-alert:before, .mdi-information:before
 	{
 		color: var(--main-text) !important;
 		pointer-events: none !important;
