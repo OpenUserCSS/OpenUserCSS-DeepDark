@@ -402,6 +402,10 @@
 		background:  var(--hover-background);
 		color: var(--main-text) !important;
 		background: repeating-linear-gradient(45deg, var(--main-background), var(--hover-background) 10px, var(--hover-background) 0, var(--main-background) 20px);
+	/* website profile */
+	.ouc-profile-wrapper h1
+	{
+		color: var(--main-text) !important;
 	}
 
 	/* help page */
