@@ -883,6 +883,23 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.alert.alert-danger, .alert.alert-danger p, .alert.alert-danger strong
+	{
+		background: var(--warning-disable-all) !important;
+		color: var(--main-text) !important;
+	}
+	.alert.alert-danger .close
+	{
+		color: var(--main-text) !important;
+		box-shadow: none !important;
+		opacity: .7
+	}
+	.alert.alert-danger .close:hover
+	{
+		color: var(--main-text) !important;
+		box-shadow: none !important;
+		opacity: .9
+	}
 
 	/*Upload theme*/
 	/*Code*/
