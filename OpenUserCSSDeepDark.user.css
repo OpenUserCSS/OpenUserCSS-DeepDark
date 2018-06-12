@@ -569,11 +569,22 @@
 		border: 1px solid var(--hover-background) !important;
 	}
 
-	/*Delete themes*/
+	/*Themes including delete*/
 	.card
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
+		box-shadow: 0 2px 3px var(--main-background),0 0 0 1px var(--main-background) !important;
+	}
+	.card-header
+	{
+		box-shadow: 0 1px 2px var(--main-background) !important;
+	}
+	/* Card headers has no background but under theme submission
+	the Creating <stylename inherits the .box styling which has bg, so add here too fo consistency in form*/
+	.ouc-new-theme-form .card-header
+	{
+		background: var(--hover-background) !important;
 	}
 	.card-footer-item, .card-footer
 	{
