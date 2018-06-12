@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.4.4
+@version 1.4.5
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.4*/
+/*1.4.5*/
 
 	/*Main color variables*/
 	:root
@@ -153,8 +153,10 @@
 		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
 
 		/* These are must have static colors */
-		/*Disable all color/warning Breeze Dark*/
+		/*Warning/error Breeze Dark*/
 		--warning-disable-all: #DA4453;
+		/*Notice from Breeze Dark*/
+		--notice: #FDBC4B;
 
 		/*DeepDark colors*/
 		/*
@@ -355,10 +357,70 @@
 		filter: brightness(100%) !important;
 	}
 
+	/* register dialog */
+	.switch[data-v-688d0aeb]
+	{
+		background: var(--main-text) !important;
+		border: 1px solid var(--main-text) !important;
+	}
+	label.checkbox:hover
+	{
+		 color: var(--dimmer-text) !important;
+	}
 	/*help warning info banner */
-	.mdi-alert:before, .mdi-information:before {
+	.mdi-alert:before, .mdi-information:before, .is-1
+	{
 		color: var(--main-text) !important;
 		pointer-events: none !important;
+	}
+	/* warning is orange */
+	.notification.is-warning, .notification.is-warning p
+	{
+		background-color: var(--notice) !important;
+		color: var(--main-background) !important;
+	}
+	/* danger is red */
+	.notification.is-danger, .is-ancestor li
+	{
+		background-color: var(--warning-disable-all) !important;
+		color: var(--main-text) !important;
+	}
+	/* target section hr directly */
+	.section hr
+	{
+		background: var(--hover-background) !important;
+	}
+
+	/* loading */
+	.ouc-loading-cover[data-v-05fea271]
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.ouc-loading-inner[data-v-05fea271]
+	{
+		background:  var(--hover-background);
+		color: var(--main-text) !important;
+		background: repeating-linear-gradient(45deg, var(--main-background), var(--hover-background) 10px, var(--hover-background) 0, var(--main-background) 20px);
+	}
+
+	/* help page */
+	.box.is-warning
+	{
+		background-color: var(--notice) !important;
+		color: var(--main-background) !important;
+	}
+	.is-inline a
+	{
+		color: var(--main-background) !important;
+	}
+	.is-inline a:hover
+	{
+		filter: contrast(70%) !important;
+	}
+	svg.is-inline
+	{
+		color: var(--second-background) !important;
 	}
 
 	/*Header*/
@@ -383,7 +445,7 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	/*Alpha*/
+	/*Beta*/
 	.tag:not(body).is-secondary
 	{
 		background: var(--main-color) !important;
@@ -410,7 +472,7 @@
 		color: var(--dimmer-text) !important;
 	}
 
-	/*Newst themes*/
+	/*Newest themes*/
 	.is-primary > .box
 	{
 		background: var(--hover-background) !important;
@@ -431,7 +493,7 @@
 		color: var(--main-color) !important;
 	}
 	/*About*/
-	h2
+	h2, .label, .card-header-title label
 	{
 		color: var(--main-text) !important;
 	}
@@ -459,6 +521,11 @@
 	hr
 	{
 		background: var(--hover-background) !important;
+	}
+	/* card content hr*/
+	.is-8 hr
+	{
+		background: var(--main-text) !important;
 	}
 
 	/*Code*/
@@ -503,12 +570,77 @@
 		border-color: transparent !important;
 	}
 	/*Buttons*/
+	.is-brand-primary
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.is-brand-primary:hover
+	{
+		filter: brightness(110%) !important;
+	}
+	.is-brand-primary p
+	{
+		color: var(--main-text) !important;
+	}
+	.is-brand-secondary
+	{
+		background: var(--notice) !important;
+		color: var(--main-background) !important;
+	}
+	.is-brand-secondary:active:not([disabled]), .is-brand-secondary:focus:not([disabled]),
+	.is-brand-secondary:hover:not([disabled])
+	{
+		filter: brightness(110%) !important;
+	}
+	.button.is-danger
+	{
+		background: var(--warning-disable-all) !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-primary
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-primary:hover
+	{
+		filter: brightness(110%) !important;
+	}
 	.button[disabled], .card-footer-item.is-paddingless .button
 	{
-		background: #d80b00 !important;
+		background: var(--main-color) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 		margin-bottom: 30px !important;
+	}
+	.button.is-grey-light
+	{
+		background-color: var(--main-background) !important;
+		border-color: transparent !important;
+		color: var(--main-text) !important;
+	}
+	.button.is-grey-light.is-hovered, .button.is-grey-light:hover
+	{
+		filter: brightness(120%) !important;
+	}
+	.has-text-primary
+	{
+		color: var(--main-color) !important;
+	}
+	a.has-text-primary:focus, a.has-text-primary:hover
+	{
+		color: var(--main-color) !important;
+		filter: brightness(120%) !important;
+	}
+	a.has-text-secondary, a.has-text-warning
+	{
+		color: var(--notice) !important;
+	}
+	a.has-text-secondary:focus, a.has-text-secondary:hover, a.has-text-warning:focus, a.has-text-warning:hover
+	{
+		color: var(--notice) !important;
+		filter: brightness(110%) !important;
 	}
 	.card-footer-item.is-paddingless .button[type="reset"]
 	{
@@ -519,19 +651,23 @@
 	{
 		filter: brightness(110%);
 	}
+	.tile .has-text-white
+	{
+		color: var(--main-text) !important;
+	}
 
-	/*Ratings*/
-	.vue-rate-it-pointer stop[stop-color="#ffd055"], .vue-rate-it-rating stop[stop-color="#ffd055"]
+	/* Ratings  fixed 1.0.0 */
+	.vue-star-rating-star stop[stop-color="#ffd055"], .vue-star-rating-star stop[stop-color="#ffd055"]
 	{
 		stop-color: var(--main-color) !important;
 	}
-	.vue-rate-it-pointer stop[stop-color="#d8d8d8"], .vue-rate-it-rating stop[stop-color="#d8d8d8"]
+	.vue-star-rating-star stop[stop-color="#d8d8d8"], .vue-star-rating-star stop[stop-color="#d8d8d8"]
 	{
 		stop-color: var(--main-background) !important;
 	}
-	.vue-rate-it-pointer polygon[stroke="#999"], .vue-rate-it-rating polygon[stroke="#999"]
+	.vue-star-rating-star polygon[stroke="#999"], .vue-star-rating-star polygon[stroke="#999"]
 	{
-		stroke: var(--hover-background) !important;
+		stroke: var(--main-background) !important;
 	}
 
 	/*Profile*/
@@ -567,6 +703,24 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.table tr:nth-child(odd)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table tr:nth-child(even)
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table tr:nth-child(odd):hover, .table tr:nth-child(even):hover
+	{
+		background: var(--hover-background) !important;
+	}
+	.table td, .table th
+	{
+		border: 1px solid var(--hover-background) !important;
+	}
 	/*Lock check*/
 	.switch.checked
 	{
@@ -574,11 +728,24 @@
 		border-color: var(--main-color) !important;
 	}
 	/*Inputs*/
-	.input, .textarea
+	.input, .textarea, .vue-treeselect__control, .vue-treeselect__menu
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
+	}
+	.vue-treeselect--disabled .vue-treeselect__control, .vue-treeselect__multi-value-item
+	{
+		background-color: var(--second-background) !important;
+	}
+	.vue-treeselect__single-value
+	{
+		color: var(--main-text) !important;
+	}
+	.vue-treeselect__label-wrapper:hover
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--dimmer-text) !important;
 	}
 	.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused,
 	.textarea:active, .textarea:focus, .input:hover, .textarea:hover
@@ -685,9 +852,9 @@
 
 	/*Upload theme*/
 	/*Code*/
-	#editor .ace_gutter
+	.ouc-editor .ace_gutter
 	{
-		background: var(--second-background) !important;
+		background: var(--hover-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
@@ -695,19 +862,20 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	#editor
+	.ouc-editor
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	#editor .ace_print-margin
+	.ouc-editor .ace_print-margin
 	{
 		background: transparent !important;
 	}
-	#editor .ace_cursor
+	.ouc-editor .ace_cursor
 	{
 		border-color: var(--main-color) !important;
+		border-left-width: 3px !important;
 	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
@@ -755,13 +923,17 @@
 	}
 
 	/*Donations*/
-	.is-primary-bg
+	.ouc-im-broke-wrapper
 	{
 		background: var(--main-background) !important;
 	}
-	a.button.is-patreon.is-pulled-right.is-fullheight div.ouc-flush-img-root
+	 .button.is-patreon .ouc-responsive-image-wrapper
 	{
 		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
+	}
+	.button.is-paypal .ouc-responsive-image-wrapper
+	{
+		filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
 	}
 	.button.is-paypal:hover, .button.is-patreon:hover
 	{
@@ -899,7 +1071,6 @@
 		border-top-color: var(--main-color) !important;
 		border-left-color: var(--main-color) !important;
 	}
-
 	.material-bar:nth-child(3)
 	{
 		background: var(--main-color) !important;
@@ -1320,9 +1491,23 @@
 		border-color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
-	.btn-group > .btn:hover, div.post-bar .btn:hover, #content [role="button"]:hover
+	.btn-group > .btn:hover
+	{
+		color: var(--main-text) !important;
+	}
+	div.post-bar .btn:hover, #content [role="button"]:hover
 	{
 		color: var(--main-color) !important;
+	}
+	 .btn.btn-default.composer-discard
+	{
+		color: var(--main-color) !important;
+	}
+	.btn.btn-default.composer-discard:hover
+	{
+		background: transparent !important;
+		background-image: transparent !important;
+		filter: brightness(110%) !important;
 	}
 	.btn-danger
 	{
