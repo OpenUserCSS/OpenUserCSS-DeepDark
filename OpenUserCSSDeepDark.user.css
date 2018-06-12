@@ -28,7 +28,6 @@
 	"Orange": "#ff6905",
 	"Jisho_夜明け": "#EF7D6C"
 }
-
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
 	"BreezeDark": "#232629",
@@ -48,7 +47,6 @@
 	"Orange": "#0a0400",
 	"Jisho_夜明け": "#332222"
 }
-
 @var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
 	"BreezeDark": "#2a2e32",
@@ -68,7 +66,6 @@
 	"Orange": "#0e0702",
 	"Jisho_夜明け": "#2A1B1B"
 }
-
 @var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
 	"BreezeDark": "#31363b",
@@ -88,7 +85,6 @@
 	"Orange": "#110903",
 	"Jisho_夜明け": "#863B2F"
 }
-
 @var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
 	"BreezeDark": "#eff0f1",
@@ -108,7 +104,6 @@
 	"Orange": "#fff9f5",
 	"Jisho_夜明け": "#EFB26C"
 }
-
 @var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
