@@ -1044,6 +1044,11 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	/* fix post list timeline border */
+	.posts-list .posts-list-item .post-body
+	{
+		border-right: 2px solid var(--main-color) !important;
+	}
 
 	/* profile control button */
 	.btn-group.account-fab .fab, .fab.btn-morph.plus
