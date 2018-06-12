@@ -628,6 +628,11 @@
 	{
 		filter: brightness(110%) !important;
 	}
+	/* style boder left in theme settings bounding boxes */
+	.has-brand-line-left
+	{
+		border-left: 5px solid var(--main-color) !important;
+	}
 	.button[disabled], .card-footer-item.is-paddingless .button
 	{
 		background: var(--main-color) !important;
