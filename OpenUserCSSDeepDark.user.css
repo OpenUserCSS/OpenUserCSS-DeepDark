@@ -725,7 +725,8 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.box[disabled], .box
+	/* box styling is under - Popular themes section*/
+	.box[disabled]
 	{
 		background: var(--hover-background) !important;
 		color: var(--dimmer-text) !important;
