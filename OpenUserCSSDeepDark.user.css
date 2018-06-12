@@ -365,7 +365,7 @@
 	}
 	label.checkbox:hover
 	{
-		 color: var(--dimmer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*help warning info banner */
 	.mdi-alert:before, .mdi-information:before
@@ -400,8 +400,10 @@
 	.ouc-loading-inner[data-v-05fea271]
 	{
 		background:  var(--hover-background);
-		color: var(--main-text) !important;
 		background: repeating-linear-gradient(45deg, var(--main-background), var(--hover-background) 10px, var(--hover-background) 0, var(--main-background) 20px);
+		color: var(--main-text) !important;
+	}
+
 	/* website profile */
 	.ouc-profile-wrapper h1
 	{
@@ -545,16 +547,16 @@
 		color: var(--main-color);
 	}
 	pre
- 	{
+	{
 		background-color: var(--main-background) !important;
- 		border: 1px solid var(--hover-background) !important;
+		border: 1px solid var(--hover-background) !important;
 		color: var(--main-text) !important;
- 	}
+	}
 	code
 	{
 		background-color: var(--main-background) !important;
- 		border: none !important;
- 	}
+		border: none !important;
+	}
 	.v--modal
 	{
 		box-shadow: var(--shadow) !important;
@@ -563,7 +565,7 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	 .box.is-fullheight
+	.box.is-fullheight
 	{
 		background: var(---background) !important;
 		border: 1px solid var(--hover-background) !important;
@@ -930,7 +932,7 @@
 	}
 
 	/*Options*/
-	 .vc-chrome-body, .vc-chrome-fields .vc-input__input
+	.vc-chrome-body, .vc-chrome-fields .vc-input__input
 	{
 		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
@@ -959,7 +961,7 @@
 	{
 		background: var(--main-background) !important;
 	}
-	 .button.is-patreon .ouc-responsive-image-wrapper
+	.button.is-patreon .ouc-responsive-image-wrapper
 	{
 		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
 	}
@@ -1147,7 +1149,7 @@
 	.avatar
 	{
 		color: var(--main-text) !important;
- 	}
+	}
 	.navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:focus,
 	.navbar-default .navbar-nav > .open > label:hover
 	{
@@ -1176,7 +1178,7 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	 .chats-list
+	.chats-list
 	{
 		background: var(--main-background) !important;
 		border-right: 1px solid var(--hover-background) !important;
@@ -1521,12 +1523,12 @@
 		background: var(--hover-background) !important;
 	}
 	/*Tags*/
- 	.tag-container, .tag-container .tag-topic-count, .category > ul > li .tag-list .tag
+	.tag-container, .tag-container .tag-topic-count, .category > ul > li .tag-list .tag
 	{
-        border-color: var(--main-background) !important;
+		border-color: var(--main-background) !important;
 		background: var(--main-background) !important;
 	}
-	.timeago, .stats small, a.permalink
+	.timeago, .stats small, a.permalink, a.permalink .timeago:hover
 	{
 		color: var(--dimmer-text) !important;
 		text-decoration: none !important;
@@ -1549,14 +1551,14 @@
 	{
 		color: var(--main-color) !important;
 	}
-	 .btn.btn-default.composer-discard
+	.btn.btn-default.composer-discard
 	{
 		color: var(--main-color) !important;
 	}
 	.btn.btn-default.composer-discard:hover
 	{
 		background: transparent !important;
-		background-image: transparent !important;
+		background-image: none !important;
 		filter: brightness(110%) !important;
 	}
 	.btn-danger
@@ -1574,7 +1576,7 @@
 		color: var(--main-color) !important;
 	}
 
-	/*Wathing svg hover*/
+	/*Watching svg hover*/
 	.actions > li > span > i
 	{
 		color: var(--main-text) !important;
@@ -1667,20 +1669,20 @@
 	}
 	/*Avatar hover menu*/
 	.popover
- 	{
+	{
 		background-color: var(--main-background) !important;
- 		border-color: transparent !important;
- 		color: var(--main-text) !important;
- 	}
+		border-color: transparent !important;
+		color: var(--main-text) !important;
+	}
 
 	pre
- 	{
+	{
 		background-color: var(--main-background) !important;
- 		border: 1px solid var(--hover-background) !important;
- 	}
+		border: 1px solid var(--hover-background) !important;
+	}
 	code
 	{
 		background-color: var(--main-background) !important;
- 		border: none !important;
- 	}
+		border: none !important;
+	}
 }
