@@ -1051,13 +1051,18 @@
 	}
 
 	/* profile control button */
-	.btn-group.account-fab .fab, .fab.btn-morph.plus
+	.btn-group.account-fab .fab, .fab.btn-morph.plus, .btn-morph.fab.heart
 	{
 		background: var(--main-color) !important;
 	}
 	.btn-morph:hover, button:hover
 	{
 		filter: brightness(120%) !important;
+	}
+	/* style the actual <3 */
+	.fab.btn-morph.heart > span > span
+	{
+		background-color: var(--warning-disable-all) !important;
 	}
 
 	/* profile upload modal */
