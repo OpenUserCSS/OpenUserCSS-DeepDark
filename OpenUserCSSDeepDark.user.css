@@ -1392,6 +1392,13 @@
 	}
 
 	/*Unread*/
+	/* fixes alert info specifically in chats (it is only visible with more than one chat target active)*/
+	.chats-full .alert-info
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
 	.alert-info
 	{
 		color: var(--main-color) !important;
