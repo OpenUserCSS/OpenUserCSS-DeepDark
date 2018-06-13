@@ -917,6 +917,11 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/* fix: hide text/icon when loading*/
+	.tile.is-vertical .button.is-primary.is-loading p, .tile.is-vertical .button.is-primary.is-loading .fa-user-plus
+	{
+		display: none !important;
+	}
 	.alert.alert-danger, .alert.alert-danger p, .alert.alert-danger strong
 	{
 		background: var(--warning-disable-all) !important;
