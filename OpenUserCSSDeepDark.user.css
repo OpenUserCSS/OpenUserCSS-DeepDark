@@ -538,14 +538,15 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
+	/* generic hr line */
 	hr
 	{
 		background: var(--hover-background) !important;
 	}
-	/* card content hr*/
+	/* user card .card-content.is-brand-primary content hr*/
 	.is-8 hr
 	{
-		background: var(--main-text) !important;
+		background: var(--hover-background) !important;
 	}
 	.control.has-icons-left .icon, .control.has-icons-right .icon
 	{
@@ -603,6 +604,11 @@
 	.card-footer-item, .card-footer
 	{
 		border-color: transparent !important;
+	}
+	.card-content.is-brand-primary
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
 	}
 	/*Buttons*/
 	.is-brand-primary
