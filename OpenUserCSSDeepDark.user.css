@@ -153,6 +153,14 @@
 		/*Notice from Breeze Dark*/
 		--notice: #FDBC4B;
 
+		/* Categories */
+		--general: #34495e;
+		--theme-dev: #2980b9;
+		--open-ucss: #60459f;
+		--theme-req: #7f8c8d;
+		--stylus: #1abc9c;
+		--cat-icon: #e3e3e3;
+
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
@@ -1353,6 +1361,51 @@
 	.listview.lv-bordered .lv-item
 	{
 		border-color: var(--main-background) !important;
+	}
+	li.row:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--general) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(1) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--general) !important;
+	}
+	li.row:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--theme-dev) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(2) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--theme-dev) !important;
+	}
+	li.row:nth-child(3) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--open-ucss) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(3) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--open-ucss) !important;
+	}
+	li.row:nth-child(4) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--theme-req)  !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(4) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--theme-req)  !important;
+	}
+	li.row:nth-child(5) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--stylus) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(5) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--stylus) !important;
 	}
 
 	/*Panels*/
