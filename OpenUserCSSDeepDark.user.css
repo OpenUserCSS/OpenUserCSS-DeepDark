@@ -404,6 +404,19 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/* this styles the bio preview pane below and the theme submission preview pane
+	Im taking inspiration from the post submission preview well
+	commit d021dc9 or https://git.io/vhKn1 */
+	.columns > div > div > div:nth-child(4), .box.is-minheight-description
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+		opacity: .75;
+	}
+	.content p, .box.is-minheight-description p
+	{
+		color: var(--dimmer-text) !important;
+	}
 
 	/* help page */
 	.box.is-warning
