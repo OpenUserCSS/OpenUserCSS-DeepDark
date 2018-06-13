@@ -1027,11 +1027,11 @@
 	}
 	.button.is-patreon .ouc-responsive-image-wrapper
 	{
-		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
+		filter: invert(100%) hue-rotate(180deg) contrast(30%) brightness(190%) !important;
 	}
 	.button.is-paypal .ouc-responsive-image-wrapper
 	{
-		filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
+		filter: invert(100%) hue-rotate(180deg) !important;
 	}
 	.button.is-paypal:hover, .button.is-patreon:hover
 	{
