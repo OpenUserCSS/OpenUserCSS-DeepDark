@@ -653,7 +653,7 @@
 	{
 		filter: brightness(110%) !important;
 	}
-	/* style boder left in theme settings bounding boxes */
+	/* style border left in theme settings bounding boxes */
 	.has-brand-line-left
 	{
 		border-left: 5px solid var(--main-color) !important;
@@ -1030,7 +1030,7 @@
 		background: var(--hover-background) !important;
 	}
 
-	/*Sned issues*/
+	/*Send issues*/
 	.sentry-error-embed
 	{
 		background: var(--hover-background) !important;
