@@ -663,7 +663,9 @@
 		background: var(--main-color) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
-		margin-bottom: 30px !important;
+		/*margin-bottom: 30px !important;*/
+		/*Im disabling this because it makes no sense
+		and adds margins where none exists in various elements.*/
 	}
 	.button.is-grey-light, .button.is-grey-lighter
 	{
