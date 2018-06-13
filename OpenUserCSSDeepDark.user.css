@@ -709,20 +709,34 @@
 		color: var(--main-text) !important;
 	}
 
-	/* Ratings  fixed 1.0.0 */
-	.vue-star-rating-star stop[stop-color="#ffd055"], .vue-star-rating-star stop[stop-color="#ffd055"]
+	/* Ratings fixed 1.1.0
+	first selector is actual rating action, second selector is the main page overview.
+	for the time being the unstarred background has to be light not dark because
+	otherwise this looks all uneven, ugly and the contrast is poor for good visibility.*/
+	.vue-star-rating-star stop[stop-color="#ffd055"],
+	.vue-star-rating-star stop[stop-color="#FFB450"]
 	{
 		stop-color: var(--main-color) !important;
 	}
-	.vue-star-rating-star stop[stop-color="#d8d8d8"], .vue-star-rating-star stop[stop-color="#d8d8d8"]
+	.vue-star-rating-star stop[stop-color="#d8d8d8"],
+	.vue-star-rating-star stop[stop-color="#FFFFFF"]
 	{
-		stop-color: var(--main-background) !important;
+		stop-color: var(--dimmer-text) !important;
 	}
-	.vue-star-rating-star polygon[stroke="#999"], .vue-star-rating-star polygon[stroke="#999"]
+	.vue-star-rating-star polygon[stroke="#fff"]
 	{
-		stroke: var(--main-background) !important;
+		stroke: var(--dimmer-text) !important;
+		stroke-width: 0px !important; /* this is a hack to make sure the stars dont look lobsided */
 	}
-
+	.vue-star-rating-star polygon[stroke="#FFFFFF"]
+	{
+		stroke: var(--dimmer-text) !important;
+	}
+	.vue-star-rating-star polygon[stroke="#999"]
+	{
+		stroke: var(--dimmer-text) !important;
+		stroke-width: 1px !important; /* this is a hack to make sure the stars dont look lobsided */
+	}
 	/*Profile*/
 	.tile.is-parent h2, h4
 	{
