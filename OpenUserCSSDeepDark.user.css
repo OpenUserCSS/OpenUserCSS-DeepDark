@@ -1242,6 +1242,11 @@
 	}
 
 	/*Chat*/
+	/* title of chats modal is not blue */
+	.ui-draggable-handle > h4
+	{
+		color: var(--main-text) !important;
+	}
 	.chat-content, .modal-content
 	{
 		background: var(--second-background) !important;
