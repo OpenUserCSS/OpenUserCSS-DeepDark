@@ -665,13 +665,13 @@
 		color: var(--main-text) !important;
 		margin-bottom: 30px !important;
 	}
-	.button.is-grey-light
+	.button.is-grey-light, .button.is-grey-lighter
 	{
 		background-color: var(--main-background) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 	}
-	.button.is-grey-light.is-hovered, .button.is-grey-light:hover
+	.button.is-grey-light.is-hovered, .button.is-grey-light:hover, .button.is-grey-lighter:hover
 	{
 		filter: brightness(120%) !important;
 	}
