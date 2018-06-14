@@ -388,6 +388,10 @@
 		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
+	.notification.is-danger p
+	{
+		color: var(--main-text) !important;
+	}
 	/* target section hr directly */
 	.section hr
 	{
