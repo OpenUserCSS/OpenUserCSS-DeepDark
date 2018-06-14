@@ -783,21 +783,48 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.table tr:nth-child(odd)
-	{
-		background-color: var(--main-background) !important;
-		color: var(--main-text) !important;
-	}
-	.table tr:nth-child(even)
+	.table
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.table tr:nth-child(odd):hover, .table tr:nth-child(even):hover
+	.table b, .table:hover b
+	{
+		color: var(--main-text) !important;
+	}
+	.table tr:nth-child(even)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table td
+	{
+		border: 1px solid var(--hover-background) !important;
+	}
+	.table tr
+	{
+		background: var(--second-background) !important;
+	}
+	.table tr:nth-child(even)
+	{
+		background: var(--main-background) !important;
+	}
+
+	.table.is-marginless tr:nth-child(odd)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table.is-marginless tr:nth-child(even)
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table.is-marginless tr:nth-child(odd):hover, .table.is-marginless tr:nth-child(even):hover
 	{
 		background: var(--hover-background) !important;
 	}
-	.table td, .table th
+	.table.is-marginless td, .table.is-marginless th
 	{
 		border: 1px solid var(--hover-background) !important;
 	}
