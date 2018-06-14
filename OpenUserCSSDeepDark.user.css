@@ -388,7 +388,7 @@
 		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
-	.notification.is-danger p
+	.notification.is-danger p, .notification.is-danger a
 	{
 		color: var(--main-text) !important;
 	}
