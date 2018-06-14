@@ -1589,6 +1589,10 @@
 	}
 
 	/*Tables*/
+	.table-bordered
+	{
+		border: 1px solid var(--main-background) !important;
+	}
 	.table-bordered > thead > tr > td, .table-bordered > thead > tr > th
 	{
 		background: var(--second-background) !important;
