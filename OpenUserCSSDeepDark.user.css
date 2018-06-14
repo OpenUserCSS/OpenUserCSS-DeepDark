@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.4.7
+@version 1.4.8
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -132,7 +132,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.7*/
+/*1.4.8*/
 
 	/*Main color variables*/
 	:root
@@ -617,20 +617,24 @@
 	{
 		border-color: transparent !important;
 	}
-	.card-content.is-brand-primary
+	.card-content.is-brand-primary, .box.is-brand-primary
 	{
 		background: var(--main-background) !important;
 		color: var(--main-text) !important;
 	}
 	/*Buttons*/
-	.is-brand-primary
+	.is-brand-primary, .button.is-primary.is-backgroundless
 	{
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
 	.is-brand-primary:hover
 	{
-		filter: brightness(110%) !important;
+		filter: brightness(105%) !important;
+	}
+	.button.is-primary.is-backgroundless:hover
+	{
+		filter: brightness(98%) !important;
 	}
 	.is-brand-primary p
 	{
@@ -663,7 +667,7 @@
 	}
 	.button.is-primary:hover
 	{
-		filter: brightness(110%) !important;
+		filter: brightness(105%) !important;
 	}
 	/* style border left in theme settings bounding boxes */
 	.has-brand-line-left
@@ -756,16 +760,16 @@
 	}
 
 	/*Buttons*/
-	.button.is-primary.ouc-new-theme-button, .button.is-primary.ouc-account-button
+	.ouc-new-theme-button, .ouc-account-button
 	{
-		background: var(--hover-background) !important;
+		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	.button.is-primary.ouc-new-theme-button:hover, .button.is-primary.ouc-account-button:hover
+	.ouc-new-theme-button:hover, .ouc-account-button:hover
 	{
-		color: var(--main-color) !important;
-		filter: brightness(110%);
+		color: var(--main-text) !important;
+		filter: brightness(105%);
 	}
 
 	/*Account details*/
@@ -1585,6 +1589,10 @@
 	}
 
 	/*Tables*/
+	.table-bordered
+	{
+		border: 1px solid var(--main-background) !important;
+	}
 	.table-bordered > thead > tr > td, .table-bordered > thead > tr > th
 	{
 		background: var(--second-background) !important;
@@ -1701,7 +1709,7 @@
 	}
 	div.post-bar .btn:hover, #content [role="button"]:hover
 	{
-		color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 	.btn.btn-default.composer-discard
 	{
