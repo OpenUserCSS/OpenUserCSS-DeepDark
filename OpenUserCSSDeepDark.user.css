@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.4.6
+@version 1.4.7
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -132,7 +132,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.6*/
+/*1.4.7*/
 
 	/*Main color variables*/
 	:root
@@ -152,6 +152,14 @@
 		--warning-disable-all: #DA4453;
 		/*Notice from Breeze Dark*/
 		--notice: #FDBC4B;
+
+		/* Categories */
+		--general: #34495e;
+		--theme-dev: #2980b9;
+		--open-ucss: #60459f;
+		--theme-req: #7f8c8d;
+		--stylus: #1abc9c;
+		--cat-icon: #e3e3e3;
 
 		/*DeepDark colors*/
 		/*
@@ -380,6 +388,10 @@
 		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
+	.notification.is-danger p, .notification.is-danger a
+	{
+		color: var(--main-text) !important;
+	}
 	/* target section hr directly */
 	.section hr
 	{
@@ -403,6 +415,19 @@
 	.ouc-profile-wrapper h1
 	{
 		color: var(--main-text) !important;
+	}
+	/* this styles the bio preview pane below and the theme submission preview pane
+	Im taking inspiration from the post submission preview well
+	commit d021dc9 or https://git.io/vhKn1 */
+	.columns > div > div > div:nth-child(4), .box.is-minheight-description
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+		opacity: .75;
+	}
+	.content p, .box.is-minheight-description p
+	{
+		color: var(--dimmer-text) !important;
 	}
 
 	/* help page */
@@ -525,14 +550,15 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
+	/* generic hr line */
 	hr
 	{
 		background: var(--hover-background) !important;
 	}
-	/* card content hr*/
+	/* user card .card-content.is-brand-primary content hr*/
 	.is-8 hr
 	{
-		background: var(--main-text) !important;
+		background: var(--hover-background) !important;
 	}
 	.control.has-icons-left .icon, .control.has-icons-right .icon
 	{
@@ -591,6 +617,11 @@
 	{
 		border-color: transparent !important;
 	}
+	.card-content.is-brand-primary
+	{
+		background: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
 	/*Buttons*/
 	.is-brand-primary
 	{
@@ -634,7 +665,7 @@
 	{
 		filter: brightness(110%) !important;
 	}
-	/* style boder left in theme settings bounding boxes */
+	/* style border left in theme settings bounding boxes */
 	.has-brand-line-left
 	{
 		border-left: 5px solid var(--main-color) !important;
@@ -644,15 +675,17 @@
 		background: var(--main-color) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
-		margin-bottom: 30px !important;
+		/*margin-bottom: 30px !important;*/
+		/*Im disabling this because it makes no sense
+		and adds margins where none exists in various elements.*/
 	}
-	.button.is-grey-light
+	.button.is-grey-light, .button.is-grey-lighter
 	{
 		background-color: var(--main-background) !important;
 		border-color: transparent !important;
 		color: var(--main-text) !important;
 	}
-	.button.is-grey-light.is-hovered, .button.is-grey-light:hover
+	.button.is-grey-light.is-hovered, .button.is-grey-light:hover, .button.is-grey-lighter:hover
 	{
 		filter: brightness(120%) !important;
 	}
@@ -688,20 +721,34 @@
 		color: var(--main-text) !important;
 	}
 
-	/* Ratings  fixed 1.0.0 */
-	.vue-star-rating-star stop[stop-color="#ffd055"], .vue-star-rating-star stop[stop-color="#ffd055"]
+	/* Ratings fixed 1.1.0
+	first selector is actual rating action, second selector is the main page overview.
+	for the time being the unstarred background has to be light not dark because
+	otherwise this looks all uneven, ugly and the contrast is poor for good visibility.*/
+	.vue-star-rating-star stop[stop-color="#ffd055"],
+	.vue-star-rating-star stop[stop-color="#FFB450"]
 	{
 		stop-color: var(--main-color) !important;
 	}
-	.vue-star-rating-star stop[stop-color="#d8d8d8"], .vue-star-rating-star stop[stop-color="#d8d8d8"]
+	.vue-star-rating-star stop[stop-color="#d8d8d8"],
+	.vue-star-rating-star stop[stop-color="#FFFFFF"]
 	{
-		stop-color: var(--main-background) !important;
+		stop-color: var(--dimmer-text) !important;
 	}
-	.vue-star-rating-star polygon[stroke="#999"], .vue-star-rating-star polygon[stroke="#999"]
+	.vue-star-rating-star polygon[stroke="#fff"]
 	{
-		stroke: var(--main-background) !important;
+		stroke: var(--dimmer-text) !important;
+		stroke-width: 0px !important; /* this is a hack to make sure the stars dont look lobsided */
 	}
-
+	.vue-star-rating-star polygon[stroke="#FFFFFF"]
+	{
+		stroke: var(--dimmer-text) !important;
+	}
+	.vue-star-rating-star polygon[stroke="#999"]
+	{
+		stroke: var(--dimmer-text) !important;
+		stroke-width: 1px !important; /* this is a hack to make sure the stars dont look lobsided */
+	}
 	/*Profile*/
 	.tile.is-parent h2, h4
 	{
@@ -736,21 +783,48 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.table tr:nth-child(odd)
-	{
-		background-color: var(--main-background) !important;
-		color: var(--main-text) !important;
-	}
-	.table tr:nth-child(even)
+	.table
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.table tr:nth-child(odd):hover, .table tr:nth-child(even):hover
+	.table b, .table:hover b
+	{
+		color: var(--main-text) !important;
+	}
+	.table tr:nth-child(even)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table td
+	{
+		border: 1px solid var(--hover-background) !important;
+	}
+	.table tr
+	{
+		background: var(--second-background) !important;
+	}
+	.table tr:nth-child(even)
+	{
+		background: var(--main-background) !important;
+	}
+
+	.table.is-marginless tr:nth-child(odd)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table.is-marginless tr:nth-child(even)
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.table.is-marginless tr:nth-child(odd):hover, .table.is-marginless tr:nth-child(even):hover
 	{
 		background: var(--hover-background) !important;
 	}
-	.table td, .table th
+	.table.is-marginless td, .table.is-marginless th
 	{
 		border: 1px solid var(--hover-background) !important;
 	}
@@ -882,6 +956,11 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/* fix: hide text/icon when loading*/
+	.tile.is-vertical .button.is-primary.is-loading p, .tile.is-vertical .button.is-primary.is-loading .fa-user-plus
+	{
+		display: none !important;
+	}
 	.alert.alert-danger, .alert.alert-danger p, .alert.alert-danger strong
 	{
 		background: var(--warning-disable-all) !important;
@@ -979,18 +1058,18 @@
 	}
 	.button.is-patreon .ouc-responsive-image-wrapper
 	{
-		filter: invert(100%) hue-rotate(180deg) contrast(25%) brightness(170%) !important;
+		filter: invert(100%) hue-rotate(180deg) contrast(30%) brightness(190%) !important;
 	}
 	.button.is-paypal .ouc-responsive-image-wrapper
 	{
-		filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
+		filter: invert(100%) hue-rotate(180deg) !important;
 	}
 	.button.is-paypal:hover, .button.is-patreon:hover
 	{
 		background: var(--hover-background) !important;
 	}
 
-	/*Sned issues*/
+	/*Send issues*/
 	.sentry-error-embed
 	{
 		background: var(--hover-background) !important;
@@ -1202,6 +1281,11 @@
 	}
 
 	/*Chat*/
+	/* title of chats modal is not blue */
+	.ui-draggable-handle > h4
+	{
+		color: var(--main-text) !important;
+	}
 	.chat-content, .modal-content
 	{
 		background: var(--second-background) !important;
@@ -1309,6 +1393,51 @@
 	{
 		border-color: var(--main-background) !important;
 	}
+	li.row:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--general) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(1) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--general) !important;
+	}
+	li.row:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--theme-dev) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(2) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--theme-dev) !important;
+	}
+	li.row:nth-child(3) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--open-ucss) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(3) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--open-ucss) !important;
+	}
+	li.row:nth-child(4) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--theme-req)  !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(4) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--theme-req)  !important;
+	}
+	li.row:nth-child(5) > div:nth-child(2) > div:nth-child(1)
+	{
+		background: var(--stylus) !important;
+		color: var(--cat-icon) !important;
+	}
+	li.row:nth-child(5) > div:nth-child(5) > div:nth-child(1)
+	{
+		border-color: var(--stylus) !important;
+	}
 
 	/*Panels*/
 	/* if you must add a bg to breadcrumb, at least add padding a bg that starts with text looks crap */
@@ -1347,6 +1476,13 @@
 	}
 
 	/*Unread*/
+	/* fixes alert info specifically in chats (it is only visible with more than one chat target active)*/
+	.chats-full .alert-info
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
 	.alert-info
 	{
 		color: var(--main-color) !important;
