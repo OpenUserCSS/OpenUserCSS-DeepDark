@@ -995,7 +995,7 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	.ouc-editor
+	.ouc-editor.ace_editor
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
@@ -1009,6 +1009,15 @@
 	{
 		border-color: var(--main-color) !important;
 		border-left-width: 3px !important;
+	}
+	.ace_editor.ace_focus
+	{
+		border: 2px solid var(--main-color) !important;
+	}
+	.ace_comment
+	{
+		font-style: italic !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
