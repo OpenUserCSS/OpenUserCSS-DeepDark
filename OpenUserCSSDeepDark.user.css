@@ -769,6 +769,13 @@
 		stroke: var(--dimmer-text) !important;
 		stroke-width: 1px !important; /* this is a hack to make sure the stars dont look lobsided */
 	}
+	/* Pull rating stars down
+	see https://github.com/OpenUserCSS/openusercss.org/issues/104 */
+	.ouc-screenshot-overlay .is-pulled-right.vue-star-rating
+	{
+		margin-top: 180px !important;
+	}
+
 	/*Profile*/
 	.tile.is-parent h2, h4
 	{
