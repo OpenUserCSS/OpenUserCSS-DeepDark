@@ -991,7 +991,8 @@
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.ace_folding-enabled > .ace_gutter-cell, .ace-tm .ace_marker-layer .ace_active-line, .ace-tm .ace_marker-layer .ace_selection
+	.ace_folding-enabled > .ace_gutter-cell, .ace-tm .ace_marker-layer .ace_active-line,
+	.ace-tm .ace_marker-layer .ace_selection
 	{
 		background: var(--hover-background) !important;
 	}
@@ -1021,7 +1022,7 @@
 	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
-	.is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary
+	.is-marginless[is-pulled-right="is-pulled-right"] .button.is-primary
 	{
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
@@ -1029,7 +1030,7 @@
 		opacity: 1 !important;
 	}
 	.has-bottom-margin .button.is-primary:hover, .tile.is-6 .button.is-primary:hover,
-	.is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary:hover
+	.is-marginless[is-pulled-right="is-pulled-right"] .button.is-primary:hover
 	{
 		filter: brightness(110%);
 	}
