@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.4.8
+@version 1.4.9
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -132,7 +132,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.8*/
+/*1.4.9*/
 
 	/*Main color variables*/
 	:root
@@ -622,6 +622,22 @@
 		background: var(--main-background) !important;
 		color: var(--main-text) !important;
 	}
+	/* Style generic card background
+	see  https://github.com/OpenUserCSS/openusercss.org/issues/103 */
+	.ouc-responsive-image.-img-main-bg-x640-png
+	{
+		background:
+			repeating-linear-gradient(
+				45deg,
+				transparent,
+				transparent 10px,
+				var(--hover-background) 10px,
+				var(--main-background) 80px),
+			linear-gradient(
+				to bottom,
+				var(--hover-background),
+				var(--main-background)) !important;
+	}
 	/*Buttons*/
 	.is-brand-primary, .button.is-primary.is-backgroundless
 	{
@@ -753,6 +769,13 @@
 		stroke: var(--dimmer-text) !important;
 		stroke-width: 1px !important; /* this is a hack to make sure the stars dont look lobsided */
 	}
+	/* Pull rating stars down
+	see https://github.com/OpenUserCSS/openusercss.org/issues/104 */
+	.ouc-screenshot-overlay .is-pulled-right.vue-star-rating
+	{
+		margin-top: 180px !important;
+	}
+
 	/*Profile*/
 	.tile.is-parent h2, h4
 	{
@@ -991,11 +1014,12 @@
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.ace_folding-enabled > .ace_gutter-cell, .ace-tm .ace_marker-layer .ace_active-line, .ace-tm .ace_marker-layer .ace_selection
+	.ace_folding-enabled > .ace_gutter-cell, .ace-tm .ace_marker-layer .ace_active-line,
+	.ace-tm .ace_marker-layer .ace_selection
 	{
 		background: var(--hover-background) !important;
 	}
-	.ouc-editor
+	.ouc-editor.ace_editor
 	{
 		background: var(--main-background) !important;
 		border-color: var(--second-background) !important;
@@ -1010,9 +1034,18 @@
 		border-color: var(--main-color) !important;
 		border-left-width: 3px !important;
 	}
+	.ace_editor.ace_focus
+	{
+		border: 2px solid var(--main-color) !important;
+	}
+	.ace_comment
+	{
+		font-style: italic !important;
+		color: var(--dimmer-text) !important;
+	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
-	.is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary
+	.is-marginless[is-pulled-right="is-pulled-right"] .button.is-primary
 	{
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
@@ -1020,7 +1053,7 @@
 		opacity: 1 !important;
 	}
 	.has-bottom-margin .button.is-primary:hover, .tile.is-6 .button.is-primary:hover,
-	.is-marginless[is-pulled-right="is-pulled-right"]  .button.is-primary:hover
+	.is-marginless[is-pulled-right="is-pulled-right"] .button.is-primary:hover
 	{
 		filter: brightness(110%);
 	}
@@ -1491,6 +1524,7 @@
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 	.alert-warning
 	{
