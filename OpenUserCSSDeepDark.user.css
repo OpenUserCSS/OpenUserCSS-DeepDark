@@ -1500,6 +1500,7 @@
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 	.alert-warning
 	{
