@@ -1024,6 +1024,10 @@
 		box-shadow: none !important;
 		opacity: .9
 	}
+	.ouc-logged-out .button.is-brand-primary
+	{
+		color: var(--main-text) !important;
+	}
 
 	/*Upload theme*/
 	/*Code*/
