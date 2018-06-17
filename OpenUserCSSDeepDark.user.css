@@ -1031,10 +1031,18 @@
 
 	/*Upload theme*/
 	/*Code*/
+	/* allow more fonts to account for custom user configurations
+	this is trasnposed from  http://beautifytools.com/stylus-compiler.php Ace editor*/
+	.ouc-editor *
+	{
+		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+		font-size: 15px !important;
+		direction: ltr !important;
+	}
 	.ouc-editor .ace_gutter
 	{
 		background: var(--hover-background) !important;
-		border-color: var(--second-background) !important;
+		border-right: 1px solid var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
 	.ace_folding-enabled > .ace_gutter-cell, .ace-tm .ace_marker-layer .ace_active-line,
@@ -1057,14 +1065,26 @@
 		border-color: var(--main-color) !important;
 		border-left-width: 3px !important;
 	}
+	.ace_editor
+	{
+		border: 1px solid var(--hover-background) !important;
+	}
 	.ace_editor.ace_focus
 	{
-		border: 2px solid var(--main-color) !important;
+		border: 1px solid var(--main-color) !important;
 	}
 	.ace_comment
 	{
 		font-style: italic !important;
 		color: var(--dimmer-text) !important;
+	}
+	.ouc-editor .ace_tooltip
+	{
+		background-color: var(--hover-background) !important;
+		background-image: none !important;
+		border: 1px solid var(--main-background) !important;
+		border-radius: 1px !important;
+		color: var(--main-text) !important;
 	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
