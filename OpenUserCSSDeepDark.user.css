@@ -969,6 +969,24 @@
 	}
 
 	/*Login*/
+	/* the autofill in Opera and Chrome is apple green lets wrangle that in
+	have to use keyframes hack though :(*/
+	@-webkit-keyframes autofill
+	{
+		to
+		{
+			background-color: var(--main-background);
+			background-image: none;
+			color: var(--main-text);
+		}
+	}
+	input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus,
+	textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus,
+	select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus
+	{
+		-webkit-animation-name: autofill !important;
+		-webkit-animation-fill-mode: both !important;
+	}
 	.tile.is-vertical .button.is-primary
 	{
 		background: var(--main-color) !important;
