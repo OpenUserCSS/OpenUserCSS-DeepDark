@@ -562,7 +562,8 @@
 	}
 	.control.has-icons-left .icon, .control.has-icons-right .icon
 	{
-		color: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+		opacity: .6;
 	}
 
 	/*Code*/
