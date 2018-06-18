@@ -1103,6 +1103,28 @@
 		border-radius: 1px !important;
 		color: var(--main-text) !important;
 	}
+	.ouc-editor .ace_indent-guide
+	{
+		background-repeat: right repeat-y !important;
+		filter: brightness(40%) !important;
+	}
+	.ace_gutter-cell.ace_warning {
+		background-image: url('https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/Images/warning.png') !important;
+		background-repeat: no-repeat !important;
+		background-position: 3px -1px !important;
+	}
+	.ace_gutter-cell.ace_error
+	{
+		background-image: url('https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/Images/error.png' ) !important;
+		background-repeat: no-repeat !important;
+		background-position: 3px 0px !important;
+	}
+	.ace_gutter-cell.ace_info, .ace_dark .ace_gutter-cell.ace_info
+	{
+		background-image: url('https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/Images/info.png') !important;
+		background-repeat: no-repeat !important;
+		background-position: 3px -1px !important;
+	}
 	/*Buttons*/
 	.has-bottom-margin .button.is-primary, .tile.is-6 .button.is-primary,
 	.is-marginless[is-pulled-right="is-pulled-right"] .button.is-primary
