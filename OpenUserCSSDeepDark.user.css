@@ -934,6 +934,11 @@
 	{
 		filter: brightness(110%);
 	}
+	/* fix text on button shows when search animation overlays*/
+	.section .button.is-primary.is-pulled-right.is-loading
+	{
+		color: transparent !important;
+	}
 	/*Notification List */
 	.notification.is-primary
 	{
