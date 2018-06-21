@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.5.1
+@version 1.5.2
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -132,7 +132,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.5.1*/
+/*1.5.2*/
 
 	/*Main color variables*/
 	:root
@@ -783,7 +783,7 @@
 	see https://github.com/OpenUserCSS/openusercss.org/issues/104 */
 	.ouc-screenshot-overlay .is-pulled-right.vue-star-rating
 	{
-		margin-top: 180px !important;
+		margin-top: 125px !important;
 	}
 
 	/*Profile*/
@@ -933,6 +933,11 @@
 	.column.is-1 .button.is-primary:hover
 	{
 		filter: brightness(110%);
+	}
+	/* fix text on button shows when search animation overlays*/
+	.section .button.is-primary.is-pulled-right.is-loading
+	{
+		color: transparent !important;
 	}
 	/*Notification List */
 	.notification.is-primary
