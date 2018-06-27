@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.5.2
+@version 1.5.3
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -132,7 +132,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.5.2*/
+/*1.5.3*/
 
 	/*Main color variables*/
 	:root
@@ -610,6 +610,10 @@
 		color: var(--main-text) !important;
 		box-shadow: 0 2px 3px var(--main-background),0 0 0 1px var(--main-background) !important;
 	}
+	.card:hover .card-header-title
+	{
+		color: var(--main-color) !important;
+	}
 	.card-header
 	{
 		box-shadow: 0 1px 2px var(--main-background) !important;
@@ -772,7 +776,7 @@
 	}
 	.vue-star-rating-star polygon[stroke="#FFFFFF"]
 	{
-		stroke: var(--dimmer-text) !important;
+		stroke: transparent !important;
 	}
 	.vue-star-rating-star polygon[stroke="#999"]
 	{
@@ -1228,6 +1232,10 @@
 }
 @-moz-document domain("forums.openusercss.org") {
 	/*Forums*/
+	a:hover
+	{
+		text-decoration: none !important;
+	}
 
 	body
 	{
@@ -1301,6 +1309,10 @@
 	{
 		text-shadow: none !important;
 		opacity: 1 !important;
+	}
+	.fa.fa-rss-square
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Inputs*/
@@ -1540,6 +1552,7 @@
 	{
 		background: var(--general) !important;
 		color: var(--cat-icon) !important;
+		border-radius: 100%;
 	}
 	li.row:nth-child(1) > div:nth-child(5) > div:nth-child(1)
 	{
@@ -1549,6 +1562,7 @@
 	{
 		background: var(--theme-dev) !important;
 		color: var(--cat-icon) !important;
+		border-radius: 100%;
 	}
 	li.row:nth-child(2) > div:nth-child(5) > div:nth-child(1)
 	{
@@ -1558,6 +1572,7 @@
 	{
 		background: var(--open-ucss) !important;
 		color: var(--cat-icon) !important;
+		border-radius: 100%;
 	}
 	li.row:nth-child(3) > div:nth-child(5) > div:nth-child(1)
 	{
@@ -1567,6 +1582,7 @@
 	{
 		background: var(--theme-req)  !important;
 		color: var(--cat-icon) !important;
+		border-radius: 100%;
 	}
 	li.row:nth-child(4) > div:nth-child(5) > div:nth-child(1)
 	{
@@ -1576,6 +1592,7 @@
 	{
 		background: var(--stylus) !important;
 		color: var(--cat-icon) !important;
+		border-radius: 100%;
 	}
 	li.row:nth-child(5) > div:nth-child(5) > div:nth-child(1)
 	{
