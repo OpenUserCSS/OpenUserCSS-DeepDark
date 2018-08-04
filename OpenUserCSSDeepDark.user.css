@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.5.4
+@version 1.5.5
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -132,7 +132,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.5.4*/
+/*1.5.5*/
 
 	/*Main color variables*/
 	:root
@@ -417,6 +417,11 @@
 		background: var(--main-background) !important;
 		color: var(--main-text) !important;
 		opacity: .75;
+	}
+	.column.is-6  div:nth-child(4)
+	{
+		background: transparent !important;
+		opacity: 1 !important;
 	}
 	.content p, .box.is-minheight-description p
 	{
