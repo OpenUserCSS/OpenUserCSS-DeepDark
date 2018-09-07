@@ -2,7 +2,7 @@
 @name OpenUserCSS DeepDark
 @namespace github.com/OpenUserCSS/OpenUserCSS-DeepDark
 @homepageURL https://github.com/OpenUserCSS/OpenUserCSS-DeepDark
-@version 1.5.6
+@version 1.5.7
 @updateURL https://raw.githubusercontent.com/OpenUserCSS/OpenUserCSS-DeepDark/master/OpenUserCSSDeepDark.user.css
 @description Host your code in the dark. May the dark be kinder on thine eyes. (openusercss.org dark theme)
 @author RaitaroH
@@ -1358,6 +1358,16 @@
 	{
 		background: var(--main-color) !important;
 		filter: brightness(100%);
+	}
+
+	/*Topic loading bar*/
+	.topic .pagination-block .progress-bar
+	{
+		background-color: var(--main-color) !important;
+	}
+	.topic .pagination-block
+	{
+		background-color: var(--hover-background) !important;
 	}
 
 	/* fix tags */
